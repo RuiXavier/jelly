@@ -1010,7 +1010,17 @@ describe("tests/micro", () => {
         moduleInfos: 1,
         functionInfos: 30,
         numberOfFunctionToFunctionEdges: 47,
-        numberOfCallToFunctionEdges: 94,
+        numberOfCallToFunctionEdges: 86,
+    });
+
+    runTest("tests/micro", "spread_order.js", {
+        options: {spread: true},
+        numberOfCallToFunctionEdges: 7,
+    });
+
+    runTest("tests/micro", "spread_cycle.js", {
+        options: {spread: true},
+        numberOfCallToFunctionEdges: 3,
     });
 
     runTest("tests/micro", "timers.js", {

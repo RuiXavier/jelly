@@ -544,10 +544,10 @@ export default class Solver {
      * Adds a quantified constraint for all explicit numeric properties of the given array.
      * The triple consisting of the token, the key, and the node must together uniquely determine the function (including its free variables).
      */
-    addForAllArrayEntriesConstraint(t: ArrayToken, key: TokenListener, n: Node, listener: (prop: string) => void) {
+    addForAllArrayEntriesConstraint(t: ArrayToken, key: TokenListener, opts: Node | Omit<ListenerKey, "l">, listener: (prop: string) => void) {
         if (logger.isDebugEnabled())
             logger.debug(`Adding array entries constraint #${TokenListener[key]} to ${t}`);
-        const id = this.getListenerID({l: key, n});
+        const id = this.getListenerID(isNode(opts) ? {l: key, n: opts} : {...opts, l: key});
         const m = this.runArrayEntriesListener(t, id, listener);
         if (m) {
             // register listener for future entries
