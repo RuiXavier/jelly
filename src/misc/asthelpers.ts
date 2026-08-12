@@ -38,6 +38,7 @@ import {
     isParenthesizedExpression,
     isPrivateName,
     isStringLiteral,
+    isTSParameterProperty,
     JSXMemberExpression,
     MemberExpression,
     NewExpression,
@@ -344,7 +345,8 @@ export function getConstructor(path: NodePath<Class>): NodePath<ClassMethod> {
 
 /**
  * Invokes `f` on every Identifier that introduces a binding inside the given LVal/pattern.
- * Recurses into RestElement, AssignmentPattern, ArrayPattern, and ObjectPattern.
+ * Recurses into RestElement, AssignmentPattern, ArrayPattern, ObjectPattern, and
+ * TSParameterProperty.
  */
 export function forEachPatternIdentifier(p: Node, f: (id: Identifier) => void): void {
     if (isIdentifier(p))
@@ -353,6 +355,8 @@ export function forEachPatternIdentifier(p: Node, f: (id: Identifier) => void): 
         forEachPatternIdentifier(p.argument, f);
     else if (isAssignmentPattern(p))
         forEachPatternIdentifier(p.left, f);
+    else if (isTSParameterProperty(p))
+        forEachPatternIdentifier(p.parameter, f);
     else if (isArrayPattern(p)) {
         for (const el of p.elements)
             if (el)
@@ -364,7 +368,6 @@ export function forEachPatternIdentifier(p: Node, f: (id: Identifier) => void): 
             else if (isObjectProperty(prop))
                 forEachPatternIdentifier(prop.value as Node, f);
     }
-    // TODO: TSParameterProperty
 }
 
 /**
