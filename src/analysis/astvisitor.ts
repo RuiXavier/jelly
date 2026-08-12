@@ -378,8 +378,11 @@ export function visit(ast: File, op: Operations) {
                     op.assign(eVar, path.node.left, path);
 
                     // constraint: ⟦E⟧ ⊆ ⟦... = E⟧
-                    if (!isParentExpressionStatement(path))
+                    if (!isParentExpressionStatement(path)) {
                         solver.addSubsetConstraint(eVar, vp.nodeVar(path.node));
+                        if ((oper === '||=' || oper === '??=') && isExpression(path.node.left))
+                            solver.addSubsetConstraint(op.expVar(path.node.left, path), vp.nodeVar(path.node));
+                    }
                 }
             }
         },

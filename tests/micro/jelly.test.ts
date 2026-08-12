@@ -125,6 +125,13 @@ describe("tests/micro", () => {
         oneCalleeCalls: 15,
     });
 
+    runTest("tests/micro", "logicalassignment.js", {
+        functionInfos: 4,
+        moduleInfos: 1,
+        numberOfFunctionToFunctionEdges: 4,
+        numberOfCallToFunctionEdges: 4,
+    });
+
     runTest("tests/micro", "create.js", {
         soundness: "tests/micro/create.json",
         functionInfos: 2,
