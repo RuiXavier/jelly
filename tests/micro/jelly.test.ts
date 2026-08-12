@@ -724,6 +724,30 @@ describe("tests/micro", () => {
         callTotal: 6,
     });
 
+    runTest("tests/micro", "static_init_arrow.js", {
+        functionInfos: 16,
+        moduleInfos: 1,
+        numberOfFunctionToFunctionEdges: 21,
+        hasEdges: [
+            ["micro@0.0.1:static_init_arrow.js:10:20:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:6:12:cHit"],
+            ["micro@0.0.1:static_init_arrow.js:12:32:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:6:12:cHit"],
+            ["micro@0.0.1:static_init_arrow.js:14:25:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:6:12:cHit"],
+            ["micro@0.0.1:static_init_arrow.js:24:24:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:6:12:cHit"],
+            ["micro@0.0.1:static_init_arrow.js:17:21:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:2:12:aHit"],
+            ["micro@0.0.1:static_init_arrow.js:19:33:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:2:12:aHit"],
+            ["micro@0.0.1:static_init_arrow.js:25:24:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:2:12:aHit"],
+            ["micro@0.0.1:static_init_arrow.js:28:17:<anonymous>",
+             "micro@0.0.1:static_init_arrow.js:8:5:instM"],
+        ],
+    });
+
     runTest("tests/micro", "dpr-this.js", {
         soundness: "tests/micro/dpr-this.json",
         // TODO: patch dynamics heuristic does not kick in for dynamic property reads

@@ -138,7 +138,8 @@ export function visit(ast: File, op: Operations) {
 
             // this
             const encl = path.findParent((p: NodePath) =>
-                isFunction(p.node) || isStaticBlock(p.node) || isClassProperty(p.node) || isClassPrivateProperty(p.node));
+                (isFunction(p.node) && !isArrowFunctionExpression(p.node)) ||
+                isStaticBlock(p.node) || isClassProperty(p.node) || isClassPrivateProperty(p.node));
             if (encl && (isStaticBlock(encl.node) || ((isClassProperty(encl.node) || isClassPrivateProperty(encl.node)) && encl.node.static))) {
                 // in static block or static field initializer
                 // constraint: c ∈ ⟦this⟧ where c is the constructor of the enclosing class
@@ -167,7 +168,8 @@ export function visit(ast: File, op: Operations) {
 
             // super
             const encl = path.findParent((p: NodePath) =>
-                isFunction(p.node) || isStaticBlock(p.node) || isClassProperty(p.node) || isClassPrivateProperty(p.node));
+                (isFunction(p.node) && !isArrowFunctionExpression(p.node)) ||
+                isStaticBlock(p.node) || isClassProperty(p.node) || isClassPrivateProperty(p.node));
             if (!encl) {
                 f.error("'super' keyword unexpected", path.node);
                 return;
