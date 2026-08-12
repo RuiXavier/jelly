@@ -699,6 +699,9 @@ for (const [name, val] of Object.entries({
 
     /**
      * Performs a method call and models special native functions.
+     * The property is read here (rather than in the generated code) so that a read
+     * that throws (null/undefined receiver, throwing getter, ...) can be suppressed
+     * and approximate interpretation can continue past the error.
      * @param mod module name
      * @param loc source location
      * @param base base value
@@ -714,6 +717,7 @@ for (const [name, val] of Object.entries({
             logger.debug(`$method ${mod}:${loc}${isDynamic ? " dynamic" : ""}${isOptionalMember ? " optionalMember" : ""}${isOptionalCall ? " optionalCall" : ""}`);
         let fun;
         try {
+            // reads the property after the arguments (wrong JS order), accepted so read failures can be suppressed
             fun = isOptionalMember && (base === undefined || base === null) ? undefined : base[prop];
         } catch (ex) {
             if (logger.isDebugEnabled())
