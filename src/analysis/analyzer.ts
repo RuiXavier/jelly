@@ -20,7 +20,6 @@ import {finalizeCallEdges} from "./finalization";
 import {ProcessManager} from "../approx/processmanager";
 import {Patching} from "../approx/patching";
 import {PatchingDiagnostics} from "../approx/diagnostics";
-import {patchThis} from "../patching/patchthis";
 
 export async function analyzeFiles(files: Array<string>, solver: Solver) {
     const a = solver.globalState;
@@ -140,14 +139,12 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
                     }
 
                     // patch heuristics
-                    if (options.patchDynamics || options.patchMethodCalls || options.patchThis) {
+                    if (options.patchDynamics || options.patchMethodCalls) {
                         const t = new Timer();
                         if (options.patchDynamics)
                             patchDynamics(solver);
                         if (options.patchMethodCalls)
                             patchMethodCalls(solver);
-                        if (options.patchThis)
-                            patchThis(solver);
                         await solver.propagate("Extra patching");
                         d.totalOtherPatchingTime += t.elapsed();
                     }
