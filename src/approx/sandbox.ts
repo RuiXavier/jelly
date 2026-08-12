@@ -64,6 +64,13 @@ export function patchGlobalBuiltins() {
     // DOM specific interface
     g.window = g.document = theProxy;
 
+    // Blob/File and URL.createObjectURL/revokeObjectURL: on Node >=22, feeding a
+    // Proxy placeholder into these aborts the process with a native SIGABRT
+    // (Blob::New / Blob::StoreDataObject) rather than a catchable exception.
+    g.Blob = g.File = theProxy;
+    if (g.URL)
+        g.URL.createObjectURL = g.URL.revokeObjectURL = theProxy;
+
     // freeze objects and properties
     for (const x of [
         Array, ArrayBuffer, BigInt, Boolean, DataView, Date, /*Error,*/ AggregateError, EvalError, RangeError, ReferenceError,
