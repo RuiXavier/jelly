@@ -118,11 +118,11 @@ describe("tests/micro", () => {
     });
 
     runTest("tests/micro", "lazyaccessors.js", {
-        functionInfos: 15,
+        functionInfos: 17,
         moduleInfos: 1,
-        numberOfFunctionToFunctionEdges: 15,
-        numberOfCallToFunctionEdges: 15,
-        oneCalleeCalls: 15,
+        numberOfFunctionToFunctionEdges: 17,
+        numberOfCallToFunctionEdges: 17,
+        oneCalleeCalls: 17,
     });
 
     runTest("tests/micro", "logicalassignment.js", {

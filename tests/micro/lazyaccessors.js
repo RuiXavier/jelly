@@ -54,3 +54,15 @@ class D {
 }
 new D().quux = target6;
 captured6();
+
+function target7() {}
+let captured7;
+const proto7 = {};
+const obj7 = Object.create(proto7);
+obj7.late = target7;
+Object.defineProperty(proto7, "late", {
+    set: function setLate(v) {
+        captured7 = v;
+    }
+});
+captured7();
