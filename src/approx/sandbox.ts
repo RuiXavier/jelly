@@ -41,6 +41,7 @@ export function patchGlobalBuiltins() {
     Error.captureStackTrace = emptyFunction; // TODO: Error (parser writes to Error.prepareStackTrace)
     Atomics.wait = Atomics.waitAsync = theProxy;
     Module.register = function() {};
+    process.env.DISABLE_V8_COMPILE_CACHE = "1"; // v8-compile-cache (e.g. bundled by eslint) patches Module._compile to compile via vm, bypassing instrumentation
 
     // replace Module._load
     const realLoad = (Module as any)._load;
