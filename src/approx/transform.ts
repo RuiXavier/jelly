@@ -103,12 +103,6 @@ const NEW = template.expression(`${PREFIX}new(${PREFIX}mod, LOC, FUN, ARGS)`);
 const FUNCALL = template.expression(`${PREFIX}fun(${PREFIX}mod, LOC, FUN, OPTCALL, ARGS)`);
 const EVAL = template.expression(`${PREFIX}eval(${PREFIX}mod, LOC, STR)`);
 const REQUIRE = template.expression(`${PREFIX}require(${PREFIX}mod, LOC, STR)`);
-// The property read is performed inside the _J$method hook (not here) so that a
-// read that throws (e.g. a null/undefined receiver or a throwing getter) can be
-// suppressed and approximate interpretation can continue past the error instead
-// of aborting the execution. Consequently the getter fires after the arguments
-// are evaluated, and arguments are evaluated even when an optional chain short-
-// circuits; both are acceptable for approximate (best-effort) interpretation.
 const METHODCALL = template.expression(`${PREFIX}method(${PREFIX}mod, LOC, BASE, PROP, DYN, OPTMEMBER, OPTCALL, ARGS)`);
 const COMP = template.expression(`${PREFIX}comp(${PREFIX}mod, LOC, VAL, KIND, STATIC, DYN)`);
 const ENTER = template.expression(`${PREFIX}enter(${PREFIX}mod, LOC)`);

@@ -699,9 +699,6 @@ for (const [name, val] of Object.entries({
 
     /**
      * Performs a method call and models special native functions.
-     * The property is read here (rather than in the generated code) so that a read
-     * that throws (null/undefined receiver, throwing getter, ...) can be suppressed
-     * and approximate interpretation can continue past the error.
      * @param mod module name
      * @param loc source location
      * @param base base value
