@@ -619,7 +619,7 @@ export function visit(ast: File, op: Operations) {
 
                 for (const p of path.node.properties)
                     if (isSpreadElement(p)) {
-                        if (options.objSpread) {
+                        if (options.spread) {
                             // it's enticing to rewrite the AST to use Object.assign, but assign invokes setters on the target object
                             const enclosing = a.getEnclosingFunctionOrModule(path);
                             const argVar = vp.expVar(p.argument, path);
@@ -632,7 +632,7 @@ export function visit(ast: File, op: Operations) {
                                 }
                             });
                         } else
-                            f.warnUnsupported(p, "SpreadElement in ObjectExpression (use --obj-spread)");
+                            f.warnUnsupported(p, "SpreadElement in ObjectExpression (use --spread)");
                     } // (ObjectProperty and ObjectMethod are handled at rules Property and Method respectively)
             }
         },

@@ -13,7 +13,9 @@ import {
     Identifier,
     ImportDefaultSpecifier,
     ImportSpecifier,
+    isArrayPattern,
     isArrowFunctionExpression,
+    isAssignmentPattern,
     isBigIntLiteral,
     isCallExpression,
     isClass,
@@ -28,6 +30,9 @@ import {
     isImportSpecifier,
     isJSXMemberExpression,
     isMemberExpression,
+    isObjectPattern,
+    isObjectProperty,
+    isRestElement,
     isNewExpression,
     isNumericLiteral,
     isParenthesizedExpression,
@@ -335,6 +340,31 @@ export function getConstructor(path: NodePath<Class>): NodePath<ClassMethod> {
         if (isClassMethod(b.node) && b.node.kind === "constructor")
             return b as NodePath<ClassMethod>;
     assert.fail(`Constructor not found for class ${locationToStringWithFileAndEnd(path.node.loc)}`);
+}
+
+/**
+ * Invokes `f` on every Identifier that introduces a binding inside the given LVal/pattern.
+ * Recurses into RestElement, AssignmentPattern, ArrayPattern, and ObjectPattern.
+ */
+export function forEachPatternIdentifier(p: Node, f: (id: Identifier) => void): void {
+    if (isIdentifier(p))
+        f(p);
+    else if (isRestElement(p))
+        forEachPatternIdentifier(p.argument, f);
+    else if (isAssignmentPattern(p))
+        forEachPatternIdentifier(p.left, f);
+    else if (isArrayPattern(p)) {
+        for (const el of p.elements)
+            if (el)
+                forEachPatternIdentifier(el, f);
+    } else if (isObjectPattern(p)) {
+        for (const prop of p.properties)
+            if (isRestElement(prop))
+                forEachPatternIdentifier(prop.argument, f);
+            else if (isObjectProperty(prop))
+                forEachPatternIdentifier(prop.value as Node, f);
+    }
+    // TODO: TSParameterProperty
 }
 
 /**

@@ -33,6 +33,7 @@ import {
 } from "@babel/types";
 import {NodePath} from "@babel/traverse";
 import {
+    forEachPatternIdentifier,
     getAdjustedCallNodePath,
     getConstantString,
     getEnclosingFunction,
@@ -246,13 +247,36 @@ export class Operations {
             return;
         }
 
-        const argVars = args.map(arg => {
-            if (isExpression(arg))
-                return this.expVar(arg, path);
-            else if (isSpreadElement(arg))
-                f.warnUnsupported(arg, "SpreadElement in arguments"); // TODO: SpreadElement in arguments
-            return undefined;
-        });
+        // split arguments into a positional prefix (up to the first SpreadElement)
+        // and a tailVar that collects all values after the first spread, with unknown position
+        const argVars: Array<ConstraintVar | undefined> = [];
+        let tailVar: ConstraintVar | undefined;
+        if (options.spread) {
+            for (const arg of args) {
+                if (tailVar === undefined) {
+                    if (isExpression(arg))
+                        argVars.push(this.expVar(arg, path));
+                    else if (isSpreadElement(arg)) {
+                        tailVar = vp.intermediateVar(path.node, "argTail");
+                        this.readIteratorValue(this.expVar(arg.argument, path), tailVar, path.node);
+                    } else
+                        argVars.push(undefined);
+                } else if (isExpression(arg))
+                    this.solver.addSubsetConstraint(this.expVar(arg, path), tailVar);
+                else if (isSpreadElement(arg))
+                    this.readIteratorValue(this.expVar(arg.argument, path), tailVar, path.node);
+            }
+        } else {
+            for (const arg of args) {
+                if (isExpression(arg))
+                    argVars.push(this.expVar(arg, path));
+                else if (isSpreadElement(arg)) {
+                    f.warnUnsupported(arg, "SpreadElement in arguments (use --spread)");
+                    argVars.push(undefined);
+                } else
+                    argVars.push(undefined);
+            }
+        }
 
         if (options.interops && isIdentifier(p.node) && [
             "__importDefault", "__importStar", // TypeScript
@@ -273,7 +297,7 @@ export class Operations {
         // TODO: recognize by implementation instead of name for soundness and to also work on minified code?
 
         const handleCall = (base: ObjectPropertyVarObj | undefined, t: Token) => {
-            this.callFunctionBound(base, t, calleeVar, argVars, resultVar, strings, path);
+            this.callFunctionBound(base, t, calleeVar, argVars, resultVar, strings, path, tailVar);
         };
 
         const key =
@@ -352,6 +376,7 @@ export class Operations {
         resultVar: ConstraintVar | undefined,
         strings: () => Array<string>,
         path: CallNodePath,
+        tailVar?: ConstraintVar | undefined,
     ) {
         const f = this.solver.fragmentState; // (don't use in callbacks)
         const caller = this.a.getEnclosingFunctionOrModule(path);
@@ -359,7 +384,7 @@ export class Operations {
         const args = path.node.arguments;
         const isNew = path.isNewExpression();
         if (t instanceof FunctionToken)
-            this.callFunctionTokenBound(t, base, caller, argVars, resultVar, isNew, path);
+            this.callFunctionTokenBound(t, base, caller, argVars, resultVar, isNew, path, {}, tailVar);
         else if (t instanceof NativeObjectToken) {
             f.registerCall(pars.node, caller, undefined, {native: true});
             if (options.ignoreImpreciseNativeCalls && calleeVar && f.getTokensSize(f.getRepresentative(calleeVar))[0] > 2)
@@ -369,6 +394,7 @@ export class Operations {
                     base,
                     path,
                     callArgs: path.node.arguments,
+                    tailVar,
                     solver: this.solver,
                     op: this,
                     moduleInfo: this.moduleInfo,
@@ -406,8 +432,12 @@ export class Operations {
                     this.solver.addForAllTokensConstraint(argVar, TokenListener.CALL_EXTERNAL, pars.node, (at: Token) =>
                         this.invokeExternalCallback(at, pars.node, caller));
                     f.registerEscapingToExternal(argVar, args[i], caller);
-                } else if (isSpreadElement(args[i]))
-                    f.warnUnsupported(args[i], "SpreadElement in arguments to external function"); // TODO: SpreadElement in arguments to external function
+                }
+            }
+            if (tailVar) {
+                this.solver.addForAllTokensConstraint(tailVar, TokenListener.CALL_EXTERNAL, pars.node, (at: Token) =>
+                    this.invokeExternalCallback(at, pars.node, caller));
+                f.registerEscapingToExternal(tailVar, path.node, caller);
             }
             // TODO: also add arguments (and everything reachable from them) to escaping?
             // TODO: also add UnknownAccessPath to properties of object arguments for external functions? (see also TODO at AssignmentExpression)
@@ -439,6 +469,7 @@ export class Operations {
         isNew: boolean,
         path: CallNodePath,
         kind: {native?: boolean, accessor?: boolean, external?: boolean} = {},
+        tailVar?: ConstraintVar | undefined,
     ) {
         // helper function for adding a token or subset constraint
         const addInclusionConstraint = (from: Token | ConstraintVar, to: ConstraintVar) => {
@@ -458,19 +489,39 @@ export class Operations {
             if (i < t.fun.params.length) {
                 const param = t.fun.params[i];
                 if (isRestElement(param)) {
-                    // read the remaining arguments into a fresh array
+                    // read the remaining prefix arguments into a fresh array (positional),
+                    // and merge tailVar values into the array's unknown-index slot
                     const rest = args.slice(i);
-                    const t = this.newArrayToken(param);
-                    for (const [i, rarg] of rest.entries())
-                        if (rarg) // TODO: SpreadElement in arguments (warning emitted below)
-                            addInclusionConstraint(rarg, vp.objPropVar(t, String(i)));
-                    this.solver.addTokenConstraint(t, vp.nodeVar(param));
+                    const restArr = this.newArrayToken(param);
+                    for (const [j, rarg] of rest.entries())
+                        if (rarg)
+                            addInclusionConstraint(rarg, vp.objPropVar(restArr, String(j)));
+                    if (tailVar)
+                        this.solver.addSubsetConstraint(tailVar, vp.arrayUnknownVar(restArr));
+                    this.solver.addTokenConstraint(restArr, vp.nodeVar(param));
                 } else if (arg)
                     addInclusionConstraint(arg, vp.nodeVar(param));
             }
             // constraint ...: ⟦Ei⟧ ⊆ ⟦t_arguments[i]⟧ for each argument i if the function uses 'arguments'
             if (argumentsToken && arg)
                 addInclusionConstraint(arg, vp.objPropVar(argumentsToken, String(i)));
+        }
+        if (tailVar) {
+            // tailVar carries values from spread/post-spread positions, with unknown index;
+            // it flows into every param beyond the prefix (and into a not-yet-handled RestElement)
+            for (let i = args.length; i < t.fun.params.length; i++) {
+                const param = t.fun.params[i];
+                if (isRestElement(param)) {
+                    const restArr = this.newArrayToken(param);
+                    this.solver.addSubsetConstraint(tailVar, vp.arrayUnknownVar(restArr));
+                    this.solver.addTokenConstraint(restArr, vp.nodeVar(param));
+                    break;
+                } else
+                    this.solver.addSubsetConstraint(tailVar, vp.nodeVar(param));
+            }
+            // also flow into the 'arguments' object at unknown index
+            if (argumentsToken)
+                this.solver.addSubsetConstraint(tailVar, vp.arrayUnknownVar(argumentsToken));
         }
         // constraint: ...: t_arguments ∈ ⟦t_arguments⟧ if the function uses 'arguments'
         if (argumentsToken)
@@ -509,8 +560,8 @@ export class Operations {
             if (!f.externalCallbacksProcessed.has(at)) {
                 f.externalCallbacksProcessed.add(at);
                 for (const param of at.fun.params)
-                    if (isIdentifier(param)) // TODO: non-identifier parameters?
-                        this.solver.addAccessPath(UnknownAccessPath.instance, f.varProducer.nodeVar(param));
+                    forEachPatternIdentifier(param, id =>
+                        this.solver.addAccessPath(UnknownAccessPath.instance, f.varProducer.nodeVar(id)));
                 this.solver.addAccessPath(UnknownAccessPath.instance, f.varProducer.thisVar(at.fun));
                 // TODO: handle 'this' under --newobj?
             }

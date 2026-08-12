@@ -1,4 +1,5 @@
-import {isClassMethod, isFunctionDeclaration, isFunctionExpression, isIdentifier} from "@babel/types";
+import {isClassMethod, isFunctionDeclaration, isFunctionExpression} from "@babel/types";
+import {forEachPatternIdentifier} from "../misc/asthelpers";
 import {ModuleInfo} from "./infos";
 import {AccessPathToken, AllocationSiteToken, FunctionToken, NativeObjectToken, ObjectToken, Token} from "./tokens";
 import {ConstraintVar, isObjectPropertyVarObj, ObjectPropertyVarObj} from "./constraintvars";
@@ -131,10 +132,10 @@ export function findEscapingObjects(ms: ModuleInfo | Array<ModuleInfo>, solver: 
             // values returned from escaping functions are escaping
             addToWorklist(vp.returnVar(t.fun));
 
-            // add UnknownAccessPath at parameters
+            // add UnknownAccessPath at parameter identifiers
             for (const param of t.fun.params)
-                if (isIdentifier(param)) // TODO: Pattern|RestElement?
-                    solver.addToken(theUnknownAccessPathToken, f.getRepresentative(vp.nodeVar(param)));
+                forEachPatternIdentifier(param, id =>
+                    solver.addToken(theUnknownAccessPathToken, f.getRepresentative(vp.nodeVar(id))));
             const tv = f.getRepresentative(vp.thisVar(t.fun));
             const thisWasEmpty = f.isEmpty(tv);
             solver.addToken(theUnknownAccessPathToken, tv);

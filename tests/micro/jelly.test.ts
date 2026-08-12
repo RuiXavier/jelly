@@ -955,16 +955,23 @@ describe("tests/micro", () => {
     });
 
     runTest("tests/micro", "spread.js", {
-        options: {objSpread: true},
+        options: {spread: true},
         soundness: "tests/micro/spread.json",
         funTotal: 10,
-        callFound: 17,
         callTotal: 20,
         reachableTotal: 9,
     });
 
+    runTest("tests/micro", "spread2.js", {
+        options: {spread: true},
+        moduleInfos: 1,
+        functionInfos: 30,
+        numberOfFunctionToFunctionEdges: 47,
+        numberOfCallToFunctionEdges: 94,
+    });
+
     runTest("tests/micro", "timers.js", {
-        options: {objSpread: true},
+        options: {spread: true},
         funTotal: 1,
         callTotal: 1,
         reachableTotal: 4,

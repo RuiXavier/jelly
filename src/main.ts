@@ -117,7 +117,7 @@ program
     .option("--patch-dynamics", "enable dynamic property access patching heuristic")
     .option("--patch-method-calls", "enable method call patching heuristic")
     .option("--proto", "enable model of assignments to the __proto__ property")
-    .option("--obj-spread", "enable model of spread syntax for object literals ({...obj})")
+    .option("--spread", "enable model of spread syntax in call arguments and object literals")
     .option("--native-overwrites", "allow overwriting of native object properties")
     .option("--ignore-imprecise-native-calls", "ignore imprecise native calls")
     .option("--callstacks-json <file>", "save vulnerability call stacks in JSON file")
