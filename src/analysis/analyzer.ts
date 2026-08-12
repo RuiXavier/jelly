@@ -5,13 +5,14 @@ import Solver, {AbortedException} from "./solver";
 import Timer, {nanoToMs, TimeoutException} from "../misc/timer";
 import {getMapHybridSetSize, percent} from "../misc/util";
 import {visit} from "./astvisitor";
-import {FunctionInfo} from "./infos";
+import {FunctionInfo, ModuleInfo} from "./infos";
 import {options, resolveBaseDir} from "../options";
 import {findModules} from "./modulefinder";
 import {parseAndDesugar} from "../parsing/parser";
 import {findEscapingObjects} from "./escaping";
 import {buildGlobalNatives, buildModuleNatives} from "../natives/nativebuilder";
 import {AnalysisStateReporter} from "../output/analysisstatereporter";
+import {getExportedFunctions} from "./exported";
 import {Operations} from "./operations";
 import {preprocessAst} from "../parsing/extras";
 import {patchDynamics} from "../patching/patchdynamics";
@@ -200,7 +201,10 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
         d.externalOnlyCalls = r.getZeroButExternalCalleeCalls();
         d.nativeOrExternalCalls = r.getZeroButNativeOrExternalCalleeCalls();
         d.functionsWithZeroCallers = r.getZeroCallerFunctions().size;
-        d.reachableFunctions = Array.from(r.getReachableModulesAndFunctions(r.getEntryModules())).filter(r => r instanceof FunctionInfo).length;
+        const entries = new Set<FunctionInfo | ModuleInfo>(r.getEntryModules());
+        for (const fi of getExportedFunctions(f))
+            entries.add(fi);
+        d.reachableFunctions = Array.from(r.getReachableModulesAndFunctions(entries)).filter(r => r instanceof FunctionInfo).length;
         if (logger.isInfoEnabled()) {
             logger.info(`Analyzed packages: ${d.packages}, modules: ${d.modules}, functions: ${a.functionInfos.size}, code size main: ${Math.ceil(d.codeSizeMain / 1024)}KB, dependencies: ${Math.ceil(d.codeSizeDependencies / 1024)}KB`);
             logger.info(`Call edges function->function: ${d.functionToFunctionEdges}, call->function: ${d.callToFunctionEdges}`);

@@ -11,6 +11,7 @@ import {options} from "../options";
 import {locationToStringWithFileAndEnd, mapGetSet} from "../misc/util";
 import {FragmentState} from "./fragmentstate";
 import {TokenListener} from "./listeners";
+import {visitExportedTokens} from "./exported";
 
 /**
  * If true, skip injecting %UnknownAccessPath at property vars where the ReadResultVar for
@@ -92,22 +93,22 @@ export function findEscapingObjects(ms: ModuleInfo | Array<ModuleInfo>, solver: 
             }
     }
 
-    // first round, seed worklist with module.exports, find functions accessible via property reads
+    // First round: find every FunctionToken reachable from module.exports via
+    // property reads; queue them in w2 for round 2.
+    const w2: Array<ObjectPropertyVarObj> = [];
+    const seeds: Array<ConstraintVar> = [];
     for (const m of Array.isArray(ms) ? ms : [ms])
         if (m.packageInfo.isEntry && (m.getPath().includes("node_modules") || options.library)) // only consider escaping objects for entry packages in libraries
             if (!m.packageInfo.exports || m.packageInfo.exports.test(m.relativePath)) // only consider escaping objects from modules that are exported
-                addToWorklist(vp.objPropVar(a.canonicalizeToken(new NativeObjectToken("module", m)), "exports"));
-    const w2: Array<ObjectPropertyVarObj> = [];
-    while (worklist.length !== 0) {
-        const t = worklist.pop()!;
+                seeds.push(vp.objPropVar(a.canonicalizeToken(new NativeObjectToken("module", m)), "exports"));
+    visitExportedTokens(f, seeds, (t, visitor) => {
         if (t instanceof FunctionToken)
             w2.push(t);
         else if (t instanceof ObjectToken || (t instanceof NativeObjectToken && t.name === "exports"))
             for (const p of f.objectProperties.get(t) ?? [])
                 if (!isInternalProperty(p))
-                    addToWorklist(vp.objPropVar(t, p));
-    }
-    visited.clear();
+                    visitor(vp.objPropVar(t, p));
+    });
     for (const t of w2) {
         visited.add(t);
         worklist.push(t);
