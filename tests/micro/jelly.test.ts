@@ -462,7 +462,7 @@ describe("tests/micro", () => {
         patterns: ["tests/micro/lowpatterns.json"],
         functionInfos: 0,
         moduleInfos: 1,
-        matches: {total: 3, low: 1},
+        matches: {total: 2, low: 0},
     });
 
     runTest("tests/micro", "bind.js", {
@@ -914,7 +914,14 @@ describe("tests/micro", () => {
 
     runTest("tests/micro", "jsx.js", {
         options: {ignoreUnresolved: true},
-        apiUsageAccessPathPatternsAtNodes: 6,
+        apiUsageAccessPathPatternsAtNodes: 5,
+    });
+
+    runTest("tests/micro", "jsxclosing.jsx", {
+        functionInfos: 2,
+        moduleInfos: 1,
+        numberOfFunctionToFunctionEdges: 2,
+        numberOfCallToFunctionEdges: 2,
     });
 
     runTest("tests/micro", "escape.js",  {

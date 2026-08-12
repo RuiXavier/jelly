@@ -62,4 +62,6 @@ export enum TokenListener { // TODO: rename
     NATIVE_INVOKE_APPLY_NATIVE,
     NATIVE_FLATMAP_FLATTEN,
     PATCH_ESCAPING_DUMMY_THIS,
+    REFINE,
+    REFINE_NEGATED,
 }

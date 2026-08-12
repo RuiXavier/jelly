@@ -21,6 +21,8 @@ import {finalizeCallEdges} from "./finalization";
 import {ProcessManager} from "../approx/processmanager";
 import {Patching} from "../approx/patching";
 import {PatchingDiagnostics} from "../approx/diagnostics";
+import {buildProgramCFG, CFGBuildError} from "../cfg/builder";
+import {computeDefUse} from "../cfg/defuse";
 
 export async function analyzeFiles(files: Array<string>, solver: Solver) {
     const a = solver.globalState;
@@ -96,6 +98,24 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
                                 a.timeoutTimer.checkTimeout();
 
                         } else {
+
+                            // compute def-use information for flow-sensitive treatment of local variables (unless --no-def-use;
+                            // narrowing builds on the def-use machinery, so --no-def-use also disables it);
+                            // done before preprocessAst so that the artificial module parameters resolve to no binding
+                            if (options.defUse)
+                                try {
+                                    const t1 = new Timer();
+                                    const pcfg = buildProgramCFG(ast, options.narrow);
+                                    d.cfgTime += t1.elapsed();
+                                    const t2 = new Timer();
+                                    a.defUse.set(moduleInfo, computeDefUse(pcfg));
+                                    d.defUseTime += t2.elapsed();
+                                } catch (ex) {
+                                    if (!(ex instanceof CFGBuildError))
+                                        throw ex;
+                                    // without def-use information, the module is analyzed flow-insensitively (sound)
+                                    solver.fragmentState.warn(`CFG construction failed, skipping def-use for ${moduleInfo} (${ex.message})`);
+                                }
 
                             // preprocess the AST
                             const moduleParams = preprocessAst(ast, moduleInfo);
@@ -218,6 +238,8 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
             logger.info(`Analysis time: ${nanoToMs(d.analysisTime)}, memory usage: ${d.maxMemoryUsage}MB${!options.gc ? " (without --gc)" : ""}`);
             logger.info(`Analysis errors: ${d.errors}, warnings: ${d.warnings}${getMapHybridSetSize(f.warningsUnsupported) > 0 && !options.warningsUnsupported ? " (show all with --warnings-unsupported)" : ""}`);
             if (options.diagnostics) {
+                if (options.defUse)
+                    logger.info(`CFG time: ${nanoToMs(d.cfgTime)}, def-use time: ${nanoToMs(d.defUseTime)}`);
                 logger.info(`Propagations: ${d.propagations}, listener notification rounds: ${d.listenerNotificationRounds}`);
                 if (options.maxWaves !== undefined)
                     logger.info(`Fixpoint wave limit reached: ${d.waveLimitReached} time${d.waveLimitReached !== 1 ? "s" : ""}`);

@@ -107,6 +107,7 @@ import {
     getProperty,
     isCalleeExpression,
     isIdentifierReference,
+    isInJSXClosingElement,
     isMemberRead,
     isParentExpressionStatement,
     registerArtificialClassPropertyInitializer,
@@ -118,6 +119,7 @@ import {
 } from "../natives/ecmascript";
 import {Operations} from "./operations";
 import {TokenListener} from "./listeners";
+import {filterAcceptsAllTokens, tokenMaySatisfy} from "./typefilters";
 import {JELLY_NODE_ID} from "../parsing/extras";
 
 export const IDENTIFIER_KIND = Symbol();
@@ -128,6 +130,47 @@ export function visit(ast: File, op: Operations) {
     const f = solver.fragmentState; // (don't use in callbacks)
     const vp = f.varProducer; // (don't use in callbacks)
     const class2constructor = new Map<Class, ClassMethod>();
+
+    if (options.defUse) {
+        // flow-sensitive treatment of local variables:
+        // reads and writes of refinable bindings use the identifier occurrence nodes as constraint
+        // variables (see ConstraintVarProducer.identVar); here the two kinds of
+        // subset edges connecting them are added:
+        const du = a.defUse.get(op.moduleInfo);
+        if (du) {
+            // the definitions that may reach each read (instead of phi nodes)
+            // constraint: ⟦d⟧ ⊆ ⟦x_read⟧ for each definition d reaching the read of x
+            // (canonicalized reads share their representative's variable, so the edges are
+            // only added once per distinct definition set, see DefUse.readRep)
+            for (const [readNode, defs] of du.nodeDefs) {
+                if (du.rep(readNode) !== readNode)
+                    continue;
+                for (const d of defs)
+                    if (d !== null && d !== readNode)
+                        solver.addSubsetConstraint(vp.defVar(d), vp.nodeVar(readNode));
+            }
+            // condition-based narrowing: a refinement pseudo-definition receives the values of
+            // its incoming definitions that satisfy the filter
+            // constraint: t ∈ ⟦x_refine⟧ for each t ∈ ⟦d⟧ with d flowing into the refinement,
+            // where t may satisfy the refinement's filter
+            for (const nr of du.refinements) {
+                const dst = vp.defVar(nr);
+                for (const src of nr.sources) {
+                    if (src === null || src === nr)
+                        continue;
+                    if (filterAcceptsAllTokens(nr.filter))
+                        solver.addSubsetConstraint(vp.defVar(src), dst);
+                    else
+                        solver.addForAllTokensConstraint(vp.defVar(src),
+                            nr.filter.negated ? TokenListener.REFINE_NEGATED : TokenListener.REFINE,
+                            nr.node, (t: Token) => {
+                                if (tokenMaySatisfy(t, nr.filter))
+                                    solver.addTokenConstraint(t, dst);
+                            });
+                }
+            }
+        }
+    }
 
     // traverse the AST and extend the analysis result with information about the current module
     if (logger.isVerboseEnabled())
@@ -222,7 +265,8 @@ export function visit(ast: File, op: Operations) {
 
         JSXMemberExpression: {
             exit(path: NodePath<JSXMemberExpression>) {
-                visitMemberExpression(path);
+                if (!isInJSXClosingElement(path))
+                    visitMemberExpression(path);
             }
         },
 
@@ -791,6 +835,8 @@ export function visit(ast: File, op: Operations) {
                             switch (spec.type) {
                                 case "ExportSpecifier": // example: export {x as y} ...
                                 case "ExportDefaultSpecifier": // example: export x from "m"
+                                    // (exported bindings are excluded from def-use refinement, so this is the
+                                    // flow-insensitive declaration variable that receives all assignments)
                                     const from = isExportDefaultSpecifier(spec) ? getExportVar("default") : node.source ? getExportVar(spec.local.name) : vp.identVar(spec.local, path);
                                     solver.addSubsetConstraint(from, vp.objPropVar(op.exportsObjectToken, getExportName(spec.exported)));
                                     break;

@@ -925,7 +925,7 @@ export class Operations {
 
             // X = E
             // constraint: ⟦E⟧ ⊆ ⟦X⟧
-            const lVar = vp.identVar(dst, path);
+            const lVar = vp.identVar(dst, path, "write");
             this.solver.addSubsetConstraint(src, lVar);
 
         } else if (isMemberExpression(dst) || isOptionalMemberExpression(dst)) {

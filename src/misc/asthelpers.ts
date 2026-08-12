@@ -10,6 +10,7 @@ import {
     ClassProperty,
     Expression,
     Function,
+    FunctionDeclaration,
     Identifier,
     ImportDefaultSpecifier,
     ImportSpecifier,
@@ -49,6 +50,7 @@ import {
     OptionalMemberExpression,
     Property,
     SourceLocation,
+    Statement,
     StringLiteral,
 } from "@babel/types";
 import assert from "assert";
@@ -333,14 +335,86 @@ export function isIdentifierReference(path: NodePath<Identifier>): boolean {
 }
 
 /**
- * Returns the constructor for the given class.
- * (See replaceTypeScriptImportExportAssignmentsAndAddConstructors.)
+ * Returns the constructor for the given class, or undefined if it has none.
+ * (Desugared ASTs always have explicit constructors,
+ * see replaceTypeScriptImportExportAssignmentsAndAddConstructors.)
  */
-export function getConstructor(path: NodePath<Class>): NodePath<ClassMethod> {
+export function findConstructor(path: NodePath<Class>): NodePath<ClassMethod> | undefined {
     for (const b of path.get("body.body") as Array<NodePath>)
         if (isClassMethod(b.node) && b.node.kind === "constructor")
             return b as NodePath<ClassMethod>;
+    return undefined;
+}
+
+/**
+ * Returns the constructor for the given class.
+ */
+export function getConstructor(path: NodePath<Class>): NodePath<ClassMethod> {
+    const c = findConstructor(path);
+    if (c)
+        return c;
     assert.fail(`Constructor not found for class ${locationToStringWithFileAndEnd(path.node.loc)}`);
+}
+
+/**
+ * Type guard to check if a NodePath has a non-null node.
+ */
+export function hasNode<T extends Node | null | undefined>(p: NodePath<T>): p is NodePath<NonNullable<T>> {
+    return p.node != null;
+}
+
+/**
+ * Returns the named function declarations directly among the given statements (looking
+ * through labels and export declarations, which only occur at the top level of modules).
+ * Their bindings are initialized when the enclosing scope is entered, before the
+ * statements execute.
+ */
+export function hoistedFunctionDeclarations(stmts: Array<NodePath<Statement>>): Array<NodePath<FunctionDeclaration>> {
+    const res: Array<NodePath<FunctionDeclaration>> = [];
+    for (let s of stmts) {
+        while (s.isLabeledStatement())
+            s = s.get("body");
+        let d: NodePath = s;
+        if (s.isExportNamedDeclaration() || s.isExportDefaultDeclaration()) {
+            const dp = s.get("declaration") as NodePath;
+            if (!hasNode(dp))
+                continue;
+            d = dp;
+        }
+        if (d.isFunctionDeclaration() && d.node.id)
+            res.push(d);
+    }
+    return res;
+}
+
+/**
+ * Decides whether the code at the given path is strict-mode code
+ * (module code, class bodies, or under a "use strict" directive).
+ */
+export function isStrictCode(path: NodePath): boolean {
+    const hasUseStrict = (directives: Array<{value: {value: string}}>) =>
+        directives.some(d => d.value.value === "use strict");
+    for (let p: NodePath | null = path; p; p = p.parentPath) {
+        if (p.isClass())
+            return true;
+        if (p.isProgram())
+            return p.node.sourceType === "module" || hasUseStrict(p.node.directives);
+        if (p.isFunction()) {
+            const body = p.node.body;
+            if (body.type === "BlockStatement" && hasUseStrict(body.directives))
+                return true;
+        }
+    }
+    return false;
+}
+
+/**
+ * The decorator expressions of a class or class element.
+ */
+export function getDecoratorExpressions(path: NodePath): Array<NodePath<Expression>> {
+    if (!(path.node as {decorators?: unknown}).decorators)
+        return [];
+    return (path.get("decorators") as Array<NodePath>).map(d => d.get("expression") as NodePath<Expression>);
 }
 
 /**
@@ -389,4 +463,14 @@ export function getConstantString(id: NodePath): string | undefined {
         }
     }
     return undefined;
+}
+/**
+ * Returns true if the given JSX element name belongs to a
+ * closing element ('</A.B>').
+ */
+export function isInJSXClosingElement(path: NodePath): boolean {
+    let p: NodePath | null = path;
+    while (p && p.isJSXMemberExpression())
+        p = p.parentPath;
+    return p !== null && p.isJSXClosingElement();
 }

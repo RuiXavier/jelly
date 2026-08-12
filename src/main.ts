@@ -61,6 +61,8 @@ program
     .option("-s, --soundness <file>", "compare with dynamic call graph")
     .option("-n, --graal-home <directory>", "home of graal-nodejs (default: $GRAAL_HOME)")
     .option("-d, --dynamic <file>", "generate call graph dynamically, no static analysis")
+    .option("--no-def-use", "disable flow-sensitivity for local variables (implies --no-narrow)")
+    .option("--no-narrow", "disable condition-based narrowing")
     .option("--approx", "enable approximate interpretation")
     .option("--approx-only <file>", "perform approximate interpretation, no static analysis")
     .option("--approx-load <file>", "use pre-computed approximate interpretation results")
