@@ -717,12 +717,15 @@ export class Operations {
         this.solver.addSubsetConstraint(this.solver.varProducer.objPropVar(t, prop), dst); // TODO: exclude AccessPathTokens?
 
         // constraint: ... ∀ functions t3 ∈ ⟦(get)t.p⟧: ⟦ret_t3⟧ ⊆ ⟦E.p⟧ (unless global native, [[Prototype]], "prototype", "toString", or array index)
+        // (the getter listeners are registered lazily, only if some getter actually appears, since t.p usually has no getter)
         if (!isGlobalNative(t) && !isUnlikelyGetterSetter(prop)) {
             const getter = this.solver.varProducer.objPropVar(t, prop, "get");
-            this.solver.addForAllTokensConstraint(getter, TokenListener.READ_GETTER, dstkey,
-                (t3: Token) => readFromGetter(t3));
-            this.solver.addForAllTokensConstraint(getter, TokenListener.READ_GETTER_THIS, {t: thist},
-                (t3: Token) => bindGetterThis(thist, t3));
+            this.solver.addIfNonEmptyConstraint(getter, () => {
+                this.solver.addForAllTokensConstraint(getter, TokenListener.READ_GETTER, dstkey,
+                    (t3: Token) => readFromGetter(t3));
+                this.solver.addForAllTokensConstraint(getter, TokenListener.READ_GETTER_THIS, {t: thist},
+                    (t3: Token) => bindGetterThis(thist, t3));
+            });
         }
 
         if (t instanceof ArrayToken) {
@@ -781,9 +784,12 @@ export class Operations {
                     this.solver.addForAllAncestorsConstraint(base, TokenListener.WRITE_ANCESTORS, {n: node, s: prop}, (anc: Token) => {
                         if (isObjectPropertyVarObj(anc)) {
                             // constraint: ...: ∀ functions t2 ∈ ⟦(set)anc.p⟧: ⟦E2⟧ ⊆ ⟦x⟧ where x is the parameter of t2
+                            // (the setter listeners are registered lazily, only if some setter actually appears, since anc.p usually has no setter)
                             const setter = this.solver.varProducer.objPropVar(anc, prop, "set");
-                            this.solver.addForAllTokensConstraint(setter, TokenListener.WRITE_SETTER, {n: node, s: prop}, writeToSetter);
-                            this.solver.addForAllTokensConstraint(setter, TokenListener.WRITE_SETTER_THIS, {t: base}, bindSetterThis);
+                            this.solver.addIfNonEmptyConstraint(setter, () => {
+                                this.solver.addForAllTokensConstraint(setter, TokenListener.WRITE_SETTER, {n: node, s: prop}, writeToSetter);
+                                this.solver.addForAllTokensConstraint(setter, TokenListener.WRITE_SETTER_THIS, {t: base}, bindSetterThis);
+                            });
                         }
                     });
 

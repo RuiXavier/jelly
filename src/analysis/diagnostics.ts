@@ -79,6 +79,8 @@ export default class AnalysisDiagnostics {
 
     objectPropertiesListenerNotifications: number = 0;
 
+    nonEmptyListenerNotifications: number = 0;
+
     waveLimitReached: number = 0;
 
     indirectionsLimitReached: number = 0;

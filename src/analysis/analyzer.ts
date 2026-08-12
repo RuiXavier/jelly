@@ -224,7 +224,8 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
                 logger.info(`Constraint vars: ${f.getNumberOfVarsWithTokens()} (${f.vars.size}), tokens: ${d.tokens}, subset edges: ${d.subsetEdges}, max tokens: ${f.getLargestTokenSetSize()}, max subset out: ${f.getLargestSubsetEdgeOutDegree()}, redirections: ${f.redirections.size}`);
                 logger.info(`Listeners (notifications) token: ${f.tokenListeners.totalSize()} (${d.tokenListenerNotifications}), bounded: ${f.tokenListeners2.totalSize()} (${d.tokenListener2Notifications}), ` +
                     `array: ${f.arrayEntriesListeners.totalSize()} (${d.arrayEntriesListenerNotifications}), ` +
-                    `obj: ${f.objectPropertiesListeners.totalSize()} (${d.objectPropertiesListenerNotifications})`);
+                    `obj: ${f.objectPropertiesListeners.totalSize()} (${d.objectPropertiesListenerNotifications}), ` +
+                    `nonempty: ${f.nonEmptyListeners.totalSize()} (${d.nonEmptyListenerNotifications})`);
                 logger.info(`Canonicalize vars: ${a.canonicalConstraintVars.size} (${a.numberOfCanonicalizeVarCalls}), tokens: ${a.canonicalTokens.size} (${a.numberOfCanonicalizeTokenCalls}), access paths: ${a.canonicalAccessPaths.size} (${a.numberOfCanonicalizeAccessPathCalls})`);
                 logger.info(`Propagation: ${nanoToMs(d.totalPropagationTime)}, listeners: ${nanoToMs(d.totalListenerCallTime)}` +
                     `, finalization: ${nanoToMs(d.finalizationTime)}`);

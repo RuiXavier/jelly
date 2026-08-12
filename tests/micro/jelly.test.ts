@@ -106,6 +106,25 @@ describe("tests/micro", () => {
         soundness: "tests/micro/defineProperties.json",
     });
 
+    runTest("tests/micro", "definePropertyGetter.js", {
+        functionInfos: 4,
+        moduleInfos: 1,
+        hasEdges: [
+            ["micro@0.0.1:definePropertyGetter.js", "micro@0.0.1:definePropertyGetter.js:1:1:createParserGetter"],
+            ["micro@0.0.1:definePropertyGetter.js", "micro@0.0.1:definePropertyGetter.js:2:12:get"],
+            ["micro@0.0.1:definePropertyGetter.js:2:12:get", "micro@0.0.1:definePropertyGetter.js:7:1:loadParser"],
+            ["micro@0.0.1:definePropertyGetter.js", "micro@0.0.1:definePropertyGetter.js:8:12:parser"],
+        ]
+    });
+
+    runTest("tests/micro", "lazyaccessors.js", {
+        functionInfos: 15,
+        moduleInfos: 1,
+        numberOfFunctionToFunctionEdges: 15,
+        numberOfCallToFunctionEdges: 15,
+        oneCalleeCalls: 15,
+    });
+
     runTest("tests/micro", "create.js", {
         soundness: "tests/micro/create.json",
         functionInfos: 2,
