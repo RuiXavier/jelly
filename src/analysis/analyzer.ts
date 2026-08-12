@@ -123,20 +123,20 @@ export async function analyzeFiles(files: Array<string>, solver: Solver) {
 
                 if (!options.modulesOnly) {
 
-                    // patch using escape analysis
-                    if (options.patchEscaping) {
-                        const t = new Timer();
-                        findEscapingObjects(Array.from(a.moduleInfos.values()), solver); // TODO: currently using all modules in a
-                        await solver.propagate("Escape patching");
-                        d.totalEscapePatchingTime += t.elapsed();
-                    }
-
                     // patch using hints from approximate interpretation
                     if (options.approx || options.approxLoad) {
                         const t = new Timer();
                         a.patching!.patch(solver);
                         await solver.propagate("Approximate patching");
                         d.totalApproxPatchingTime += t.elapsed();
+                    }
+
+                    // patch using escape analysis
+                    if (options.patchEscaping) {
+                        const t = new Timer();
+                        findEscapingObjects(Array.from(a.moduleInfos.values()), solver); // TODO: currently using all modules, restrict to relevant packages?
+                        await solver.propagate("Escape patching");
+                        d.totalEscapePatchingTime += t.elapsed();
                     }
 
                     // patch heuristics
