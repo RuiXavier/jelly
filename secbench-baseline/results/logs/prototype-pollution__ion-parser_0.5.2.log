@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ion-parser.test.js (1)
+Analyzing module ion-parser@0.5.2:parser.js (2)
+Analyzed packages: 2, modules: 2, functions: 26, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 45, call->function: 63
+Calls with zero or one callee: 70/152 (46.05%), multiple: 0/152 (0.00%), native or external: 82/152 (53.95%)
+Functions with zero callers: 2/26 (7.69%), reachable functions: 23/26 (88.46%)
+Analysis time: 104ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 13 (show all with --warnings-unsupported)

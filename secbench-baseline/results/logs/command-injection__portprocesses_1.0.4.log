@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:portprocesses.test.js (1)
+Analyzing module portprocesses@1.0.4:index.js (2)
+Analyzing module portprocesses@1.0.4:exec.js (3)
+Analyzed packages: 2, modules: 3, functions: 16, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 17, call->function: 17
+Calls with zero or one callee: 23/50 (46.00%), multiple: 0/50 (0.00%), native or external: 27/50 (54.00%)
+Functions with zero callers: 1/16 (6.25%), reachable functions: 7/16 (43.75%)
+Analysis time: 59ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

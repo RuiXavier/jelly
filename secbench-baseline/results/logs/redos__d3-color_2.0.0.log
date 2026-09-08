@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:d3-color.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/d3-color_2.0.0/d3-color.test.js:2:23
+Analyzing module d3-color@2.0.0:dist/d3-color.js (2)
+Analyzed packages: 2, modules: 2, functions: 60, code size main: 1KB, dependencies: 17KB
+Call edges function->function: 60, call->function: 99
+Calls with zero or one callee: 111/181 (61.33%), multiple: 0/181 (0.00%), native or external: 70/181 (38.67%)
+Functions with zero callers: 32/60 (53.33%), reachable functions: 5/60 (8.33%)
+Analysis time: 113ms, memory usage: 47MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

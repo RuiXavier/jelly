@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:hoek.test.js (1)
+Analyzing module hoek@5.0.0:lib/index.js (2)
+Analyzing module hoek@5.0.0:lib/escape.js (3)
+Analyzed packages: 2, modules: 3, functions: 60, code size main: 1KB, dependencies: 27KB
+Call edges function->function: 55, call->function: 72
+Calls with zero or one callee: 98/208 (47.12%), multiple: 2/208 (0.96%), native or external: 108/208 (51.92%)
+Functions with zero callers: 27/60 (45.00%), reachable functions: 8/60 (13.33%)
+Analysis time: 129ms, memory usage: 53MB (without --gc)
+Analysis errors: 0, warnings: 20 (show all with --warnings-unsupported)

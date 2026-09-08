@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:im-resize.test.js (1)
+Analyzing module im-resize@2.3.2:index.js (2)
+Analyzing module aspectratio@2.2.2:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 12, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 13, call->function: 15
+Calls with zero or one callee: 17/71 (23.94%), multiple: 0/71 (0.00%), native or external: 54/71 (76.06%)
+Functions with zero callers: 0/12 (0.00%), reachable functions: 12/12 (100.00%)
+Analysis time: 76ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 0

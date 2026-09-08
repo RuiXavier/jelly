@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:marked.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/marked_0.3.6/marked.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/marked_0.3.6/marked.test.js:3:23
+Analyzing module marked@0.3.6:lib/marked.js (2)
+Analyzed packages: 2, modules: 2, functions: 54, code size main: 1KB, dependencies: 28KB
+Call edges function->function: 70, call->function: 157
+Calls with zero or one callee: 166/337 (49.26%), multiple: 0/337 (0.00%), native or external: 171/337 (50.74%)
+Functions with zero callers: 4/54 (7.41%), reachable functions: 8/54 (14.81%)
+Analysis time: 163ms, memory usage: 50MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

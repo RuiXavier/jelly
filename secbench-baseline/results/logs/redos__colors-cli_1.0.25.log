@@ -1,0 +1,14 @@
+Analyzing module <anonymous>:colors-cli.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/colors-cli_1.0.25/colors-cli.test.js:2:23
+Analyzing module colors-cli@1.0.25:safe.js (2)
+Analyzing module colors-cli@1.0.25:lib/color-safe.js (3)
+Analyzing module colors-cli@1.0.25:lib/styles-name.js (4)
+Analyzing module colors-cli@1.0.25:lib/ansi-regex.js (5)
+Analyzing module colors-cli@1.0.25:lib/color.js (6)
+Analyzing module colors-cli@1.0.25:lib/supports-colors.js (7)
+Analyzed packages: 2, modules: 7, functions: 36, code size main: 1KB, dependencies: 12KB
+Call edges function->function: 16, call->function: 20
+Calls with zero or one callee: 35/68 (51.47%), multiple: 0/68 (0.00%), native or external: 33/68 (48.53%)
+Functions with zero callers: 21/36 (58.33%), reachable functions: 9/36 (25.00%)
+Analysis time: 85ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 28 (show all with --warnings-unsupported)

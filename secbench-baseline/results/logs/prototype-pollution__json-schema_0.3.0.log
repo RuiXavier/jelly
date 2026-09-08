@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:json-schema.test.js (1)
+Analyzing module json-schema@0.3.0:lib/validate.js (2)
+Analyzed packages: 2, modules: 2, functions: 14, code size main: 1KB, dependencies: 11KB
+Call edges function->function: 21, call->function: 41
+Calls with zero or one callee: 37/67 (55.22%), multiple: 3/67 (4.48%), native or external: 27/67 (40.30%)
+Functions with zero callers: 2/14 (14.29%), reachable functions: 11/14 (78.57%)
+Analysis time: 81ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

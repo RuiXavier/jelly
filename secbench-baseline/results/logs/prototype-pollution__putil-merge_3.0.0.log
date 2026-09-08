@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:putil-merge.test.js (1)
+Analyzing module putil-merge@3.0.0:lib/merge.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 6, call->function: 10
+Calls with zero or one callee: 15/33 (45.45%), multiple: 0/33 (0.00%), native or external: 18/33 (54.55%)
+Functions with zero callers: 2/6 (33.33%), reachable functions: 4/6 (66.67%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

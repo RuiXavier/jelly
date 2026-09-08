@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:just-extend.test.js (1)
+Analyzing module just-extend@3.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 4, call->function: 4
+Calls with zero or one callee: 8/18 (44.44%), multiple: 0/18 (0.00%), native or external: 10/18 (55.56%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 48ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

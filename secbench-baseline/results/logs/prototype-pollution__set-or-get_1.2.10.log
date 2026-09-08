@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:set-or-get.test.js (1)
+Analyzing module set-or-get@1.2.10:lib/index.js (2)
+Analyzing module deffy@2.2.5:lib/index.js (3)
+Analyzing module typpy@2.4.0:lib/index.js (4)
+Analyzing module function.name@1.0.14:lib/index.js (5)
+Analyzing module noop6@1.0.10:lib/index.js (6)
+Analyzed packages: 6, modules: 6, functions: 12, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 10, call->function: 12
+Calls with zero or one callee: 14/27 (51.85%), multiple: 1/27 (3.70%), native or external: 12/27 (44.44%)
+Functions with zero callers: 3/12 (25.00%), reachable functions: 9/12 (75.00%)
+Analysis time: 61ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

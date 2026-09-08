@@ -1,0 +1,16 @@
+Analyzing module <anonymous>:cookiex-deep.test.js (1)
+Analyzing module @cookiex/deep@0.0.6:dist/index.js (2)
+Analyzing module @cookiex/deep@0.0.6:dist/types.js (3)
+Analyzing module @cookiex/deep@0.0.6:dist/assigner.js (4)
+Analyzing module @cookiex/deep@0.0.6:dist/assigner-counter.js (5)
+Analyzing module @cookiex/deep@0.0.6:dist/assigner-path.js (6)
+Analyzing module @cookiex/deep@0.0.6:dist/assigner-mapper.js (7)
+Analyzing module @cookiex/deep@0.0.6:dist/assigner-complex.js (8)
+Analyzing module @cookiex/deep@0.0.6:dist/deepers.js (9)
+Analyzing module @cookiex/deep@0.0.6:dist/default.js (10)
+Analyzed packages: 2, modules: 10, functions: 36, code size main: 1KB, dependencies: 9KB
+Call edges function->function: 30, call->function: 34
+Calls with zero or one callee: 39/111 (35.14%), multiple: 2/111 (1.80%), native or external: 70/111 (63.06%)
+Functions with zero callers: 8/36 (22.22%), reachable functions: 8/36 (22.22%)
+Analysis time: 96ms, memory usage: 42MB (without --gc)
+Analysis errors: 0, warnings: 9 (show all with --warnings-unsupported)

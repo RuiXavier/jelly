@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:moment.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/moment_2.18.1/moment.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/moment_2.18.1/moment.test.js:3:23
+Analyzing module moment@2.18.1:moment.js (2)
+Analyzed packages: 2, modules: 2, functions: 326, code size main: 1KB, dependencies: 126KB
+Call edges function->function: 536, call->function: 892
+Calls with zero or one callee: 902/1340 (67.31%), multiple: 7/1340 (0.52%), native or external: 431/1340 (32.16%)
+Functions with zero callers: 120/326 (36.81%), reachable functions: 40/326 (12.27%)
+Analysis time: 374ms, memory usage: 87MB (without --gc)
+Analysis errors: 0, warnings: 80 (show all with --warnings-unsupported)

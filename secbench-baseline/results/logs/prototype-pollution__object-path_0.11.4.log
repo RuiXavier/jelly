@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:object-path.test.js (1)
+Analyzing module object-path@0.11.4:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 25, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 43, call->function: 52
+Calls with zero or one callee: 57/76 (75.00%), multiple: 0/76 (0.00%), native or external: 19/76 (25.00%)
+Functions with zero callers: 6/25 (24.00%), reachable functions: 10/25 (40.00%)
+Analysis time: 77ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

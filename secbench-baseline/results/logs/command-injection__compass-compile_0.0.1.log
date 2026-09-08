@@ -1,0 +1,14 @@
+Analyzing module <anonymous>:compass-compile.test.js (1)
+Analyzing module compass-compile@0.0.1:index.js (2)
+Analyzing module compass-compile@0.0.1:lib/compass.js (3)
+Analyzing module merge@1.2.1:merge.js (4)
+Analyzing module dargs@4.1.0:index.js (5)
+Analyzing module rsvp@3.6.2:dist/rsvp.js (6)
+Analyzing module number-is-nan@1.0.1:index.js (7)
+Warning: Unable to resolve conditionally loaded module 'vertx' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/command-injection/compass-compile_0.0.1/node_modules/rsvp/dist/rsvp.js:2427:17
+Analyzed packages: 6, modules: 7, functions: 166, code size main: 1KB, dependencies: 74KB
+Call edges function->function: 432, call->function: 463
+Calls with zero or one callee: 250/362 (69.06%), multiple: 28/362 (7.73%), native or external: 84/362 (23.20%)
+Functions with zero callers: 16/166 (9.64%), reachable functions: 134/166 (80.72%)
+Analysis time: 203ms, memory usage: 65MB (without --gc)
+Analysis errors: 0, warnings: 29 (show all with --warnings-unsupported)

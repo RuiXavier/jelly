@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:killport.test.js (1)
+Analyzing module killport@1.0.1:index.js (2)
+Analyzing module es6-promise@2.3.0:dist/es6-promise.js (3)
+Analyzing module async@0.9.2:lib/async.js (4)
+Warning: Unable to resolve conditionally loaded module 'vertx' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/command-injection/killport_1.0.1/node_modules/es6-promise/dist/es6-promise.js:137:21
+Analyzed packages: 4, modules: 4, functions: 283, code size main: 1KB, dependencies: 67KB
+Call edges function->function: 658, call->function: 704
+Calls with zero or one callee: 284/477 (59.54%), multiple: 95/477 (19.92%), native or external: 98/477 (20.55%)
+Functions with zero callers: 55/283 (19.43%), reachable functions: 181/283 (63.96%)
+Analysis time: 200ms, memory usage: 66MB (without --gc)
+Analysis errors: 0, warnings: 12 (show all with --warnings-unsupported)

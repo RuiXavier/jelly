@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:connection-tester.test.js (1)
+Analyzing module connection-tester@0.2.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 7, call->function: 9
+Calls with zero or one callee: 14/43 (32.56%), multiple: 0/43 (0.00%), native or external: 29/43 (67.44%)
+Functions with zero callers: 1/8 (12.50%), reachable functions: 7/8 (87.50%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

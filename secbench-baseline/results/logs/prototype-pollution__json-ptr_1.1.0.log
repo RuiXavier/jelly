@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:json-ptr.test.js (1)
+Analyzing module json-ptr@1.1.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 47, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 65, call->function: 99
+Calls with zero or one callee: 66/140 (47.14%), multiple: 10/140 (7.14%), native or external: 64/140 (45.71%)
+Functions with zero callers: 16/47 (34.04%), reachable functions: 13/47 (27.66%)
+Analysis time: 98ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 15 (show all with --warnings-unsupported)

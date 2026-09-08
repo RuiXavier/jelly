@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-ini.test.js (1)
+Analyzing module node-ini@1.0.0:node-ini.js (2)
+Analyzed packages: 2, modules: 2, functions: 13, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 13, call->function: 15
+Calls with zero or one callee: 16/31 (51.61%), multiple: 0/31 (0.00%), native or external: 15/31 (48.39%)
+Functions with zero callers: 1/13 (7.69%), reachable functions: 12/13 (92.31%)
+Analysis time: 71ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 37 (show all with --warnings-unsupported)

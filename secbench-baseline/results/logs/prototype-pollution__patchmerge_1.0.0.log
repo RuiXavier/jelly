@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:patchmerge.test.js (1)
+Analyzing module patchmerge@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 12, call->function: 15
+Calls with zero or one callee: 15/33 (45.45%), multiple: 0/33 (0.00%), native or external: 18/33 (54.55%)
+Functions with zero callers: 0/6 (0.00%), reachable functions: 6/6 (100.00%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

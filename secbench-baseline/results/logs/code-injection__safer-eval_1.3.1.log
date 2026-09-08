@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:safer-eval.test.js (1)
+Analyzing module safer-eval@1.3.1:lib/index.js (2)
+Analyzing module safer-eval@1.3.1:lib/common.js (3)
+Analyzing module clones@1.2.0:lib/index.js (4)
+Analyzed packages: 3, modules: 4, functions: 36, code size main: 1KB, dependencies: 14KB
+Call edges function->function: 39, call->function: 48
+Calls with zero or one callee: 67/105 (63.81%), multiple: 2/105 (1.90%), native or external: 36/105 (34.29%)
+Functions with zero callers: 6/36 (16.67%), reachable functions: 30/36 (83.33%)
+Analysis time: 85ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 14 (show all with --warnings-unsupported)

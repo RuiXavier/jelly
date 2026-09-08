@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:node-rules.test.js (1)
+Analyzing module node-rules@3.0.0:index.js (2)
+Analyzing module node-rules@3.0.0:lib/node-rules.js (3)
+Analyzing module underscore@1.13.8:underscore-node.cjs (4)
+Analyzing module underscore@1.13.8:underscore-node-f.cjs (5)
+Analyzed packages: 3, modules: 5, functions: 210, code size main: 1KB, dependencies: 73KB
+Call edges function->function: 939, call->function: 1135
+Calls with zero or one callee: 322/514 (62.65%), multiple: 63/514 (12.26%), native or external: 129/514 (25.10%)
+Functions with zero callers: 74/210 (35.24%), reachable functions: 116/210 (55.24%)
+Analysis time: 264ms, memory usage: 60MB (without --gc)
+Analysis errors: 0, warnings: 57 (show all with --warnings-unsupported)

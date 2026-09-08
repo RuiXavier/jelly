@@ -1,0 +1,16 @@
+Analyzing module <anonymous>:mol-proto.test.js (1)
+Analyzing module mol-proto@0.1.15:lib/proto.js (2)
+Analyzing module mol-proto@0.1.15:lib/utils.js (3)
+Analyzing module mol-proto@0.1.15:lib/proto_prototype.js (4)
+Analyzing module mol-proto@0.1.15:lib/proto_object.js (5)
+Analyzing module mol-proto@0.1.15:lib/proto_array.js (6)
+Analyzing module mol-proto@0.1.15:lib/proto_function.js (7)
+Analyzing module mol-proto@0.1.15:lib/proto_string.js (8)
+Analyzing module mol-proto@0.1.15:lib/proto_number.js (9)
+Analyzing module mol-proto@0.1.15:lib/proto_util.js (10)
+Analyzed packages: 2, modules: 10, functions: 128, code size main: 1KB, dependencies: 64KB
+Call edges function->function: 91, call->function: 99
+Calls with zero or one callee: 128/268 (47.76%), multiple: 5/268 (1.87%), native or external: 135/268 (50.37%)
+Functions with zero callers: 71/128 (55.47%), reachable functions: 30/128 (23.44%)
+Analysis time: 146ms, memory usage: 58MB (without --gc)
+Analysis errors: 0, warnings: 27 (show all with --warnings-unsupported)

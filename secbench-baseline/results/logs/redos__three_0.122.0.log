@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:three.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/three_0.122.0/three.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/three_0.122.0/three.test.js:3:23
+Analyzing module three@0.122.0:build/three.js (2)
+Analyzed packages: 2, modules: 2, functions: 2401, code size main: 1KB, dependencies: 1203KB
+Call edges function->function: 16827, call->function: 20937
+Calls with zero or one callee: 4994/8475 (58.93%), multiple: 1132/8475 (13.36%), native or external: 2349/8475 (27.72%)
+Functions with zero callers: 862/2401 (35.90%), reachable functions: 934/2401 (38.90%)
+Analysis time: 45363ms, memory usage: 7396MB (without --gc)
+Analysis errors: 0, warnings: 428 (show all with --warnings-unsupported)

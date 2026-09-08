@@ -1,0 +1,7 @@
+Analyzing module <anonymous>:TypeORM.test.js (1)
+Analyzed packages: 1, modules: 1, functions: 3, code size main: 2KB, dependencies: 0KB
+Call edges function->function: 4, call->function: 7
+Calls with zero or one callee: 7/19 (36.84%), multiple: 0/19 (0.00%), native or external: 12/19 (63.16%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 43ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

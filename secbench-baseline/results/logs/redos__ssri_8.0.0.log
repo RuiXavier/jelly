@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:ssri.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ssri_8.0.0/ssri.test.js:2:23
+Analyzing module ssri@8.0.0:index.js (2)
+Analyzing module minipass@3.3.6:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 137, code size main: 1KB, dependencies: 30KB
+Call edges function->function: 150, call->function: 200
+Calls with zero or one callee: 204/388 (52.58%), multiple: 21/388 (5.41%), native or external: 163/388 (42.01%)
+Functions with zero callers: 60/137 (43.80%), reachable functions: 2/137 (1.46%)
+Analysis time: 152ms, memory usage: 63MB (without --gc)
+Analysis errors: 0, warnings: 121 (show all with --warnings-unsupported)

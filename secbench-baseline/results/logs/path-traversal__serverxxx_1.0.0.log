@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:serverxxx.test.js (1)
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/serverxxx_1.0.0/serverxxx.test.js:8:19
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/serverxxx_1.0.0/serverxxx.test.js:16:17
+Analyzed packages: 1, modules: 1, functions: 6, code size main: 1KB, dependencies: 0KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 7/23 (30.43%), multiple: 0/23 (0.00%), native or external: 16/23 (69.57%)
+Functions with zero callers: 0/6 (0.00%), reachable functions: 6/6 (100.00%)
+Analysis time: 41ms, memory usage: 32MB (without --gc)
+Analysis errors: 2, warnings: 0

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:changeset.test.js (1)
+Analyzing module changeset@0.1.0:index.js (2)
+Analyzing module underscore@1.4.4:underscore.js (3)
+Analyzing module udc@1.0.1:udc.js (4)
+Analyzed packages: 4, modules: 4, functions: 182, code size main: 1KB, dependencies: 48KB
+Call edges function->function: 205, call->function: 278
+Calls with zero or one callee: 216/344 (62.79%), multiple: 18/344 (5.23%), native or external: 110/344 (31.98%)
+Functions with zero callers: 73/182 (40.11%), reachable functions: 79/182 (43.41%)
+Analysis time: 183ms, memory usage: 56MB (without --gc)
+Analysis errors: 0, warnings: 44 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:smart-extend.test.js (1)
+Analyzing module smart-extend@1.7.3:dist/smart-extend.js (2)
+Analyzed packages: 2, modules: 2, functions: 32, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 30, call->function: 35
+Calls with zero or one callee: 38/57 (66.67%), multiple: 0/57 (0.00%), native or external: 19/57 (33.33%)
+Functions with zero callers: 21/32 (65.63%), reachable functions: 5/32 (15.63%)
+Analysis time: 76ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 16 (show all with --warnings-unsupported)

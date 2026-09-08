@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:ansi-regex.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ansi-regex_4.1.0/ansi-regex.test.js:3:23
+Analyzing module ansi-regex@4.1.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 4/12 (33.33%), multiple: 0/12 (0.00%), native or external: 8/12 (66.67%)
+Functions with zero callers: 1/3 (33.33%), reachable functions: 1/3 (33.33%)
+Analysis time: 40ms, memory usage: 31MB (without --gc)
+Analysis errors: 0, warnings: 1

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:set-deep-prop.test.js (1)
+Analyzing module set-deep-prop@1.0.0:set-deep-prop.js (2)
+Analyzed packages: 2, modules: 2, functions: 2, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 2/7 (28.57%), multiple: 0/7 (0.00%), native or external: 5/7 (71.43%)
+Functions with zero callers: 0/2 (0.00%), reachable functions: 2/2 (100.00%)
+Analysis time: 41ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

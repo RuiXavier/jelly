@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:curling.test.js (1)
+Analyzing module curling@0.2.0:index.js (2)
+Analyzing module curling@0.2.0:lib/curl-transport.js (3)
+Analyzed packages: 2, modules: 3, functions: 23, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 24, call->function: 25
+Calls with zero or one callee: 32/56 (57.14%), multiple: 0/56 (0.00%), native or external: 24/56 (42.86%)
+Functions with zero callers: 6/23 (26.09%), reachable functions: 10/23 (43.48%)
+Analysis time: 64ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 0

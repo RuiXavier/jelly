@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:hosted-git-info.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/hosted-git-info_3.0.0/hosted-git-info.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/hosted-git-info_3.0.0/hosted-git-info.test.js:3:23
+Analyzing module hosted-git-info@3.0.0:index.js (2)
+Analyzing module hosted-git-info@3.0.0:git-host-info.js (3)
+Analyzing module hosted-git-info@3.0.0:git-host.js (4)
+Analyzing module lru-cache@5.1.1:index.js (5)
+Analyzing module yallist@3.1.1:yallist.js (6)
+Analyzing module yallist@3.1.1:iterator.js (7)
+Analyzed packages: 4, modules: 7, functions: 106, code size main: 1KB, dependencies: 29KB
+Call edges function->function: 78, call->function: 83
+Calls with zero or one callee: 115/215 (53.49%), multiple: 0/215 (0.00%), native or external: 100/215 (46.51%)
+Functions with zero callers: 61/106 (57.55%), reachable functions: 12/106 (11.32%)
+Analysis time: 155ms, memory usage: 62MB (without --gc)
+Analysis errors: 0, warnings: 87 (show all with --warnings-unsupported)

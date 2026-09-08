@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:amqp-match.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/amqp-match_0.0.0/amqp-match.test.js:3:23
+Analyzing module amqp-match@0.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 7/11 (63.64%), multiple: 0/11 (0.00%), native or external: 4/11 (36.36%)
+Functions with zero callers: 1/3 (33.33%), reachable functions: 1/3 (33.33%)
+Analysis time: 39ms, memory usage: 31MB (without --gc)
+Analysis errors: 0, warnings: 1

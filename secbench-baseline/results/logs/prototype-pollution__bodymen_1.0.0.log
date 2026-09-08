@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:bodymen.test.js (1)
+Analyzing module bodymen@1.0.0:dist/index.js (2)
+Analyzing module lodash@4.18.1:lodash.js (3)
+Analyzing module rich-param@1.0.5:dist/index.js (4)
+Analyzing module bodymen@1.0.0:dist/bodymen-schema.js (5)
+Analyzing module rich-param@1.0.5:dist/validators.js (6)
+Analyzing module rich-param@1.0.5:dist/formatters.js (7)
+Analyzed packages: 4, modules: 7, functions: 776, code size main: 1KB, dependencies: 561KB
+Call edges function->function: 10335, call->function: 15360
+Calls with zero or one callee: 1297/2042 (63.52%), multiple: 399/2042 (19.54%), native or external: 346/2042 (16.94%)
+Functions with zero callers: 204/776 (26.29%), reachable functions: 459/776 (59.15%)
+Analysis time: 2233ms, memory usage: 316MB (without --gc)
+Analysis errors: 0, warnings: 176 (show all with --warnings-unsupported)

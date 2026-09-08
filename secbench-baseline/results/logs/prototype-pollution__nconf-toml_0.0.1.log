@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:nconf-toml.test.js (1)
+Analyzing module nconf-toml@0.0.1:index.js (2)
+Analyzing module toml@2.3.6:index.js (3)
+Analyzing module tomlify-j0.4@1.0.4:tomlify.js (4)
+Analyzing module toml@2.3.6:lib/parser.js (5)
+Analyzing module toml@2.3.6:lib/compiler.js (6)
+Analyzed packages: 4, modules: 6, functions: 174, code size main: 1KB, dependencies: 123KB
+Call edges function->function: 338, call->function: 554
+Calls with zero or one callee: 562/854 (65.81%), multiple: 0/854 (0.00%), native or external: 292/854 (34.19%)
+Functions with zero callers: 8/174 (4.60%), reachable functions: 134/174 (77.01%)
+Analysis time: 313ms, memory usage: 72MB (without --gc)
+Analysis errors: 0, warnings: 112 (show all with --warnings-unsupported)

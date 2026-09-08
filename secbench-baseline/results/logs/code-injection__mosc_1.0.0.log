@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:mosc.test.js (1)
+Analyzing module mosc@1.0.0:mosc.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 7, call->function: 8
+Calls with zero or one callee: 12/30 (40.00%), multiple: 0/30 (0.00%), native or external: 18/30 (60.00%)
+Functions with zero callers: 3/8 (37.50%), reachable functions: 5/8 (62.50%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

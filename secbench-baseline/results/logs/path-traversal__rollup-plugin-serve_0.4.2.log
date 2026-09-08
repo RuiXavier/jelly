@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:rollup-plugin-serve.test.js (1)
+Analyzing module rollup-plugin-serve@0.4.2:dist/index.cjs.js (2)
+Analyzing module mime@1.6.0:mime.js (3)
+Analyzing module opener@1.5.2:lib/opener.js (4)
+Analyzed packages: 4, modules: 4, functions: 31, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 32, call->function: 33
+Calls with zero or one callee: 43/105 (40.95%), multiple: 1/105 (0.95%), native or external: 61/105 (58.10%)
+Functions with zero callers: 6/31 (19.35%), reachable functions: 20/31 (64.52%)
+Analysis time: 85ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

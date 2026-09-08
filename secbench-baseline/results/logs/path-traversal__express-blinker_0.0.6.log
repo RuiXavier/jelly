@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:express-blinker.test.js (1)
+Error: Unable to resolve module 'express' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/express-blinker_0.0.6/express-blinker.test.js:8:19
+Analyzing module express-blinker@0.0.6:index.js (2)
+Analyzing module md5-file@2.0.7:index.js (3)
+Analyzing module async@1.5.2:lib/async.js (4)
+Analyzing module mime@1.6.0:mime.js (5)
+Analyzing module debug@2.6.9:src/index.js (6)
+Analyzing module debug@2.6.9:src/browser.js (7)
+Analyzing module debug@2.6.9:src/node.js (8)
+Analyzing module debug@2.6.9:src/debug.js (9)
+Analyzing module ms@2.0.0:index.js (10)
+Analyzed packages: 7, modules: 10, functions: 272, code size main: 1KB, dependencies: 65KB
+Call edges function->function: 909, call->function: 1040
+Calls with zero or one callee: 288/615 (46.83%), multiple: 108/615 (17.56%), native or external: 219/615 (35.61%)
+Functions with zero callers: 53/272 (19.49%), reachable functions: 184/272 (67.65%)
+Analysis time: 237ms, memory usage: 60MB (without --gc)
+Analysis errors: 1, warnings: 22 (show all with --warnings-unsupported)

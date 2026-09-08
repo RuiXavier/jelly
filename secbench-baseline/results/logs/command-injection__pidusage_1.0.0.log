@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:pidusage.test.js (1)
+Analyzing module pidusage@1.0.0:index.js (2)
+Analyzing module pidusage@1.0.0:lib/stats.js (3)
+Analyzing module pidusage@1.0.0:lib/helpers.js (4)
+Analyzed packages: 2, modules: 4, functions: 23, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 15, call->function: 24
+Calls with zero or one callee: 21/95 (22.11%), multiple: 3/95 (3.16%), native or external: 71/95 (74.74%)
+Functions with zero callers: 9/23 (39.13%), reachable functions: 3/23 (13.04%)
+Analysis time: 75ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

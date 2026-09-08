@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:json-pointer.test.js (1)
+Analyzing module json-pointer@0.6.0:index.js (2)
+Analyzing module foreach@2.0.6:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 17, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 20, call->function: 21
+Calls with zero or one callee: 25/59 (42.37%), multiple: 0/59 (0.00%), native or external: 34/59 (57.63%)
+Functions with zero callers: 3/17 (17.65%), reachable functions: 4/17 (23.53%)
+Analysis time: 72ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

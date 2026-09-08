@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:uri-js.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/uri-js_2.1.1/uri-js.test.js:3:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/uri-js_2.1.1/uri-js.test.js:4:23
+Analyzing module uri-js@2.1.1:build/uri.js (2)
+Analyzing module uri-js@2.1.1:build/punycode.js (3)
+Analyzing module uri-js@2.1.1:build/schemes.js (4)
+Analyzing module uri-js@2.1.1:build/schemes/http.js (5)
+Analyzing module uri-js@2.1.1:build/schemes/urn.js (6)
+Analyzing module uri-js@2.1.1:build/schemes/mailto.js (7)
+Analyzed packages: 2, modules: 7, functions: 54, code size main: 1KB, dependencies: 55KB
+Call edges function->function: 64, call->function: 207
+Calls with zero or one callee: 272/453 (60.04%), multiple: 1/453 (0.22%), native or external: 180/453 (39.74%)
+Functions with zero callers: 14/54 (25.93%), reachable functions: 10/54 (18.52%)
+Analysis time: 167ms, memory usage: 47MB (without --gc)
+Analysis errors: 0, warnings: 10 (show all with --warnings-unsupported)

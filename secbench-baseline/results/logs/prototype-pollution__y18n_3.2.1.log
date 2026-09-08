@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:y18n.test.js (1)
+Analyzing module y18n@3.2.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 17, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 12, call->function: 13
+Calls with zero or one callee: 29/54 (53.70%), multiple: 1/54 (1.85%), native or external: 24/54 (44.44%)
+Functions with zero callers: 5/17 (29.41%), reachable functions: 8/17 (47.06%)
+Analysis time: 70ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

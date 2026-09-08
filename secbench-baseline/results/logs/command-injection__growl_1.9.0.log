@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:growl.test.js (1)
+Analyzing module growl@1.9.0:lib/growl.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 7, call->function: 10
+Calls with zero or one callee: 16/97 (16.49%), multiple: 2/97 (2.06%), native or external: 79/97 (81.44%)
+Functions with zero callers: 0/7 (0.00%), reachable functions: 7/7 (100.00%)
+Analysis time: 72ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 0

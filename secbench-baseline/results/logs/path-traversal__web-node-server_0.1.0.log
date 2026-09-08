@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:web-node-server.test.js (1)
+Analyzing module web-node-server@0.1.0:index.js (2)
+Analyzing module web-node-server@0.1.0:nodeserver.js (3)
+Analyzing module web-node-server@0.1.0:tool/httpHeader.js (4)
+Analyzing module web-node-server@0.1.0:router.js (5)
+Analyzing module web-node-server@0.1.0:config.js (6)
+Analyzed packages: 2, modules: 6, functions: 22, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 27, call->function: 32
+Calls with zero or one callee: 35/86 (40.70%), multiple: 0/86 (0.00%), native or external: 51/86 (59.30%)
+Functions with zero callers: 0/22 (0.00%), reachable functions: 22/22 (100.00%)
+Analysis time: 82ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

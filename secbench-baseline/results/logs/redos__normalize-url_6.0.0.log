@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:normalize-url.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/normalize-url_6.0.0/normalize-url.test.js:2:23
+Analyzing module normalize-url@6.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 5, call->function: 6
+Calls with zero or one callee: 40/60 (66.67%), multiple: 0/60 (0.00%), native or external: 20/60 (33.33%)
+Functions with zero callers: 3/8 (37.50%), reachable functions: 1/8 (12.50%)
+Analysis time: 65ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:keyget.test.js (1)
+Analyzing module keyget@2.2.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 19, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 32, call->function: 33
+Calls with zero or one callee: 35/58 (60.34%), multiple: 0/58 (0.00%), native or external: 23/58 (39.66%)
+Functions with zero callers: 5/19 (26.32%), reachable functions: 5/19 (26.32%)
+Analysis time: 70ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

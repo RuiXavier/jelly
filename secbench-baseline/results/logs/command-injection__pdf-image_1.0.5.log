@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:pdf-image.test.js (1)
+Analyzing module pdf-image@1.0.5:index.js (2)
+Analyzing module es6-promise@2.0.1:dist/es6-promise.js (3)
+Analyzed packages: 3, modules: 3, functions: 96, code size main: 1KB, dependencies: 33KB
+Call edges function->function: 200, call->function: 206
+Calls with zero or one callee: 128/182 (70.33%), multiple: 11/182 (6.04%), native or external: 43/182 (23.63%)
+Functions with zero callers: 14/96 (14.58%), reachable functions: 71/96 (73.96%)
+Analysis time: 120ms, memory usage: 49MB (without --gc)
+Analysis errors: 0, warnings: 0

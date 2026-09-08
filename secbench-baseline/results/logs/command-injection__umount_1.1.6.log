@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:umount.test.js (1)
+Analyzing module umount@1.1.6:build/umount.js (2)
+Analyzing module lodash@4.17.23:lodash.js (3)
+Analyzing module umount@1.1.6:build/utils.js (4)
+Analyzed packages: 3, modules: 4, functions: 700, code size main: 1KB, dependencies: 536KB
+Call edges function->function: 7658, call->function: 11427
+Calls with zero or one callee: 1207/1857 (65.00%), multiple: 370/1857 (19.92%), native or external: 280/1857 (15.08%)
+Functions with zero callers: 181/700 (25.86%), reachable functions: 441/700 (63.00%)
+Analysis time: 1847ms, memory usage: 328MB (without --gc)
+Analysis errors: 0, warnings: 168 (show all with --warnings-unsupported)

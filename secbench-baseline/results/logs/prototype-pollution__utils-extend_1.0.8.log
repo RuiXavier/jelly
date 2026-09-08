@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:utils-extend.test.js (1)
+Analyzing module utils-extend@1.0.8:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 20, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 8, call->function: 10
+Calls with zero or one callee: 30/48 (62.50%), multiple: 0/48 (0.00%), native or external: 18/48 (37.50%)
+Functions with zero callers: 14/20 (70.00%), reachable functions: 5/20 (25.00%)
+Analysis time: 60ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:aso-server.test.js (1)
+Analyzing module aso-server@0.4.3:server.js (2)
+Analyzing module sleep@6.3.0:index.js (3)
+Error: Unable to resolve module './build/Release/node_sleep.node' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/aso-server_0.4.3/node_modules/sleep/index.js:1:13
+Analyzed packages: 3, modules: 3, functions: 33, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 36, call->function: 41
+Calls with zero or one callee: 49/112 (43.75%), multiple: 4/112 (3.57%), native or external: 59/112 (52.68%)
+Functions with zero callers: 3/33 (9.09%), reachable functions: 30/33 (90.91%)
+Analysis time: 82ms, memory usage: 37MB (without --gc)
+Analysis errors: 1, warnings: 1 (show all with --warnings-unsupported)

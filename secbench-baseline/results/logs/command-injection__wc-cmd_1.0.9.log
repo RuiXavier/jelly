@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:wc-cmd.test.js (1)
+Analyzing module wc-cmd@1.0.9:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 13, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 21, call->function: 22
+Calls with zero or one callee: 24/46 (52.17%), multiple: 1/46 (2.17%), native or external: 21/46 (45.65%)
+Functions with zero callers: 0/13 (0.00%), reachable functions: 13/13 (100.00%)
+Analysis time: 57ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

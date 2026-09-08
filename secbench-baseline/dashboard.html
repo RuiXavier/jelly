@@ -1,0 +1,825 @@
+<title>Jelly on SecBench.js</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-page: #f3f4f8;
+    --surface: #ffffff;
+    --surface-sunken: #eaecf3;
+    --border: rgba(11,11,15,0.10);
+    --border-strong: rgba(11,11,15,0.18);
+    --ink-primary: #0e0f14;
+    --ink-secondary: #52545f;
+    --ink-muted: #898a94;
+    --accent: #2a78d6;
+    --accent-strong: #184f95;
+    --accent-tint: #dce8fa;
+    --accent-tint-2: #b7d3f6;
+    --good: #0ca30c;
+    --good-tint: #e1f3e1;
+    --critical: #d03b3b;
+    --critical-tint: #fbe4e4;
+    --neutral-status: #898a94;
+    --neutral-status-tint: #ececee;
+    --grid: #e1e0e6;
+    --shadow: 0 1px 2px rgba(15,17,26,0.04), 0 8px 24px -12px rgba(15,17,26,0.12);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg-page: #0b0c11;
+      --surface: #15161d;
+      --surface-sunken: #1c1e28;
+      --border: rgba(255,255,255,0.09);
+      --border-strong: rgba(255,255,255,0.16);
+      --ink-primary: #f3f4f8;
+      --ink-secondary: #c1c3cf;
+      --ink-muted: #82838f;
+      --accent: #3987e5;
+      --accent-strong: #86b6ef;
+      --accent-tint: #1c2c46;
+      --accent-tint-2: #23375a;
+      --good: #2fbf4f;
+      --good-tint: #12291a;
+      --critical: #e66767;
+      --critical-tint: #331a1a;
+      --neutral-status: #8a8b97;
+      --neutral-status-tint: #202230;
+      --grid: #262832;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg-page: #0b0c11;
+    --surface: #15161d;
+    --surface-sunken: #1c1e28;
+    --border: rgba(255,255,255,0.09);
+    --border-strong: rgba(255,255,255,0.16);
+    --ink-primary: #f3f4f8;
+    --ink-secondary: #c1c3cf;
+    --ink-muted: #82838f;
+    --accent: #3987e5;
+    --accent-strong: #86b6ef;
+    --accent-tint: #1c2c46;
+    --accent-tint-2: #23375a;
+    --good: #2fbf4f;
+    --good-tint: #12291a;
+    --critical: #e66767;
+    --critical-tint: #331a1a;
+    --neutral-status: #8a8b97;
+    --neutral-status-tint: #202230;
+    --grid: #262832;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg-page);
+    color: var(--ink-primary);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace; }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ---------- header ---------- */
+  header.page-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .subhead {
+    color: var(--ink-secondary);
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 72ch;
+  }
+  .subhead code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    background: var(--surface-sunken);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--ink-primary);
+  }
+
+  /* ---------- stat tiles ---------- */
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 48px;
+    box-shadow: var(--shadow);
+  }
+  .tile {
+    background: var(--surface);
+    padding: 18px 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .tile .value {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 26px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .tile .value small { font-size: 14px; font-weight: 500; color: var(--ink-muted); }
+  .tile .label {
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .tile.good .value { color: var(--good); }
+  .tile.critical .value { color: var(--critical); }
+
+  /* ---------- sections ---------- */
+  section { margin-bottom: 52px; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--ink-primary);
+  }
+  .section-note {
+    font-size: 13px;
+    color: var(--ink-muted);
+    max-width: 48ch;
+    text-align: right;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  /* ---------- class breakdown ---------- */
+  .class-table { padding: 8px 0; }
+  .class-row {
+    display: grid;
+    grid-template-columns: 168px 1fr 240px;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .class-row:last-child { border-bottom: none; }
+  .class-row .name { font-weight: 600; font-size: 14px; }
+  .class-row .count {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    display: block;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .stackbar {
+    display: flex;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--surface-sunken);
+    width: 100%;
+  }
+  .stackbar .seg { height: 100%; }
+  .stackbar .seg.success { background: var(--good); }
+  .stackbar .seg.oom { background: var(--critical); }
+  .stackbar .seg.excluded { background: var(--neutral-status); opacity: 0.55; }
+  .class-metrics {
+    display: flex;
+    gap: 18px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    justify-content: flex-end;
+    color: var(--ink-secondary);
+    font-variant-numeric: tabular-nums;
+  }
+  .class-metrics .m-label { color: var(--ink-muted); margin-right: 4px; }
+
+  .legend {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    padding: 12px 20px 16px;
+    font-size: 12.5px;
+    color: var(--ink-secondary);
+    border-top: 1px solid var(--border);
+  }
+  .legend .dot { width: 9px; height: 9px; border-radius: 3px; display: inline-block; margin-right: 6px; vertical-align: middle; }
+
+  /* ---------- histograms ---------- */
+  .hist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+  }
+  .hist-panel {
+    background: var(--surface);
+    padding: 18px 18px 12px;
+  }
+  .hist-panel h3 {
+    margin: 0 0 2px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .hist-panel .hist-sub {
+    font-size: 11.5px;
+    color: var(--ink-muted);
+    margin-bottom: 10px;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .hist-bar-track { fill: var(--surface-sunken); }
+  .hist-bar { fill: var(--accent); }
+  .hist-axis-text { fill: var(--ink-muted); font-size: 9px; font-family: "JetBrains Mono", monospace; }
+  .hist-callout { fill: var(--critical); }
+
+  .reach-note {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--accent-tint);
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--ink-secondary);
+    line-height: 1.55;
+  }
+  .reach-note b { color: var(--ink-primary); }
+
+  /* ---------- incidents ---------- */
+  .incident-intro {
+    padding: 16px 20px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+  .incident-intro b { color: var(--ink-primary); }
+  .incident-list { display: flex; flex-direction: column; }
+  .incident {
+    display: grid;
+    grid-template-columns: 22px 1fr auto;
+    gap: 14px;
+    align-items: start;
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .incident:last-child { border-bottom: none; }
+  .incident .icon {
+    width: 18px; height: 18px;
+    border-radius: 5px;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+  }
+  .incident .icon.critical { background: var(--critical-tint); color: var(--critical); }
+  .incident .icon.excluded { background: var(--neutral-status-tint); color: var(--neutral-status); }
+  .incident .case { font-weight: 600; font-size: 13.5px; font-family: "JetBrains Mono", monospace; }
+  .incident .class-tag {
+    font-size: 10.5px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-left: 8px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .incident .detail { font-size: 12.5px; color: var(--ink-secondary); margin-top: 3px; line-height: 1.5; }
+  .incident .metric {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .reason-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 5px;
+    background: var(--neutral-status-tint);
+    color: var(--ink-secondary);
+    margin-right: 6px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  /* ---------- tables ---------- */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td {
+    text-align: left;
+    padding: 9px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    font-weight: 600;
+  }
+  td.num { font-family: "JetBrains Mono", monospace; font-variant-numeric: tabular-nums; text-align: right; }
+  tr:last-child td { border-bottom: none; }
+  .rank { color: var(--ink-muted); font-family: "JetBrains Mono", monospace; font-size: 12px; width: 20px; }
+  .case-cell { font-family: "JetBrains Mono", monospace; font-size: 12.5px; }
+  .case-cell .cls { display: block; font-size: 10.5px; color: var(--ink-muted); font-family: "IBM Plex Sans", sans-serif; text-transform: uppercase; letter-spacing: 0.03em; margin-top: 1px; }
+
+  table-wrap { display: block; overflow-x: auto; }
+
+  /* ---------- footer ---------- */
+  footer {
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    line-height: 1.7;
+  }
+  footer .mono { color: var(--ink-secondary); }
+
+  .cg-stats {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .cg-stat { background: var(--surface); padding: 16px 18px; }
+  .cg-stat .value {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .cg-stat .label {
+    font-size: 11px;
+    color: var(--ink-muted);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+  .time-note {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    margin-top: 8px;
+    max-width: 76ch;
+    line-height: 1.6;
+  }
+  .time-note b { color: var(--ink-secondary); }
+
+  @media (max-width: 900px) {
+    .three-col { grid-template-columns: 1fr; }
+    .cg-stats { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 720px) {
+    .two-col, .hist-grid { grid-template-columns: 1fr; }
+    .class-row { grid-template-columns: 1fr; row-gap: 8px; }
+    .class-metrics { justify-content: flex-start; }
+    .tiles { grid-template-columns: repeat(2, 1fr); }
+    .cg-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="page-head">
+    <span class="eyebrow">Static analysis baseline &middot; no taint layer</span>
+    <h1>Jelly &times; SecBench.js</h1>
+    <p class="subhead">
+      Plain points-to / call-graph analysis (<code>jelly &lt;entry&gt;.test.js</code>, no <code>-v</code>) run across all
+      5 official SecBench.js vulnerability classes &mdash; 603 real npm-package PoCs curated from Snyk, GitHub
+      Advisories and Huntr.dev. Run 2026-09-04 &middot; Jelly <code>0.13.0</code> &middot; Node <code>v26.8.1</code> &middot;
+      heap cap <code>8192MB</code>. Goal: establish whether base Jelly is sound and scalable on this corpus before
+      layering taint analysis on top.
+    </p>
+  </header>
+
+  <div class="tiles">
+    <div class="tile">
+      <span class="value" id="t-total">&mdash;</span>
+      <span class="label">Cases in suite</span>
+    </div>
+    <div class="tile good">
+      <span class="value" id="t-success">&mdash;</span>
+      <span class="label">Clean success</span>
+    </div>
+    <div class="tile">
+      <span class="value" id="t-time">&mdash;</span>
+      <span class="label">Median wall time</span>
+    </div>
+    <div class="tile">
+      <span class="value" id="t-analysis-time">&mdash;</span>
+      <span class="label">Median analysis time</span>
+    </div>
+    <div class="tile">
+      <span class="value" id="t-mem">&mdash;</span>
+      <span class="label">Median memory</span>
+    </div>
+    <div class="tile">
+      <span class="value" id="t-reach">&mdash;</span>
+      <span class="label">Median reachable fns</span>
+    </div>
+    <div class="tile critical">
+      <span class="value" id="t-oom">&mdash;</span>
+      <span class="label">OOM / crash</span>
+    </div>
+    <div class="tile">
+      <span class="value" id="t-npmfail">&mdash;</span>
+      <span class="label">Excluded (env/data)</span>
+    </div>
+  </div>
+  <p class="time-note">
+    <b>Wall time</b> is the full <code class="mono">node lib/main.js</code> process, measured start-to-finish from the
+    shell (includes Node startup + JS parsing). <b>Analysis time</b> is the "Analysis time" figure Jelly itself
+    prints &mdash; the solver phase only. The gap between the two medians (0.42s vs 62ms) is mostly fixed per-process
+    Node/V8 startup cost, which matters most for the many sub-second cases in this corpus.
+  </p>
+
+  <section id="sec-classes">
+    <div class="section-head">
+      <h2>Outcome by vulnerability class</h2>
+      <span class="section-note">Cases are npm PoCs paired with a jest test file that <code class="mono">require()</code>s the vulnerable package &mdash; used here as the Jelly entry point.</span>
+    </div>
+    <div class="card">
+      <div class="class-table" id="class-table"></div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--good)"></span>clean success</span>
+        <span><span class="dot" style="background:var(--critical)"></span>OOM / crash</span>
+        <span><span class="dot" style="background:var(--neutral-status);opacity:.55"></span>excluded (npm install failed / malformed case)</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-hist">
+    <div class="section-head">
+      <h2>Cost distribution &middot; clean-success cases (n=587)</h2>
+      <span class="section-note">Log-scale bins &mdash; this corpus is dominated by small single-file PoCs with a long tail of full-dependency-tree packages.</span>
+    </div>
+    <div class="card">
+      <div class="hist-grid">
+        <div class="hist-panel">
+          <h3>Wall time</h3>
+          <div class="hist-sub">median 0.42s &middot; p90 1.1s &middot; max 58.8s</div>
+          <svg id="hist-seconds" viewBox="0 0 340 178" width="100%"></svg>
+        </div>
+        <div class="hist-panel">
+          <h3>Peak memory</h3>
+          <div class="hist-sub">median 36MB &middot; p90 143MB &middot; max 7396MB</div>
+          <svg id="hist-memory" viewBox="0 0 340 178" width="100%"></svg>
+        </div>
+        <div class="hist-panel">
+          <h3>Modules reached</h3>
+          <div class="hist-sub">median 2 &middot; p90 30 &middot; max 909</div>
+          <svg id="hist-modules" viewBox="0 0 340 178" width="100%"></svg>
+        </div>
+      </div>
+      <div style="padding:0 18px 18px">
+        <div class="reach-note">
+          Across clean-success cases, a median of <b>64.5%</b> of functions in the analyzed program were found
+          reachable from the entry file (mean 62.2%). That's expected for PoC-shaped code &mdash; each test exercises
+          one vulnerable path, not the whole package &mdash; and it's the number a taint analysis built on top
+          inherits as its own reachability ceiling.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-callgraph">
+    <div class="section-head">
+      <h2>Call graph structure &middot; clean-success cases (n=587)</h2>
+      <span class="section-note">Edges from Jelly's own summary line: <code class="mono">call-&gt;function</code> is call-site&rarr;callee (an edge per possible target); <code class="mono">function-&gt;function</code> collapses that to distinct caller/callee pairs.</span>
+    </div>
+    <div class="card">
+      <div class="cg-stats">
+        <div class="cg-stat">
+          <div class="value" id="cg-edges-call">&mdash;</div>
+          <div class="label">Median call&rarr;fn edges</div>
+        </div>
+        <div class="cg-stat">
+          <div class="value" id="cg-edges-fun">&mdash;</div>
+          <div class="label">Median fn&rarr;fn edges</div>
+        </div>
+        <div class="cg-stat">
+          <div class="value" id="cg-precise">&mdash;</div>
+          <div class="label">Median call sites resolved to 0&ndash;1 callee</div>
+        </div>
+        <div class="cg-stat">
+          <div class="value" id="cg-poly">&mdash;</div>
+          <div class="label">Median call sites with 2+ callees</div>
+        </div>
+        <div class="cg-stat">
+          <div class="value" id="cg-native">&mdash;</div>
+          <div class="label">Median call sites to native/external</div>
+        </div>
+        <div class="cg-stat">
+          <div class="value" id="cg-deadfn">&mdash;</div>
+          <div class="label">Median functions with zero callers</div>
+        </div>
+      </div>
+      <div class="hist-panel" style="max-width:100%">
+        <h3>Call&rarr;function edges per case</h3>
+        <div class="hist-sub" id="cg-hist-sub"></div>
+        <svg id="hist-edges" viewBox="0 0 1020 178" width="100%"></svg>
+      </div>
+      <div style="padding:0 18px 18px">
+        <div class="reach-note">
+          Total across all 587 clean-success cases: <b id="cg-total-call">&mdash;</b> call&rarr;function edges,
+          <b id="cg-total-fun">&mdash;</b> function&rarr;function edges, over <b id="cg-total-fns">&mdash;</b> analyzed
+          functions and <b id="cg-total-mods">&mdash;</b> modules. Edge count doesn't track module count: the
+          densest graph in the corpus, <span class="mono">command-injection/libnmap_0.4.11</span>, produces 54,420
+          call&rarr;function edges from just 67 modules &mdash; more edges than <span class="mono">mathjs_7.4.0</span>
+          gets out of 909 modules.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-incidents">
+    <div class="section-head">
+      <h2>Where it breaks</h2>
+      <span class="section-note">14 of 603 cases (2.3%) didn't produce a clean result &mdash; all traced to two distinct, unrelated-to-Jelly-logic causes.</span>
+    </div>
+    <div class="card">
+      <div class="incident-intro">
+        <b>Root cause, 6 of 6 OOM/crash cases:</b> a single monolithic bundled/dist <code class="mono">.js</code> file
+        (tens of thousands of lines, often auto-generated) somewhere in the dependency tree. Module <i>count</i> and
+        overall dependency-tree size don't predict this &mdash; <code class="mono">monorepo-build_0.1.9</code> OOM'd
+        at 8GB from just 507 modules, dropping to 538MB/3.3s the moment its one bundled dependency
+        (<code class="mono">prettier</code>) was excluded. <code class="mono">redos/three_0.122.0</code> is the
+        near-miss that proves the same point from the other side: only 2 modules, yet 7.4GB / 46s, entirely from
+        one 51,012-line <code class="mono">three.module.js</code>.
+      </div>
+      <div class="incident-list" id="incident-oom"></div>
+      <div class="incident-intro" style="border-top:1px solid var(--border)">
+        <b>8 npm-install failures</b> (excluded before Jelly ever runs) &mdash; all environment or benchmark-data
+        issues, none a Jelly defect:
+      </div>
+      <div class="incident-list" id="incident-npmfail"></div>
+    </div>
+  </section>
+
+  <section id="sec-tables">
+    <div class="section-head">
+      <h2>Heaviest cases</h2>
+      <span class="section-note">Among clean-success cases only.</span>
+    </div>
+    <div class="three-col">
+      <div class="card">
+        <table>
+          <thead><tr><th></th><th>Slowest</th><th>Wall time</th></tr></thead>
+          <tbody id="table-slowest"></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <table>
+          <thead><tr><th></th><th>Largest call graph</th><th>Modules</th><th>Fns</th></tr></thead>
+          <tbody id="table-largest"></tbody>
+        </table>
+      </div>
+      <div class="card">
+        <table>
+          <thead><tr><th></th><th>Most call&rarr;fn edges</th><th>Edges</th></tr></thead>
+          <tbody id="table-edges"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div><span class="mono">603</span> cases total across prototype-pollution (193), redos (98), command-injection (101), path-traversal (171), code-injection (40) &mdash; 2 malformed case directories in the upstream repo excluded (no test file / no package.json) before counting.</div>
+    <div>Analysis: <span class="mono">node lib/main.js &lt;case&gt;.test.js --basedir &lt;case-dir&gt;</span>, dependencies followed (no <span class="mono">--ignore-dependencies</span>), <span class="mono">NODE_OPTIONS=--max-old-space-size=8192</span>, 1800s safety timeout per case (never hit).</div>
+    <div>Aside: <span class="mono">code-injection/mathjs_3.10.3</span> and <span class="mono">mathjs_3.9.0</span> produced 10,634 and 10,595 warnings respectively &mdash; by far the noisiest clean runs in the corpus, worth a look before building on top of them.</div>
+    <div>Raw per-case logs, <span class="mono">parsed.csv</span> and <span class="mono">aggregate.json</span> available on request &mdash; ask to have them copied into the repo.</div>
+  </footer>
+
+</div>
+
+<script>
+const perClass = {"prototype-pollution": {"total": 193, "success": 190, "oom": 2, "npmfail": 0, "skip": 1, "median_seconds": 0.43, "median_memory_mb": 38.0}, "redos": {"total": 98, "success": 97, "oom": 1, "npmfail": 0, "skip": 0, "median_seconds": 0.44, "median_memory_mb": 43.0}, "command-injection": {"total": 101, "success": 92, "oom": 3, "npmfail": 6, "skip": 0, "median_seconds": 0.43, "median_memory_mb": 38.0}, "path-traversal": {"total": 171, "success": 169, "oom": 0, "npmfail": 1, "skip": 1, "median_seconds": 0.39, "median_memory_mb": 32.0}, "code-injection": {"total": 40, "success": 39, "oom": 0, "npmfail": 1, "skip": 0, "median_seconds": 0.51, "median_memory_mb": 54.0}};
+const hist = {"seconds": {"edges": [0.38, 0.578, 0.881, 1.34, 2.041, 3.106, 4.729, 7.198, 10.957, 16.68, 25.392, 38.653, 58.84], "counts": [469, 47, 22, 15, 23, 6, 1, 1, 0, 0, 0, 3]}, "memory": {"edges": [30.0, 47.473, 75.122, 118.875, 188.111, 297.671, 471.041, 745.387, 1179.519, 1866.5, 2953.595, 4673.841, 7396.0], "counts": [416, 83, 27, 15, 22, 16, 3, 2, 0, 0, 0, 3]}, "modules": {"edges": [1.0, 1.764, 3.112, 5.491, 9.687, 17.09, 30.15, 53.19, 93.837, 165.548, 292.059, 515.249, 909.0], "counts": [145, 245, 47, 40, 32, 20, 17, 13, 14, 9, 4, 1]}};
+const overall = {"total_cases": 603, "npm_install_failed": 8, "skipped_malformed": 2, "analyzed": 593, "clean_success": 587, "oom_or_crash": 6, "other_nonzero_exit": 0, "wall_seconds": {"n": 587, "min": 0.38, "max": 58.84, "mean": 0.91, "median": 0.42, "p90": 1.1}, "jelly_reported_time_ms": {"n": 587, "min": 31.0, "max": 57984.0, "mean": 547.74, "median": 62.0, "p90": 721.0}, "jelly_reported_memory_mb": {"n": 587, "min": 30.0, "max": 7396.0, "mean": 100.34, "median": 36.0, "p90": 143.0}, "modules": {"n": 587, "min": 1.0, "max": 909.0, "mean": 16.82, "median": 2.0, "p90": 30.0}, "functions": {"n": 587, "min": 1.0, "max": 3976.0, "mean": 166.95, "median": 12.0, "p90": 574.0}, "packages": {"n": 587, "min": 1.0, "max": 138.0, "mean": 4.18, "median": 2.0, "p90": 7.0}, "edges_call2fun": {"n": 587, "min": 1.0, "max": 153978.0, "mean": 1584.83, "median": 15.0, "p90": 1333.0}, "funcs_reachable_pct": {"n": 587, "min": 0.39, "max": 100.0, "mean": 62.19, "median": 64.52, "p90": 100.0}, "warnings": {"n": 587, "min": 0.0, "max": 10634.0, "mean": 72.16, "median": 3.0, "p90": 109.0}, "errors": {"n": 587, "min": 0.0, "max": 9.0, "mean": 0.49, "median": 0.0, "p90": 2.0}, "oom_cases": ["prototype-pollution/jointjs_2.2.1", "prototype-pollution/jointjs_3.4.0", "redos/jspdf_2.1.1", "command-injection/apiconnect-cli-plugins_6.0.2", "command-injection/buns_1.1.6", "command-injection/monorepo-build_0.1.9"], "npm_failed_cases": ["command-injection/corenlp-js-interface_1.0.3", "command-injection/corenlp-js-prefab_1.0.1", "command-injection/effect_1.0.4", "command-injection/gity_1.0.5", "command-injection/jison_0.4.17", "command-injection/lycwed-spritesheetjs_1.2.5", "path-traversal/srverqq_1.0.0", "code-injection/mongoosemask_0.0.6"], "other_fail_cases": [], "top10_slowest": [{"case": "code-injection/mathjs_3.10.3", "seconds": 58.84}, {"case": "code-injection/mathjs_3.9.0", "seconds": 56.91}, {"case": "redos/three_0.122.0", "seconds": 46.34}, {"case": "redos/ramda_0.27.1", "seconds": 8.79}, {"case": "command-injection/libnmap_0.4.11", "seconds": 5.79}, {"case": "prototype-pollution/mathjs_7.4.0", "seconds": 4.54}, {"case": "prototype-pollution/style-dictionary_2.10.2", "seconds": 4.08}, {"case": "command-injection/total.js_3.4.6", "seconds": 3.7}, {"case": "prototype-pollution/total.js_3.4.6", "seconds": 3.68}, {"case": "redos/ethers_5.2.0", "seconds": 3.39}], "top10_largest_callgraph": [{"case": "prototype-pollution/mathjs_7.4.0", "modules": 909, "functions": 3976}, {"case": "code-injection/mathjs_3.10.3", "modules": 515, "functions": 2441}, {"case": "code-injection/mathjs_3.9.0", "modules": 512, "functions": 2414}, {"case": "prototype-pollution/locutus_2.0.11", "modules": 364, "functions": 770}, {"case": "redos/ramda_0.27.1", "modules": 332, "functions": 520}, {"case": "prototype-pollution/mout_1.0.0", "modules": 264, "functions": 353}, {"case": "redos/checkit_0.7.0", "modules": 257, "functions": 341}, {"case": "prototype-pollution/nis-utils_0.6.10", "modules": 243, "functions": 1563}, {"case": "path-traversal/nitro-server_1.3.3", "modules": 231, "functions": 1906}, {"case": "code-injection/modjs_0.4.0", "modules": 212, "functions": 2090}]};
+const oomIncidents = [{"cls": "command-injection", "case": "monorepo-build_0.1.9", "detail": "prettier bundles bin-prettier.js (46,328 lines), index.js (44,254) and standalone.js (31,825) into a 507-module tree; excluding just that one dependency drops the run to 538MB / 3.3s.", "metric": "507 modules reached &middot; OOM @ 8GB"}, {"cls": "command-injection", "case": "buns_1.1.6", "detail": "rx/dist/rx.all.compat.js (12,650 lines) and rx.all.js (12,388) alongside lodash.js (17,259 &mdash; harmless on its own elsewhere in this corpus).", "metric": "836 modules reached &middot; OOM @ 8GB"}, {"cls": "command-injection", "case": "apiconnect-cli-plugins_6.0.2", "detail": "swagger-client.browser.js (66,543 lines) plus five apidom-* adapter bundles at 28k&ndash;35k lines each.", "metric": "2,872 modules reached &middot; OOM @ 8GB"}, {"cls": "prototype-pollution", "case": "jointjs_2.2.1", "detail": "a nested demo/ts-demo/node_modules drags in the full TypeScript compiler &mdash; tsserver.js, tsserverlibrary.js, typescriptServices.js, each 117k&ndash;125k lines.", "metric": "57 modules reached &middot; OOM @ 8GB"}, {"cls": "prototype-pollution", "case": "jointjs_3.4.0", "detail": "same nested TypeScript compiler bundle, later/larger version &mdash; tsserver.js alone is 147,731 lines. OOM'd after only 7 modules.", "metric": "7 modules reached &middot; OOM @ 8GB"}, {"cls": "redos", "case": "jspdf_2.1.1", "detail": "three near-duplicate builds of jsPDF shipped side by side &mdash; jspdf.umd.js, jspdf.es.js, jspdf.node.js &mdash; each ~36,000 lines.", "metric": "252 modules reached &middot; OOM @ 8GB"}];
+const npmFailIncidents = [{"cls": "command-injection", "case": "corenlp-js-interface_1.0.3", "reason": "registry rot", "detail": "exact version unpublished from npm since the benchmark was built."}, {"cls": "command-injection", "case": "corenlp-js-prefab_1.0.1", "reason": "registry rot", "detail": "exact version unpublished from npm since the benchmark was built."}, {"cls": "command-injection", "case": "effect_1.0.4", "reason": "registry rot", "detail": "exact version unpublished (the \u201ceffect\u201d name has since been reused by an unrelated package)."}, {"cls": "command-injection", "case": "gity_1.0.5", "reason": "registry rot", "detail": "exact version unpublished from npm since the benchmark was built."}, {"cls": "command-injection", "case": "jison_0.4.17", "reason": "SecBench data bug", "detail": "package.json lists dependency \u201cinstall-package\u201d instead of \u201cjison\u201d &mdash; a metadata typo in the benchmark itself."}, {"cls": "command-injection", "case": "lycwed-spritesheetjs_1.2.5", "reason": "git fetch blocked", "detail": "depends on a GitLab git-URL package; npm 12 here has git-dependency fetching disabled by default (supply-chain hardening)."}, {"cls": "path-traversal", "case": "srverqq_1.0.0", "reason": "registry rot", "detail": "exact version unpublished from npm since the benchmark was built."}, {"cls": "code-injection", "case": "mongoosemask_0.0.6", "reason": "remote fetch blocked", "detail": "depends on a tarball fetched directly from a GitHub URL; npm 12 here has remote-tarball fetching disabled by default."}];
+const topSlowest = [{"cls": "code-injection", "module": "mathjs_3.10.3", "seconds": 58.84}, {"cls": "code-injection", "module": "mathjs_3.9.0", "seconds": 56.91}, {"cls": "redos", "module": "three_0.122.0", "seconds": 46.34}, {"cls": "redos", "module": "ramda_0.27.1", "seconds": 8.79}, {"cls": "command-injection", "module": "libnmap_0.4.11", "seconds": 5.79}, {"cls": "prototype-pollution", "module": "mathjs_7.4.0", "seconds": 4.54}, {"cls": "prototype-pollution", "module": "style-dictionary_2.10.2", "seconds": 4.08}, {"cls": "command-injection", "module": "total.js_3.4.6", "seconds": 3.7}, {"cls": "prototype-pollution", "module": "total.js_3.4.6", "seconds": 3.68}, {"cls": "redos", "module": "ethers_5.2.0", "seconds": 3.39}];
+const topLargest = [{"cls": "prototype-pollution", "module": "mathjs_7.4.0", "modules": 909, "functions": 3976}, {"cls": "code-injection", "module": "mathjs_3.10.3", "modules": 515, "functions": 2441}, {"cls": "code-injection", "module": "mathjs_3.9.0", "modules": 512, "functions": 2414}, {"cls": "prototype-pollution", "module": "locutus_2.0.11", "modules": 364, "functions": 770}, {"cls": "redos", "module": "ramda_0.27.1", "modules": 332, "functions": 520}, {"cls": "prototype-pollution", "module": "mout_1.0.0", "modules": 264, "functions": 353}, {"cls": "redos", "module": "checkit_0.7.0", "modules": 257, "functions": 341}, {"cls": "prototype-pollution", "module": "nis-utils_0.6.10", "modules": 243, "functions": 1563}, {"cls": "path-traversal", "module": "nitro-server_1.3.3", "modules": 231, "functions": 1906}, {"cls": "code-injection", "module": "modjs_0.4.0", "modules": 212, "functions": 2090}];
+const topEdges = [{"cls": "code-injection", "module": "mathjs_3.10.3", "edges": 153978}, {"cls": "code-injection", "module": "mathjs_3.9.0", "edges": 151571}, {"cls": "command-injection", "module": "libnmap_0.4.11", "edges": 54420}, {"cls": "command-injection", "module": "bestzip_2.1.6", "edges": 49275}, {"cls": "redos", "module": "ramda_0.27.1", "edges": 29640}, {"cls": "prototype-pollution", "module": "mathjs_7.4.0", "edges": 26256}, {"cls": "command-injection", "module": "thi.ng-egf_0.3.0", "edges": 24996}, {"cls": "prototype-pollution", "module": "grunt-util-property_0.0.2", "edges": 21391}, {"cls": "redos", "module": "three_0.122.0", "edges": 20937}, {"cls": "prototype-pollution", "module": "style-dictionary_2.10.2", "edges": 20656}];
+const cgStats = {"edges_fun2fun": {"median": 12.0}, "edges_call2fun": {"median": 15.0}, "calls_zero_or_one_pct": {"median": 44.36}, "calls_multiple_pct": {"median": 0.0}, "calls_native_external_pct": {"median": 53.95}, "funcs_zero_callers_pct": {"median": 14.29}, "totals": {"call_edges": 930294, "fun_edges": 570309, "functions": 97998, "modules": 9875}};
+const edgesHist = {"edges": [1.0, 2.706, 7.321, 19.809, 53.599, 145.024, 392.4, 1061.738, 2872.803, 7773.096, 21032.08, 56907.624, 153978.0], "counts": [40, 202, 82, 76, 47, 39, 34, 26, 10, 23, 6, 2]};
+
+const classLabels = {
+  "prototype-pollution": "Prototype pollution",
+  "redos": "ReDoS",
+  "command-injection": "Command injection",
+  "path-traversal": "Path traversal",
+  "code-injection": "Code injection",
+};
+const classOrder = ["prototype-pollution","redos","command-injection","path-traversal","code-injection"];
+
+function fmtNum(n) { return n.toLocaleString("en-US"); }
+
+// ---- stat tiles ----
+document.getElementById("t-total").textContent = fmtNum(overall.total_cases);
+document.getElementById("t-success").innerHTML = Math.round(overall.clean_success/overall.total_cases*100) + "%<small> (" + overall.clean_success + ")</small>";
+document.getElementById("t-time").textContent = overall.wall_seconds.median + "s";
+document.getElementById("t-analysis-time").textContent = overall.jelly_reported_time_ms.median + "ms";
+document.getElementById("t-mem").textContent = overall.jelly_reported_memory_mb.median + "MB";
+document.getElementById("t-reach").textContent = overall.funcs_reachable_pct.median + "%";
+document.getElementById("t-oom").textContent = overall.oom_or_crash;
+document.getElementById("t-npmfail").textContent = overall.npm_install_failed + overall.skipped_malformed;
+
+// ---- per-class breakdown ----
+const classTable = document.getElementById("class-table");
+classOrder.forEach(cls => {
+  const c = perClass[cls];
+  const row = document.createElement("div");
+  row.className = "class-row";
+  const excluded = c.npmfail + c.skip;
+  const pct = v => (v / c.total * 100).toFixed(1);
+  row.innerHTML = `
+    <div>
+      <span class="name">${classLabels[cls]}</span>
+      <span class="count">${c.total} cases</span>
+    </div>
+    <div class="stackbar">
+      <div class="seg success" style="width:${pct(c.success)}%" title="${c.success} success"></div>
+      <div class="seg oom" style="width:${pct(c.oom)}%" title="${c.oom} OOM"></div>
+      <div class="seg excluded" style="width:${pct(excluded)}%" title="${excluded} excluded"></div>
+    </div>
+    <div class="class-metrics">
+      <span><span class="m-label">med t</span>${c.median_seconds}s</span>
+      <span><span class="m-label">med mem</span>${c.median_memory_mb}MB</span>
+    </div>
+  `;
+  classTable.appendChild(row);
+});
+
+// ---- histograms (log-scale bar chart, hand-drawn SVG) ----
+function fmtTickValue(v) {
+  if (v >= 1000) return (v / 1000) + "k";
+  if (v < 1) return v.toString();
+  return Math.round(v).toString();
+}
+
+// Log-scale histogram: bin widths are already uniform in log-space (see
+// log_hist in the parsing script), so pixel position per bin index IS the
+// correct log-scale x-axis. What was missing was labeling that axis with
+// real, round values instead of arbitrary bin-edge numbers.
+function drawHist(svgId, data, calloutFromBin, width) {
+  const svg = document.getElementById(svgId);
+  const W = width || 340, H = 178, padL = 6, padR = 6, padB = 26, padT = 8;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const n = data.counts.length;
+  const maxCount = Math.max(...data.counts);
+  const gap = 2;
+  const barW = (plotW / n) - gap;
+  const logMin = Math.log10(data.edges[0]);
+  const logMax = Math.log10(data.edges[data.edges.length - 1]);
+  let svgContent = "";
+
+  // single background panel behind the whole plot
+  svgContent += `<rect class="hist-bar-track" x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" rx="3"/>`;
+
+  // gridlines + labels at round powers of ten within the data's actual range
+  const startExp = Math.ceil(logMin - 1e-9);
+  const endExp = Math.floor(logMax + 1e-9);
+  for (let d = startExp; d <= endExp; d++) {
+    const val = Math.pow(10, d);
+    const x = padL + ((d - logMin) / (logMax - logMin)) * plotW;
+    svgContent += `<line x1="${x.toFixed(1)}" y1="${padT}" x2="${x.toFixed(1)}" y2="${padT + plotH}" stroke="var(--grid)" stroke-width="1" stroke-dasharray="2,3"/>`;
+    const anchor = x < padL + 14 ? "start" : x > padL + plotW - 14 ? "end" : "middle";
+    const lx = anchor === "start" ? x + 2 : anchor === "end" ? x - 2 : x;
+    svgContent += `<text class="hist-axis-text" x="${lx.toFixed(1)}" y="${H - 8}" text-anchor="${anchor}">${fmtTickValue(val)}</text>`;
+  }
+  // baseline
+  svgContent += `<line x1="${padL}" y1="${padT + plotH}" x2="${padL + plotW}" y2="${padT + plotH}" stroke="var(--border-strong)" stroke-width="1"/>`;
+
+  data.counts.forEach((count, i) => {
+    const barH = maxCount ? (count / maxCount) * (plotH - 6) : 0;
+    const x = padL + i * (barW + gap);
+    const y = padT + plotH - barH;
+    const isCallout = calloutFromBin !== undefined && i >= calloutFromBin && count > 0;
+    if (count > 0) {
+      svgContent += `<rect class="${isCallout ? 'hist-callout' : 'hist-bar'}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${Math.max(barW,1).toFixed(1)}" height="${Math.max(barH,2).toFixed(1)}" rx="2"/>`;
+    }
+  });
+
+  svg.innerHTML = svgContent;
+}
+drawHist("hist-seconds", hist.seconds, 11);
+drawHist("hist-memory", hist.memory, 11);
+drawHist("hist-modules", hist.modules);
+drawHist("hist-edges", edgesHist, undefined, 1020);
+
+// ---- call graph structure ----
+document.getElementById("cg-edges-call").textContent = fmtNum(cgStats.edges_call2fun.median);
+document.getElementById("cg-edges-fun").textContent = fmtNum(cgStats.edges_fun2fun.median);
+document.getElementById("cg-precise").textContent = cgStats.calls_zero_or_one_pct.median + "%";
+document.getElementById("cg-poly").textContent = cgStats.calls_multiple_pct.median + "%";
+document.getElementById("cg-native").textContent = cgStats.calls_native_external_pct.median + "%";
+document.getElementById("cg-deadfn").textContent = cgStats.funcs_zero_callers_pct.median + "%";
+document.getElementById("cg-hist-sub").textContent =
+  "median " + fmtNum(cgStats.edges_call2fun.median) + " · max " + fmtNum(153978) + " (mathjs_3.10.3)";
+document.getElementById("cg-total-call").textContent = fmtNum(cgStats.totals.call_edges);
+document.getElementById("cg-total-fun").textContent = fmtNum(cgStats.totals.fun_edges);
+document.getElementById("cg-total-fns").textContent = fmtNum(cgStats.totals.functions);
+document.getElementById("cg-total-mods").textContent = fmtNum(cgStats.totals.modules);
+
+// ---- incidents ----
+const oomBox = document.getElementById("incident-oom");
+oomIncidents.forEach(inc => {
+  const el = document.createElement("div");
+  el.className = "incident";
+  el.innerHTML = `
+    <div class="icon critical">!</div>
+    <div>
+      <span class="case">${inc.case}</span><span class="class-tag">${classLabels[inc.cls]}</span>
+      <div class="detail">${inc.detail}</div>
+    </div>
+    <div class="metric">${inc.metric}</div>
+  `;
+  oomBox.appendChild(el);
+});
+
+const npmBox = document.getElementById("incident-npmfail");
+npmFailIncidents.forEach(inc => {
+  const el = document.createElement("div");
+  el.className = "incident";
+  el.innerHTML = `
+    <div class="icon excluded">&times;</div>
+    <div>
+      <span class="case">${inc.case}</span><span class="class-tag">${classLabels[inc.cls]}</span>
+      <div class="detail"><span class="reason-tag">${inc.reason}</span>${inc.detail}</div>
+    </div>
+    <div class="metric"></div>
+  `;
+  npmBox.appendChild(el);
+});
+
+// ---- tables ----
+const slowestBody = document.getElementById("table-slowest");
+topSlowest.forEach((r, i) => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td class="rank">${i+1}</td><td class="case-cell">${r.module}<span class="cls">${classLabels[r.cls]}</span></td><td class="num">${r.seconds}s</td>`;
+  slowestBody.appendChild(tr);
+});
+const largestBody = document.getElementById("table-largest");
+topLargest.forEach((r, i) => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td class="rank">${i+1}</td><td class="case-cell">${r.module}<span class="cls">${classLabels[r.cls]}</span></td><td class="num">${fmtNum(r.modules)}</td><td class="num">${fmtNum(r.functions)}</td>`;
+  largestBody.appendChild(tr);
+});
+const edgesBody = document.getElementById("table-edges");
+topEdges.forEach((r, i) => {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td class="rank">${i+1}</td><td class="case-cell">${r.module}<span class="cls">${classLabels[r.cls]}</span></td><td class="num">${fmtNum(r.edges)}</td>`;
+  edgesBody.appendChild(tr);
+});
+</script>

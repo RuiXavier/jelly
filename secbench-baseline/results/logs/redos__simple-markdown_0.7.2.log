@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:simple-markdown.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/simple-markdown_0.7.2/simple-markdown.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/simple-markdown_0.7.2/simple-markdown.test.js:3:23
+Analyzing module simple-markdown@0.7.2:simple-markdown.js (2)
+Analyzed packages: 2, modules: 2, functions: 131, code size main: 1KB, dependencies: 69KB
+Call edges function->function: 107, call->function: 145
+Calls with zero or one callee: 160/274 (58.39%), multiple: 0/274 (0.00%), native or external: 114/274 (41.61%)
+Functions with zero callers: 82/131 (62.60%), reachable functions: 12/131 (9.16%)
+Analysis time: 148ms, memory usage: 64MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

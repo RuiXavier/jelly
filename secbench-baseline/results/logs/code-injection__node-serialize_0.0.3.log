@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-serialize.test.js (1)
+Analyzing module node-serialize@0.0.3:lib/serialize.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 8, call->function: 8
+Calls with zero or one callee: 8/32 (25.00%), multiple: 0/32 (0.00%), native or external: 24/32 (75.00%)
+Functions with zero callers: 0/7 (0.00%), reachable functions: 6/7 (85.71%)
+Analysis time: 57ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

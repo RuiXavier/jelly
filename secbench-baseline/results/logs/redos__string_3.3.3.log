@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:string.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/string_3.3.3/string.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/string_3.3.3/string.test.js:3:23
+Analyzing module string@3.3.3:lib/string.js (2)
+Analyzing module string@3.3.3:lib/_count.js (3)
+Analyzing module string@3.3.3:lib/_splitLeft.js (4)
+Analyzing module string@3.3.3:lib/_splitRight.js (5)
+Analyzed packages: 2, modules: 5, functions: 93, code size main: 1KB, dependencies: 38KB
+Call edges function->function: 50, call->function: 55
+Calls with zero or one callee: 67/293 (22.87%), multiple: 0/293 (0.00%), native or external: 226/293 (77.13%)
+Functions with zero callers: 57/93 (61.29%), reachable functions: 6/93 (6.45%)
+Analysis time: 162ms, memory usage: 57MB (without --gc)
+Analysis errors: 0, warnings: 15 (show all with --warnings-unsupported)

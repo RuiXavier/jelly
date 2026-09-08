@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:macfromip.test.js (1)
+Analyzing module macfromip@1.1.1:macfromip.js (2)
+Analyzed packages: 2, modules: 2, functions: 19, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 23, call->function: 36
+Calls with zero or one callee: 28/64 (43.75%), multiple: 5/64 (7.81%), native or external: 31/64 (48.44%)
+Functions with zero callers: 1/19 (5.26%), reachable functions: 8/19 (42.11%)
+Analysis time: 62ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 0

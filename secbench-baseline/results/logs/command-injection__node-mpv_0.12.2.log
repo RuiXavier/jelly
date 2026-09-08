@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:node-mpv.test.js (1)
+Analyzing module node-mpv@0.12.2:index.js (2)
+Analyzing module node-mpv@0.12.2:lib/mpv/mpv.js (3)
+Analyzing module lodash@4.18.1:lodash.js (4)
+Analyzing module node-mpv@0.12.2:lib/mpv/_commands.js (5)
+Analyzing module node-mpv@0.12.2:lib/mpv/_controls.js (6)
+Analyzing module node-mpv@0.12.2:lib/mpv/_playlist.js (7)
+Analyzing module node-mpv@0.12.2:lib/mpv/_audio.js (8)
+Analyzing module node-mpv@0.12.2:lib/mpv/_video.js (9)
+Analyzing module node-mpv@0.12.2:lib/mpv/_subtitle.js (10)
+Analyzing module node-mpv@0.12.2:lib/ipcInterface.js (11)
+Analyzed packages: 3, modules: 11, functions: 775, code size main: 1KB, dependencies: 555KB
+Call edges function->function: 8302, call->function: 12535
+Calls with zero or one callee: 1233/2015 (61.19%), multiple: 399/2015 (19.80%), native or external: 383/2015 (19.01%)
+Functions with zero callers: 238/775 (30.71%), reachable functions: 460/775 (59.35%)
+Analysis time: 2703ms, memory usage: 433MB (without --gc)
+Analysis errors: 0, warnings: 165 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:merge-options.test.js (1)
+Analyzing module merge-options@1.0.0:index.js (2)
+Analyzing module is-plain-obj@1.1.0:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 15, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 27, call->function: 29
+Calls with zero or one callee: 33/56 (58.93%), multiple: 0/56 (0.00%), native or external: 23/56 (41.07%)
+Functions with zero callers: 0/15 (0.00%), reachable functions: 15/15 (100.00%)
+Analysis time: 65ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

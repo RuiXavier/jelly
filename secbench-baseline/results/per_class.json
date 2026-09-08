@@ -1,0 +1,47 @@
+{
+  "prototype-pollution": {
+    "total": 193,
+    "success": 190,
+    "oom": 2,
+    "npmfail": 0,
+    "skip": 1,
+    "median_seconds": 0.43,
+    "median_memory_mb": 38.0
+  },
+  "redos": {
+    "total": 98,
+    "success": 97,
+    "oom": 1,
+    "npmfail": 0,
+    "skip": 0,
+    "median_seconds": 0.44,
+    "median_memory_mb": 43.0
+  },
+  "command-injection": {
+    "total": 101,
+    "success": 92,
+    "oom": 3,
+    "npmfail": 6,
+    "skip": 0,
+    "median_seconds": 0.43,
+    "median_memory_mb": 38.0
+  },
+  "path-traversal": {
+    "total": 171,
+    "success": 169,
+    "oom": 0,
+    "npmfail": 1,
+    "skip": 1,
+    "median_seconds": 0.39,
+    "median_memory_mb": 32.0
+  },
+  "code-injection": {
+    "total": 40,
+    "success": 39,
+    "oom": 0,
+    "npmfail": 1,
+    "skip": 0,
+    "median_seconds": 0.51,
+    "median_memory_mb": 54.0
+  }
+}

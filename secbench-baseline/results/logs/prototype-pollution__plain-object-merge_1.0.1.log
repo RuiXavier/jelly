@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:plain-object-merge.test.js (1)
+Analyzing module plain-object-merge@1.0.1:dist/index.js (2)
+Analyzing module plain-object-clone@1.1.0:dist/index.js (3)
+Analyzing module is-primitive@3.0.1:index.js (4)
+Analyzed packages: 4, modules: 4, functions: 5, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 8, call->function: 8
+Calls with zero or one callee: 8/21 (38.10%), multiple: 0/21 (0.00%), native or external: 13/21 (61.90%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 56ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

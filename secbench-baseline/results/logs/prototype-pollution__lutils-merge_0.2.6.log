@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:lutils-merge.test.js (1)
+Analyzing module lutils-merge@0.2.6:merge.js (2)
+Analyzing module lutils-typeof@0.2.5:typeOf.js (3)
+Analyzed packages: 3, modules: 3, functions: 16, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 19, call->function: 21
+Calls with zero or one callee: 27/42 (64.29%), multiple: 1/42 (2.38%), native or external: 14/42 (33.33%)
+Functions with zero callers: 3/16 (18.75%), reachable functions: 13/16 (81.25%)
+Analysis time: 66ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

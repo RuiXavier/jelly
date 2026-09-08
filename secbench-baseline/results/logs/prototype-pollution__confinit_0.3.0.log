@@ -1,0 +1,18 @@
+Analyzing module <anonymous>:confinit.test.js (1)
+Analyzing module confinit@0.3.0:index.js (2)
+Analyzing module debug@4.1.1:src/index.js (3)
+Analyzing module yargs-parser@14.0.0:index.js (4)
+Analyzing module debug@4.1.1:src/browser.js (5)
+Analyzing module debug@4.1.1:src/node.js (6)
+Warning: Unable to resolve conditionally loaded module 'supports-color' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/confinit_0.3.0/node_modules/debug/src/node.js:28:24
+Analyzing module camelcase@5.3.1:index.js (7)
+Analyzing module decamelize@1.2.0:index.js (8)
+Analyzing module yargs-parser@14.0.0:lib/tokenize-arg-string.js (9)
+Analyzing module debug@4.1.1:src/common.js (10)
+Analyzing module ms@2.1.3:index.js (11)
+Analyzed packages: 7, modules: 11, functions: 144, code size main: 1KB, dependencies: 57KB
+Call edges function->function: 169, call->function: 231
+Calls with zero or one callee: 271/589 (46.01%), multiple: 0/589 (0.00%), native or external: 318/589 (53.99%)
+Functions with zero callers: 28/144 (19.44%), reachable functions: 15/144 (10.42%)
+Analysis time: 228ms, memory usage: 71MB (without --gc)
+Analysis errors: 0, warnings: 97 (show all with --warnings-unsupported)

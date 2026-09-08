@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:glob-parent.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/glob-parent_5.0.0/glob-parent.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/glob-parent_5.0.0/glob-parent.test.js:3:23
+Analyzing module glob-parent@5.0.0:index.js (2)
+Analyzing module is-glob@4.0.3:index.js (3)
+Analyzing module is-extglob@2.1.1:index.js (4)
+Analyzed packages: 4, modules: 4, functions: 7, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 8/39 (20.51%), multiple: 1/39 (2.56%), native or external: 30/39 (76.92%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 1/7 (14.29%)
+Analysis time: 70ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

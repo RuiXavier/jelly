@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:brace-expansion.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/brace-expansion_1.1.6/brace-expansion.test.js:3:23
+Analyzing module brace-expansion@1.1.6:index.js (2)
+Analyzing module concat-map@0.0.1:index.js (3)
+Analyzing module balanced-match@0.4.2:index.js (4)
+Analyzed packages: 4, modules: 4, functions: 20, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 22, call->function: 28
+Calls with zero or one callee: 44/100 (44.00%), multiple: 1/100 (1.00%), native or external: 55/100 (55.00%)
+Functions with zero callers: 2/20 (10.00%), reachable functions: 1/20 (5.00%)
+Analysis time: 82ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 1

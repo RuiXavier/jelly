@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:git-tags-remote.test.js (1)
+Analyzing module git-tags-remote@1.0.2:index.js (2)
+Analyzing module semver@5.7.2:semver.js (3)
+Analyzed packages: 3, modules: 3, functions: 107, code size main: 1KB, dependencies: 41KB
+Call edges function->function: 151, call->function: 209
+Calls with zero or one callee: 219/319 (68.65%), multiple: 31/319 (9.72%), native or external: 69/319 (21.63%)
+Functions with zero callers: 50/107 (46.73%), reachable functions: 26/107 (24.30%)
+Analysis time: 169ms, memory usage: 48MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

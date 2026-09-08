@@ -1,0 +1,14 @@
+Analyzing module <anonymous>:atropa-ide.test.js (1)
+Analyzing module atropa-ide@0.2.2-2:atropa-ide.js (2)
+Analyzing module atropa-server@0.5.2:atropa-server.js (3)
+Analyzing module atropa-server@0.5.2:server.js (4)
+Analyzing module atropa-server@0.5.2:router.js (5)
+Analyzing module atropa-server@0.5.2:requestHandlers.js (6)
+Analyzing module mime@1.2.9:mime.js (7)
+Analyzing module mustache@4.2.0:mustache.js (8)
+Analyzed packages: 5, modules: 8, functions: 72, code size main: 1KB, dependencies: 34KB
+Call edges function->function: 86, call->function: 108
+Calls with zero or one callee: 126/262 (48.09%), multiple: 0/262 (0.00%), native or external: 136/262 (51.91%)
+Functions with zero callers: 7/72 (9.72%), reachable functions: 63/72 (87.50%)
+Analysis time: 138ms, memory usage: 57MB (without --gc)
+Analysis errors: 0, warnings: 14 (show all with --warnings-unsupported)

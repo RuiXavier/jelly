@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:node-simple-router.test.js (1)
+Analyzing module node-simple-router@0.10.0:lib/router.js (2)
+Analyzing module node-simple-router@0.10.0:lib/async.js (3)
+Analyzing module node-simple-router@0.10.0:lib/promises.js (4)
+Analyzing module node-simple-router@0.10.0:lib/stringstream.js (5)
+Analyzed packages: 2, modules: 5, functions: 213, code size main: 1KB, dependencies: 186KB
+Call edges function->function: 379, call->function: 441
+Calls with zero or one callee: 310/698 (44.41%), multiple: 48/698 (6.88%), native or external: 340/698 (48.71%)
+Functions with zero callers: 29/213 (13.62%), reachable functions: 141/213 (66.20%)
+Analysis time: 258ms, memory usage: 62MB (without --gc)
+Analysis errors: 0, warnings: 44 (show all with --warnings-unsupported)

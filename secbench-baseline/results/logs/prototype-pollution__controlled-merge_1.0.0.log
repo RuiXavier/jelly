@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:controlled-merge.test.js (1)
+Analyzing module controlled-merge@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 4, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 4, call->function: 4
+Calls with zero or one callee: 9/18 (50.00%), multiple: 0/18 (0.00%), native or external: 9/18 (50.00%)
+Functions with zero callers: 1/4 (25.00%), reachable functions: 2/4 (50.00%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

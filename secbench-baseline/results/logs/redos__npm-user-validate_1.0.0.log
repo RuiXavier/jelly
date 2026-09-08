@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:npm-user-validate.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/npm-user-validate_1.0.0/npm-user-validate.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/npm-user-validate_1.0.0/npm-user-validate.test.js:3:23
+Analyzing module npm-user-validate@1.0.0:npm-user-validate.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 8/22 (36.36%), multiple: 0/22 (0.00%), native or external: 14/22 (63.64%)
+Functions with zero callers: 3/5 (60.00%), reachable functions: 1/5 (20.00%)
+Analysis time: 48ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 2

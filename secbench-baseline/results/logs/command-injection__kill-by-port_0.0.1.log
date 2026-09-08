@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:kill-by-port.test.js (1)
+Analyzing module kill-by-port@0.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 5/19 (26.32%), multiple: 0/19 (0.00%), native or external: 14/19 (73.68%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 44ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 0

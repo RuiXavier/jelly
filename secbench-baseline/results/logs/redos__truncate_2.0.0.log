@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:truncate.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/truncate_2.0.0/truncate.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/truncate_2.0.0/truncate.test.js:3:23
+Analyzing module truncate@2.0.0:truncate.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 4, call->function: 5
+Calls with zero or one callee: 8/14 (57.14%), multiple: 0/14 (0.00%), native or external: 6/14 (42.86%)
+Functions with zero callers: 1/5 (20.00%), reachable functions: 2/5 (40.00%)
+Analysis time: 51ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 2

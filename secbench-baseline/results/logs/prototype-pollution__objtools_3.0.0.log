@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:objtools.test.js (1)
+Analyzing module objtools@3.0.0:lib/index.js (2)
+Analyzing module objtools@3.0.0:lib/object-mask.js (3)
+Analyzing module lodash@4.18.1:lodash.js (4)
+Analyzing module xerror@2.0.0:xerror.js (5)
+Analyzing module xerror@2.0.0:error-code-registry.js (6)
+Analyzing module xerror@2.0.0:common-error-codes.js (7)
+Analyzed packages: 4, modules: 7, functions: 783, code size main: 1KB, dependencies: 584KB
+Call edges function->function: 9217, call->function: 13715
+Calls with zero or one callee: 1397/2110 (66.21%), multiple: 380/2110 (18.01%), native or external: 333/2110 (15.78%)
+Functions with zero callers: 203/783 (25.93%), reachable functions: 460/783 (58.75%)
+Analysis time: 2212ms, memory usage: 311MB (without --gc)
+Analysis errors: 0, warnings: 286 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:immer.test.js (1)
+Analyzing module immer@8.0.0:dist/index.js (2)
+Analyzing module immer@8.0.0:dist/immer.cjs.production.min.js (3)
+Analyzing module immer@8.0.0:dist/immer.cjs.development.js (4)
+Analyzed packages: 2, modules: 4, functions: 317, code size main: 1KB, dependencies: 72KB
+Call edges function->function: 579, call->function: 656
+Calls with zero or one callee: 589/915 (64.37%), multiple: 32/915 (3.50%), native or external: 294/915 (32.13%)
+Functions with zero callers: 113/317 (35.65%), reachable functions: 131/317 (41.32%)
+Analysis time: 331ms, memory usage: 74MB (without --gc)
+Analysis errors: 0, warnings: 103 (show all with --warnings-unsupported)

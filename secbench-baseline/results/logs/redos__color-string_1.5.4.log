@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:color-string.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/color-string_1.5.4/color-string.test.js:2:23
+Analyzing module color-string@1.5.4:index.js (2)
+Analyzing module color-name@1.1.4:index.js (3)
+Analyzing module simple-swizzle@0.2.4:index.js (4)
+Analyzing module is-arrayish@0.3.4:index.js (5)
+Analyzed packages: 5, modules: 5, functions: 18, code size main: 1KB, dependencies: 11KB
+Call edges function->function: 16, call->function: 24
+Calls with zero or one callee: 40/84 (47.62%), multiple: 0/84 (0.00%), native or external: 44/84 (52.38%)
+Functions with zero callers: 9/18 (50.00%), reachable functions: 1/18 (5.56%)
+Analysis time: 95ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

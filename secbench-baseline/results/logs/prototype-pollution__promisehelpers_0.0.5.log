@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:promisehelpers.test.js (1)
+Analyzing module promisehelpers@0.0.5:src/index.js (2)
+Analyzing module isarray@1.0.0:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 10, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 8/14 (57.14%), multiple: 0/14 (0.00%), native or external: 6/14 (42.86%)
+Functions with zero callers: 5/10 (50.00%), reachable functions: 5/10 (50.00%)
+Analysis time: 49ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

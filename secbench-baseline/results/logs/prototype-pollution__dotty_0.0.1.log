@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:dotty.test.js (1)
+Analyzing module dotty@0.0.1:lib/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 8, call->function: 8
+Calls with zero or one callee: 24/34 (70.59%), multiple: 0/34 (0.00%), native or external: 10/34 (29.41%)
+Functions with zero callers: 0/7 (0.00%), reachable functions: 2/7 (28.57%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

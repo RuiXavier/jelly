@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:revalidator.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/revalidator_0.3.1/revalidator.test.js:3:23
+Analyzing module revalidator@0.3.1:lib/revalidator.js (2)
+Analyzed packages: 2, modules: 2, functions: 33, code size main: 1KB, dependencies: 18KB
+Call edges function->function: 39, call->function: 63
+Calls with zero or one callee: 57/92 (61.96%), multiple: 1/92 (1.09%), native or external: 34/92 (36.96%)
+Functions with zero callers: 3/33 (9.09%), reachable functions: 2/33 (6.06%)
+Analysis time: 88ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 22 (show all with --warnings-unsupported)

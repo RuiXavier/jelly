@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:github-url-to-object.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/github-url-to-object_4.0.2/github-url-to-object.test.js:2:23
+Analyzing module github-url-to-object@4.0.2:dist/commonjs.js (2)
+Analyzing module is-url@1.2.4:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 4, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 18/26 (69.23%), multiple: 0/26 (0.00%), native or external: 8/26 (30.77%)
+Functions with zero callers: 1/4 (25.00%), reachable functions: 1/4 (25.00%)
+Analysis time: 61ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 1

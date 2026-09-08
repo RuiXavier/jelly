@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:realms-shim.test.js (1)
+Analyzing module realms-shim@1.1.0:dist/realms-shim.cjs.js (2)
+Analyzed packages: 2, modules: 2, functions: 68, code size main: 1KB, dependencies: 13KB
+Call edges function->function: 77, call->function: 93
+Calls with zero or one callee: 117/197 (59.39%), multiple: 1/197 (0.51%), native or external: 79/197 (40.10%)
+Functions with zero callers: 18/68 (26.47%), reachable functions: 49/68 (72.06%)
+Analysis time: 105ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 21 (show all with --warnings-unsupported)

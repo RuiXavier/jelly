@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:tree-kit.test.js (1)
+Analyzing module tree-kit@0.6.1:lib/tree.js (2)
+Analyzing module tree-kit@0.6.1:lib/extend.js (3)
+Analyzing module tree-kit@0.6.1:lib/clone.js (4)
+Analyzing module tree-kit@0.6.1:lib/path.js (5)
+Analyzing module tree-kit@0.6.1:lib/dotPath.js (6)
+Analyzing module tree-kit@0.6.1:lib/lazy.js (7)
+Analyzing module tree-kit@0.6.1:lib/diff.js (8)
+Analyzing module tree-kit@0.6.1:lib/mask.js (9)
+Analyzed packages: 2, modules: 9, functions: 41, code size main: 1KB, dependencies: 49KB
+Call edges function->function: 44, call->function: 57
+Calls with zero or one callee: 60/228 (26.32%), multiple: 1/228 (0.44%), native or external: 167/228 (73.25%)
+Functions with zero callers: 29/41 (70.73%), reachable functions: 6/41 (14.63%)
+Analysis time: 185ms, memory usage: 67MB (without --gc)
+Analysis errors: 0, warnings: 75 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:killing.test.js (1)
+Analyzing module killing@1.0.6:index.js (2)
+Analyzing module killing@1.0.6:lib/killing.js (3)
+Analyzing module killing@1.0.6:lib/retry.js (4)
+Analyzed packages: 2, modules: 4, functions: 18, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 19, call->function: 19
+Calls with zero or one callee: 28/53 (52.83%), multiple: 0/53 (0.00%), native or external: 25/53 (47.17%)
+Functions with zero callers: 0/18 (0.00%), reachable functions: 18/18 (100.00%)
+Analysis time: 58ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

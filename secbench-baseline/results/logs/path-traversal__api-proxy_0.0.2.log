@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:api-proxy.test.js (1)
+Analyzing module api-proxy@0.0.2:lib/index.js (2)
+Analyzing module api-proxy@0.0.2:lib/proxy.js (3)
+Analyzing module api-proxy@0.0.2:lib/filter.js (4)
+Analyzing module api-proxy@0.0.2:lib/static.js (5)
+Analyzed packages: 2, modules: 5, functions: 47, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 53, call->function: 55
+Calls with zero or one callee: 76/165 (46.06%), multiple: 2/165 (1.21%), native or external: 87/165 (52.73%)
+Functions with zero callers: 3/47 (6.38%), reachable functions: 44/47 (93.62%)
+Analysis time: 93ms, memory usage: 42MB (without --gc)
+Analysis errors: 0, warnings: 0

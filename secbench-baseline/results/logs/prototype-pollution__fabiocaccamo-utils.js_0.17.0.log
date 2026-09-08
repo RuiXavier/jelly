@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:fabiocaccamo-utils.test.js (1)
+Analyzing module @fabiocaccamo/utils.js@0.17.0:dist/utils.js (2)
+Analyzed packages: 2, modules: 2, functions: 317, code size main: 1KB, dependencies: 94KB
+Call edges function->function: 302, call->function: 363
+Calls with zero or one callee: 378/727 (51.99%), multiple: 0/727 (0.00%), native or external: 349/727 (48.01%)
+Functions with zero callers: 187/317 (58.99%), reachable functions: 5/317 (1.58%)
+Analysis time: 283ms, memory usage: 82MB (without --gc)
+Analysis errors: 0, warnings: 22 (show all with --warnings-unsupported)

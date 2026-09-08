@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:dot-object.test.js (1)
+Analyzing module dot-object@2.1.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 35, code size main: 1KB, dependencies: 13KB
+Call edges function->function: 30, call->function: 47
+Calls with zero or one callee: 91/141 (64.54%), multiple: 0/141 (0.00%), native or external: 50/141 (35.46%)
+Functions with zero callers: 17/35 (48.57%), reachable functions: 6/35 (17.14%)
+Analysis time: 89ms, memory usage: 44MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

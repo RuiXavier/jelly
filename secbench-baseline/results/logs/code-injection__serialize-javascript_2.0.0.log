@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:serialize-javascript.test.js (1)
+Analyzing module serialize-javascript@2.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 7, call->function: 8
+Calls with zero or one callee: 15/58 (25.86%), multiple: 0/58 (0.00%), native or external: 43/58 (74.14%)
+Functions with zero callers: 3/9 (33.33%), reachable functions: 3/9 (33.33%)
+Analysis time: 63ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

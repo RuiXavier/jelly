@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:json-ptr.test.js (1)
+Analyzing module json-ptr@2.0.0:dist/index.js (2)
+Analyzing module tslib@2.8.1:tslib.js (3)
+Analyzing module json-ptr@2.0.0:dist/types.js (4)
+Analyzing module json-ptr@2.0.0:dist/util.js (5)
+Analyzing module json-ptr@2.0.0:dist/pointer.js (6)
+Analyzed packages: 3, modules: 6, functions: 139, code size main: 2KB, dependencies: 39KB
+Call edges function->function: 122, call->function: 179
+Calls with zero or one callee: 171/374 (45.72%), multiple: 13/374 (3.48%), native or external: 190/374 (50.80%)
+Functions with zero callers: 60/139 (43.17%), reachable functions: 10/139 (7.19%)
+Analysis time: 186ms, memory usage: 55MB (without --gc)
+Analysis errors: 0, warnings: 47 (show all with --warnings-unsupported)

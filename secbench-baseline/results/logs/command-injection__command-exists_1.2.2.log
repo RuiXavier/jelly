@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:command-exists.test.js (1)
+Analyzing module command-exists@1.2.2:index.js (2)
+Analyzing module command-exists@1.2.2:lib/command-exists.js (3)
+Analyzed packages: 2, modules: 3, functions: 19, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 21, call->function: 22
+Calls with zero or one callee: 26/45 (57.78%), multiple: 0/45 (0.00%), native or external: 19/45 (42.22%)
+Functions with zero callers: 0/19 (0.00%), reachable functions: 7/19 (36.84%)
+Analysis time: 56ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 0

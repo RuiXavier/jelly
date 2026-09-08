@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:kill-process-by-name.test.js (1)
+Analyzing module kill-process-by-name@1.0.5:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 4, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 4, call->function: 4
+Calls with zero or one callee: 5/20 (25.00%), multiple: 0/20 (0.00%), native or external: 15/20 (75.00%)
+Functions with zero callers: 0/4 (0.00%), reachable functions: 4/4 (100.00%)
+Analysis time: 42ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 0

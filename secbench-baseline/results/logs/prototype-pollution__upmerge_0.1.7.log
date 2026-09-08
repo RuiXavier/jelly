@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:upmerge.test.js (1)
+Analyzing module upmerge@0.1.7:build/upmerge.js (2)
+Analyzed packages: 2, modules: 2, functions: 11, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 20, call->function: 23
+Calls with zero or one callee: 24/40 (60.00%), multiple: 0/40 (0.00%), native or external: 16/40 (40.00%)
+Functions with zero callers: 1/11 (9.09%), reachable functions: 10/11 (90.91%)
+Analysis time: 59ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

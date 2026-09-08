@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:pico-static-server.test.js (1)
+Analyzing module pico-static-server@2.3.4:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 9, call->function: 13
+Calls with zero or one callee: 15/44 (34.09%), multiple: 0/44 (0.00%), native or external: 29/44 (65.91%)
+Functions with zero callers: 0/9 (0.00%), reachable functions: 9/9 (100.00%)
+Analysis time: 55ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

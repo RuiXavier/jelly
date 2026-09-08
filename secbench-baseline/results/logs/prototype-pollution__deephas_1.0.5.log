@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:deephas.test.js (1)
+Analyzing module deephas@1.0.5:deepHas.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 3, call->function: 4
+Calls with zero or one callee: 20/25 (80.00%), multiple: 0/25 (0.00%), native or external: 5/25 (20.00%)
+Functions with zero callers: 5/8 (62.50%), reachable functions: 3/8 (37.50%)
+Analysis time: 50ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 0

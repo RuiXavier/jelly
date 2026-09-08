@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:thenify.test.js (1)
+Analyzing module thenify@3.3.0:index.js (2)
+Analyzing module any-promise@1.3.0:index.js (3)
+Analyzing module any-promise@1.3.0:register.js (4)
+Analyzing module any-promise@1.3.0:loader.js (5)
+Analyzed packages: 3, modules: 5, functions: 13, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 11, call->function: 11
+Calls with zero or one callee: 16/41 (39.02%), multiple: 0/41 (0.00%), native or external: 25/41 (60.98%)
+Functions with zero callers: 4/13 (30.77%), reachable functions: 9/13 (69.23%)
+Analysis time: 69ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

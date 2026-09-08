@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:printf.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/printf_0.6.0/printf.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/printf_0.6.0/printf.test.js:3:23
+Analyzing module printf@0.6.0:lib/printf.js (2)
+Analyzed packages: 2, modules: 2, functions: 15, code size main: 1KB, dependencies: 14KB
+Call edges function->function: 13, call->function: 14
+Calls with zero or one callee: 32/96 (33.33%), multiple: 0/96 (0.00%), native or external: 64/96 (66.67%)
+Functions with zero callers: 3/15 (20.00%), reachable functions: 1/15 (6.67%)
+Analysis time: 95ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

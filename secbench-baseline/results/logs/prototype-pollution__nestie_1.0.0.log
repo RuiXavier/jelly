@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:nestie.test.js (1)
+Analyzing module nestie@1.0.0:dist/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 3, call->function: 4
+Calls with zero or one callee: 6/11 (54.55%), multiple: 0/11 (0.00%), native or external: 5/11 (45.45%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 48ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

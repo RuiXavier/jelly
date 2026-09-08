@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ps-visitor.test.js (1)
+Analyzing module ps-visitor@0.0.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 23, code size main: 1KB, dependencies: 12KB
+Call edges function->function: 22, call->function: 27
+Calls with zero or one callee: 47/123 (38.21%), multiple: 0/123 (0.00%), native or external: 76/123 (61.79%)
+Functions with zero callers: 2/23 (8.70%), reachable functions: 6/23 (26.09%)
+Analysis time: 83ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

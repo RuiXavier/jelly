@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:Templ8.test.js (1)
+Analyzing module Templ8@0.7.0:Templ8.js (2)
+Analyzed packages: 2, modules: 2, functions: 115, code size main: 1KB, dependencies: 27KB
+Call edges function->function: 115, call->function: 144
+Calls with zero or one callee: 172/363 (47.38%), multiple: 1/363 (0.28%), native or external: 190/363 (52.34%)
+Functions with zero callers: 50/115 (43.48%), reachable functions: 31/115 (26.96%)
+Analysis time: 139ms, memory usage: 58MB (without --gc)
+Analysis errors: 0, warnings: 20 (show all with --warnings-unsupported)

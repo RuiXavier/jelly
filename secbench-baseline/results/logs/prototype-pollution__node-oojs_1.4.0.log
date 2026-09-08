@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-oojs.test.js (1)
+Analyzing module node-oojs@1.4.0:bin/format/oojs.js (2)
+Analyzed packages: 2, modules: 2, functions: 70, code size main: 1KB, dependencies: 32KB
+Call edges function->function: 30, call->function: 32
+Calls with zero or one callee: 58/196 (29.59%), multiple: 0/196 (0.00%), native or external: 138/196 (70.41%)
+Functions with zero callers: 43/70 (61.43%), reachable functions: 11/70 (15.71%)
+Analysis time: 135ms, memory usage: 58MB (without --gc)
+Analysis errors: 0, warnings: 33 (show all with --warnings-unsupported)

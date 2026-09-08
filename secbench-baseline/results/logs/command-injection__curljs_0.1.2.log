@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:curljs.test.js (1)
+Analyzing module curljs@0.1.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 24, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 34, call->function: 34
+Calls with zero or one callee: 34/50 (68.00%), multiple: 2/50 (4.00%), native or external: 14/50 (28.00%)
+Functions with zero callers: 7/24 (29.17%), reachable functions: 16/24 (66.67%)
+Analysis time: 60ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 0

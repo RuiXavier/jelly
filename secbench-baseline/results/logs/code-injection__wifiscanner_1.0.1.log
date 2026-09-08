@@ -1,0 +1,21 @@
+Analyzing module <anonymous>:wifiscanner.test.js (1)
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/code-injection/wifiscanner_1.0.1/wifiscanner.test.js:5:17
+Analyzing module wifiscanner@1.0.1:index.js (2)
+Analyzing module wifiscanner@1.0.1:scanners/wifiscanner.js (3)
+Analyzing module wifiscanner@1.0.1:parsers/darwinparser.js (4)
+Analyzing module wifiscanner@1.0.1:parsers/linuxparser.js (5)
+Analyzing module wifiscanner@1.0.1:parsers/windowsparser.js (6)
+Analyzing module nconf@0.8.5:lib/nconf.js (7)
+Analyzing module wifiscanner@1.0.1:parsers/common.js (8)
+Analyzing module async@1.5.2:lib/async.js (9)
+Analyzing module nconf@0.8.5:lib/nconf/common.js (10)
+Analyzing module nconf@0.8.5:lib/nconf/provider.js (11)
+Analyzing module nconf@0.8.5:lib/nconf/formats.js (12)
+Analyzing module nconf@0.8.5:lib/nconf/stores/memory.js (13)
+Analyzing module ini@1.3.8:ini.js (14)
+Analyzed packages: 5, modules: 14, functions: 327, code size main: 1KB, dependencies: 75KB
+Call edges function->function: 1003, call->function: 1151
+Calls with zero or one callee: 363/735 (49.39%), multiple: 121/735 (16.46%), native or external: 251/735 (34.15%)
+Functions with zero callers: 55/327 (16.82%), reachable functions: 235/327 (71.87%)
+Analysis time: 266ms, memory usage: 71MB (without --gc)
+Analysis errors: 1, warnings: 57 (show all with --warnings-unsupported)

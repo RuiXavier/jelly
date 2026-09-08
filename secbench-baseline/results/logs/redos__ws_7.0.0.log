@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:ws.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ws_7.0.0/ws.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ws_7.0.0/ws.test.js:3:23
+Analyzed packages: 1, modules: 1, functions: 2, code size main: 1KB, dependencies: 0KB
+Call edges function->function: 1, call->function: 1
+Calls with zero or one callee: 5/9 (55.56%), multiple: 0/9 (0.00%), native or external: 4/9 (44.44%)
+Functions with zero callers: 1/2 (50.00%), reachable functions: 1/2 (50.00%)
+Analysis time: 33ms, memory usage: 30MB (without --gc)
+Analysis errors: 0, warnings: 2

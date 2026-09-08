@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:content.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/content_3.0.5/content.test.js:2:23
+Analyzing module content@3.0.5:lib/index.js (2)
+Analyzing module boom@5.3.3:lib/index.js (3)
+Analyzing module hoek@4.3.1:lib/index.js (4)
+Analyzing module hoek@4.3.1:lib/escape.js (5)
+Analyzed packages: 4, modules: 5, functions: 103, code size main: 1KB, dependencies: 43KB
+Call edges function->function: 96, call->function: 124
+Calls with zero or one callee: 165/284 (58.10%), multiple: 2/284 (0.70%), native or external: 117/284 (41.20%)
+Functions with zero callers: 65/103 (63.11%), reachable functions: 2/103 (1.94%)
+Analysis time: 161ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 21 (show all with --warnings-unsupported)

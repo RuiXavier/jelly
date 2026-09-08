@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:access-policy.test.js (1)
+Analyzing module access-policy@3.1.0:index.js (2)
+Analyzing module access-policy@3.1.0:lib/encode.js (3)
+Analyzing module access-policy@3.1.0:lib/resources.js (4)
+Analyzing module access-policy@3.1.0:lib/restrictions.js (5)
+Analyzing module access-policy@3.1.0:lib/validate.js (6)
+Analyzing module access-policy@3.1.0:lib/tests.js (7)
+Analyzed packages: 2, modules: 7, functions: 24, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 21, call->function: 21
+Calls with zero or one callee: 25/60 (41.67%), multiple: 0/60 (0.00%), native or external: 35/60 (58.33%)
+Functions with zero callers: 4/24 (16.67%), reachable functions: 4/24 (16.67%)
+Analysis time: 75ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

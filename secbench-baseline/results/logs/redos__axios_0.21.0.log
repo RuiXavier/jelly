@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:axios.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/axios_0.21.0/axios.test.js:10:23
+Analyzing module axios@0.21.0:lib/utils.js (2)
+Analyzing module axios@0.21.0:lib/helpers/bind.js (3)
+Analyzed packages: 2, modules: 3, functions: 29, code size main: 1KB, dependencies: 9KB
+Call edges function->function: 15, call->function: 21
+Calls with zero or one callee: 31/43 (72.09%), multiple: 2/43 (4.65%), native or external: 10/43 (23.26%)
+Functions with zero callers: 16/29 (55.17%), reachable functions: 1/29 (3.45%)
+Analysis time: 67ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

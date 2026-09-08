@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:safetydance.test.js (1)
+Analyzing module safetydance@2.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 57, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 77, call->function: 77
+Calls with zero or one callee: 68/111 (61.26%), multiple: 1/111 (0.90%), native or external: 42/111 (37.84%)
+Functions with zero callers: 26/57 (45.61%), reachable functions: 2/57 (3.51%)
+Analysis time: 79ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

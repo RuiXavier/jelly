@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:wrlc.test.js (1)
+Analyzing module wrlc@0.2.5:index.js (2)
+Analyzing module mime@1.6.0:mime.js (3)
+Analyzed packages: 3, modules: 3, functions: 19, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 15, call->function: 15
+Calls with zero or one callee: 23/69 (33.33%), multiple: 0/69 (0.00%), native or external: 46/69 (66.67%)
+Functions with zero callers: 5/19 (26.32%), reachable functions: 11/19 (57.89%)
+Analysis time: 69ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:object-collider.test.js (1)
+Analyzing module object-collider@1.0.3:dist/index.js (2)
+Analyzing module object-collider@1.0.3:dist/src/index.js (3)
+Analyzing module object-collider@1.0.3:dist/src/utils/index.js (4)
+Analyzing module object-collider@1.0.3:dist/src/utils/CollideUtil.js (5)
+Analyzing module object-collider@1.0.3:dist/src/utils/TypeUtil.js (6)
+Analyzed packages: 2, modules: 6, functions: 13, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 16, call->function: 18
+Calls with zero or one callee: 20/54 (37.04%), multiple: 0/54 (0.00%), native or external: 34/54 (62.96%)
+Functions with zero callers: 1/13 (7.69%), reachable functions: 4/13 (30.77%)
+Analysis time: 73ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

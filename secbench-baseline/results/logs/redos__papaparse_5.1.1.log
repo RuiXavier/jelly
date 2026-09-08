@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:papaparse.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/papaparse_5.1.1/papaparse.test.js:2:23
+Analyzing module papaparse@5.1.1:papaparse.js (2)
+Analyzed packages: 2, modules: 2, functions: 104, code size main: 1KB, dependencies: 51KB
+Call edges function->function: 175, call->function: 234
+Calls with zero or one callee: 213/409 (52.08%), multiple: 7/409 (1.71%), native or external: 189/409 (46.21%)
+Functions with zero callers: 12/104 (11.54%), reachable functions: 4/104 (3.85%)
+Analysis time: 205ms, memory usage: 66MB (without --gc)
+Analysis errors: 0, warnings: 16 (show all with --warnings-unsupported)

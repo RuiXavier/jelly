@@ -1,0 +1,20 @@
+Analyzing module <anonymous>:html-dom-parser.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/html-dom-parser_0.1.2/html-dom-parser.test.js:3:23
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/html-dom-parser_0.1.2/html-dom-parser.test.js:4:18
+Analyzing module html-dom-parser@0.1.2:index.js (2)
+Analyzing module html-dom-parser@0.1.2:lib/html-to-dom-server.js (3)
+Analyzing module htmlparser2@3.9.1:lib/Parser.js (4)
+Analyzing module domhandler@2.3.0:index.js (5)
+Analyzing module htmlparser2@3.9.1:lib/Tokenizer.js (6)
+Analyzing module inherits@2.0.4:inherits.js (7)
+Analyzing module domelementtype@1.3.1:index.js (8)
+Analyzing module domhandler@2.3.0:lib/node.js (9)
+Analyzing module domhandler@2.3.0:lib/element.js (10)
+Analyzing module entities@1.1.2:lib/decode_codepoint.js (11)
+Analyzing module inherits@2.0.4:inherits_browser.js (12)
+Analyzed packages: 7, modules: 12, functions: 112, code size main: 1KB, dependencies: 42KB
+Call edges function->function: 151, call->function: 215
+Calls with zero or one callee: 193/292 (66.10%), multiple: 15/292 (5.14%), native or external: 84/292 (28.77%)
+Functions with zero callers: 20/112 (17.86%), reachable functions: 12/112 (10.71%)
+Analysis time: 191ms, memory usage: 60MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

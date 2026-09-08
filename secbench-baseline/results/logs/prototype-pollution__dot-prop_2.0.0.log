@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:dot-prop.test.js (1)
+Analyzing module dot-prop@2.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 9/14 (64.29%), multiple: 0/14 (0.00%), native or external: 5/14 (35.71%)
+Functions with zero callers: 3/6 (50.00%), reachable functions: 3/6 (50.00%)
+Analysis time: 44ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

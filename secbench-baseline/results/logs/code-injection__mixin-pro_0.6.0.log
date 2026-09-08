@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:mixin-pro.test.js (1)
+Analyzing module mixin-pro@0.6.0:mixin.js (2)
+Analyzed packages: 2, modules: 2, functions: 14, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 13, call->function: 16
+Calls with zero or one callee: 17/38 (44.74%), multiple: 1/38 (2.63%), native or external: 20/38 (52.63%)
+Functions with zero callers: 3/14 (21.43%), reachable functions: 10/14 (71.43%)
+Analysis time: 69ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

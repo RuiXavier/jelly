@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-http-server.test.js (1)
+Analyzing module node-http-server@8.1.2:server/Server.js (2)
+Analyzed packages: 2, modules: 2, functions: 32, code size main: 1KB, dependencies: 20KB
+Call edges function->function: 40, call->function: 54
+Calls with zero or one callee: 65/125 (52.00%), multiple: 2/125 (1.60%), native or external: 58/125 (46.40%)
+Functions with zero callers: 1/32 (3.13%), reachable functions: 31/32 (96.88%)
+Analysis time: 87ms, memory usage: 41MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

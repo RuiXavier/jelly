@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:slug.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/slug_0.9.1/slug.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/slug_0.9.1/slug.test.js:3:23
+Analyzing module slug@0.9.1:slug.js (2)
+Analyzing module unicode@14.0.0:category/So.js (3)
+Analyzed packages: 3, modules: 3, functions: 8, code size main: 1KB, dependencies: 2157KB
+Call edges function->function: 8, call->function: 8
+Calls with zero or one callee: 14/35 (40.00%), multiple: 0/35 (0.00%), native or external: 21/35 (60.00%)
+Functions with zero callers: 1/8 (12.50%), reachable functions: 5/8 (62.50%)
+Analysis time: 1708ms, memory usage: 428MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

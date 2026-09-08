@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:hftp.test.js (1)
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/hftp_0.0.6/hftp.test.js:8:19
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/hftp_0.0.6/hftp.test.js:16:17
+Analyzed packages: 1, modules: 1, functions: 7, code size main: 2KB, dependencies: 0KB
+Call edges function->function: 7, call->function: 7
+Calls with zero or one callee: 8/24 (33.33%), multiple: 0/24 (0.00%), native or external: 16/24 (66.67%)
+Functions with zero callers: 0/7 (0.00%), reachable functions: 7/7 (100.00%)
+Analysis time: 41ms, memory usage: 32MB (without --gc)
+Analysis errors: 2, warnings: 0

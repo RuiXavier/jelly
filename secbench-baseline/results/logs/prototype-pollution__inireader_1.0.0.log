@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:inireader.test.js (1)
+Analyzing module inireader@1.0.0:index.js (2)
+Analyzing module inireader@1.0.0:lib/inireaderinheritdefault.js (3)
+Analyzing module inireader@1.0.0:lib/inireadercore.js (4)
+Analyzed packages: 2, modules: 4, functions: 39, code size main: 1KB, dependencies: 22KB
+Call edges function->function: 35, call->function: 37
+Calls with zero or one callee: 36/122 (29.51%), multiple: 2/122 (1.64%), native or external: 84/122 (68.85%)
+Functions with zero callers: 11/39 (28.21%), reachable functions: 15/39 (38.46%)
+Analysis time: 92ms, memory usage: 44MB (without --gc)
+Analysis errors: 0, warnings: 12 (show all with --warnings-unsupported)

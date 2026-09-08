@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:cejs.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/cejs_2.0.20170212/cejs.test.js:3:23
+Analyzing module cejs@2.0.20170212:index.js (2)
+Analyzing module cejs@2.0.20170212:_for include/node.loader.js (3)
+Analyzed packages: 2, modules: 3, functions: 5, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 22/48 (45.83%), multiple: 0/48 (0.00%), native or external: 26/48 (54.17%)
+Functions with zero callers: 2/5 (40.00%), reachable functions: 3/5 (60.00%)
+Analysis time: 55ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

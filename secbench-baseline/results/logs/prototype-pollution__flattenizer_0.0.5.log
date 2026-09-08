@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:flattenizer.test.js (1)
+Analyzing module flattenizer@0.0.5:index.js (2)
+Analyzing module flattenizer@0.0.5:lib/flattenizer.min.js (3)
+Analyzed packages: 2, modules: 3, functions: 17, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 14, call->function: 17
+Calls with zero or one callee: 15/29 (51.72%), multiple: 2/29 (6.90%), native or external: 12/29 (41.38%)
+Functions with zero callers: 4/17 (23.53%), reachable functions: 8/17 (47.06%)
+Analysis time: 62ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

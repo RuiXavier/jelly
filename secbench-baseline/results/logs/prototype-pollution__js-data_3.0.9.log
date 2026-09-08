@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:js-data.test.js (1)
+Analyzing module js-data@3.0.9:dist/js-data.js (2)
+Analyzed packages: 2, modules: 2, functions: 586, code size main: 1KB, dependencies: 484KB
+Call edges function->function: 741, call->function: 898
+Calls with zero or one callee: 1204/1625 (74.09%), multiple: 35/1625 (2.15%), native or external: 386/1625 (23.75%)
+Functions with zero callers: 327/586 (55.80%), reachable functions: 80/586 (13.65%)
+Analysis time: 529ms, memory usage: 104MB (without --gc)
+Analysis errors: 0, warnings: 67 (show all with --warnings-unsupported)

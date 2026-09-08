@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:minimatch.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/minimatch_3.0.0/minimatch.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/minimatch_3.0.0/minimatch.test.js:3:23
+Analyzing module minimatch@3.0.0:minimatch.js (2)
+Analyzing module brace-expansion@1.1.18:index.js (3)
+Analyzing module concat-map@0.0.1:index.js (4)
+Analyzing module balanced-match@1.0.2:index.js (5)
+Analyzed packages: 5, modules: 5, functions: 54, code size main: 1KB, dependencies: 38KB
+Call edges function->function: 54, call->function: 86
+Calls with zero or one callee: 132/237 (55.70%), multiple: 1/237 (0.42%), native or external: 104/237 (43.88%)
+Functions with zero callers: 14/54 (25.93%), reachable functions: 2/54 (3.70%)
+Analysis time: 147ms, memory usage: 63MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

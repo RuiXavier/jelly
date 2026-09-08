@@ -1,0 +1,16 @@
+Analyzing module <anonymous>:class-transformer.test.js (1)
+Analyzing module class-transformer@0.1.1:index.js (2)
+Analyzing module class-transformer@0.1.1:ClassTransformer.js (3)
+Analyzing module class-transformer@0.1.1:metadata/MetadataStorage.js (4)
+Analyzing module class-transformer@0.1.1:decorators.js (5)
+Analyzing module class-transformer@0.1.1:TransformOperationExecutor.js (6)
+Analyzing module class-transformer@0.1.1:metadata/TypeMetadata.js (7)
+Analyzing module class-transformer@0.1.1:metadata/ExposeMetadata.js (8)
+Analyzing module class-transformer@0.1.1:metadata/ExcludeMetadata.js (9)
+Analyzing module class-transformer@0.1.1:metadata/TransformMetadata.js (10)
+Analyzed packages: 2, modules: 10, functions: 99, code size main: 1KB, dependencies: 31KB
+Call edges function->function: 97, call->function: 98
+Calls with zero or one callee: 113/167 (67.66%), multiple: 0/167 (0.00%), native or external: 54/167 (32.34%)
+Functions with zero callers: 27/99 (27.27%), reachable functions: 56/99 (56.57%)
+Analysis time: 127ms, memory usage: 52MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:ua-parser.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ua-parser-js_0.7.22/ua-parser.test.js:2:23
+Analyzing module ua-parser-js@0.7.22:src/ua-parser.js (2)
+Analyzed packages: 2, modules: 2, functions: 22, code size main: 1KB, dependencies: 41KB
+Call edges function->function: 28, call->function: 39
+Calls with zero or one callee: 29/46 (63.04%), multiple: 4/46 (8.70%), native or external: 13/46 (28.26%)
+Functions with zero callers: 3/22 (13.64%), reachable functions: 18/22 (81.82%)
+Analysis time: 145ms, memory usage: 63MB (without --gc)
+Analysis errors: 0, warnings: 10 (show all with --warnings-unsupported)

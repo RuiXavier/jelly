@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:node-srv.test.js (1)
+Analyzing module node-srv@2.0.0:lib/server.js (2)
+Analyzing module underscore@1.13.8:underscore-node.cjs (3)
+Analyzing module mime@1.6.0:mime.js (4)
+Analyzing module minimatch@3.1.5:minimatch.js (5)
+Analyzing module underscore@1.13.8:underscore-node-f.cjs (6)
+Analyzing module brace-expansion@1.1.18:index.js (7)
+Analyzing module concat-map@0.0.1:index.js (8)
+Analyzing module balanced-match@1.0.2:index.js (9)
+Analyzed packages: 8, modules: 9, functions: 303, code size main: 1KB, dependencies: 117KB
+Call edges function->function: 1046, call->function: 1275
+Calls with zero or one callee: 479/851 (56.29%), multiple: 77/851 (9.05%), native or external: 295/851 (34.67%)
+Functions with zero callers: 89/303 (29.37%), reachable functions: 124/303 (40.92%)
+Analysis time: 353ms, memory usage: 82MB (without --gc)
+Analysis errors: 0, warnings: 61 (show all with --warnings-unsupported)

@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:ts-dot-prop.test.js (1)
+Analyzing module ts-dot-prop@1.4.0:dist/index.js (2)
+Analyzing module ts-dot-prop@1.4.0:dist/src/index.js (3)
+Analyzing module ts-util-is@1.3.1:dist/index.js (4)
+Analyzing module ts-util-is@1.3.1:dist/src/index.js (5)
+Analyzed packages: 3, modules: 5, functions: 36, code size main: 1KB, dependencies: 11KB
+Call edges function->function: 19, call->function: 19
+Calls with zero or one callee: 44/71 (61.97%), multiple: 1/71 (1.41%), native or external: 26/71 (36.62%)
+Functions with zero callers: 21/36 (58.33%), reachable functions: 5/36 (13.89%)
+Analysis time: 82ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

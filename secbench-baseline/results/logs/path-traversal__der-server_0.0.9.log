@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:der-server.test.js (1)
+Analyzing module der-server@0.0.9:der-server.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 7, call->function: 7
+Calls with zero or one callee: 10/32 (31.25%), multiple: 0/32 (0.00%), native or external: 22/32 (68.75%)
+Functions with zero callers: 0/7 (0.00%), reachable functions: 7/7 (100.00%)
+Analysis time: 51ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

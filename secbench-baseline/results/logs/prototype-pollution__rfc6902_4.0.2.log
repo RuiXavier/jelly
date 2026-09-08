@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:rfc6902.test.js (1)
+Analyzing module rfc6902@4.0.2:index.js (2)
+Analyzing module rfc6902@4.0.2:pointer.js (3)
+Analyzing module rfc6902@4.0.2:patch.js (4)
+Analyzing module rfc6902@4.0.2:diff.js (5)
+Analyzing module rfc6902@4.0.2:util.js (6)
+Analyzed packages: 2, modules: 6, functions: 59, code size main: 1KB, dependencies: 30KB
+Call edges function->function: 96, call->function: 116
+Calls with zero or one callee: 120/185 (64.86%), multiple: 6/185 (3.24%), native or external: 59/185 (31.89%)
+Functions with zero callers: 8/59 (13.56%), reachable functions: 49/59 (83.05%)
+Analysis time: 113ms, memory usage: 42MB (without --gc)
+Analysis errors: 0, warnings: 19 (show all with --warnings-unsupported)

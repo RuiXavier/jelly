@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ps-kill.test.js (1)
+Analyzing module ps-kill@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 6/21 (28.57%), multiple: 0/21 (0.00%), native or external: 15/21 (71.43%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 43ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 0

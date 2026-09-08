@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:git-add-remote.test.js (1)
+Analyzing module git-add-remote@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 5, call->function: 7
+Calls with zero or one callee: 9/30 (30.00%), multiple: 0/30 (0.00%), native or external: 21/30 (70.00%)
+Functions with zero callers: 1/6 (16.67%), reachable functions: 5/6 (83.33%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:yargs-parser.test.js (1)
+Analyzing module yargs-parser@6.0.0:index.js (2)
+Analyzing module camelcase@4.1.0:index.js (3)
+Analyzing module yargs-parser@6.0.0:lib/tokenize-arg-string.js (4)
+Analyzed packages: 3, modules: 4, functions: 80, code size main: 1KB, dependencies: 25KB
+Call edges function->function: 106, call->function: 164
+Calls with zero or one callee: 182/341 (53.37%), multiple: 0/341 (0.00%), native or external: 159/341 (46.63%)
+Functions with zero callers: 5/80 (6.25%), reachable functions: 71/80 (88.75%)
+Analysis time: 133ms, memory usage: 56MB (without --gc)
+Analysis errors: 0, warnings: 61 (show all with --warnings-unsupported)

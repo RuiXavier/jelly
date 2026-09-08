@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:reduce-css-calc.test.js (1)
+Analyzing module reduce-css-calc@1.2.0:index.js (2)
+Analyzing module balanced-match@0.1.0:index.js (3)
+Analyzing module reduce-function-call@1.0.3:index.js (4)
+Analyzing module balanced-match@1.0.2:index.js (5)
+Analyzed packages: 5, modules: 5, functions: 15, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 16, call->function: 19
+Calls with zero or one callee: 42/76 (55.26%), multiple: 0/76 (0.00%), native or external: 34/76 (44.74%)
+Functions with zero callers: 1/15 (6.67%), reachable functions: 14/15 (93.33%)
+Analysis time: 80ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:mpath.test.js (1)
+Analyzing module mpath@0.4.1:index.js (2)
+Analyzing module mpath@0.4.1:lib/index.js (3)
+Analyzed packages: 2, modules: 3, functions: 7, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 8, call->function: 16
+Calls with zero or one callee: 27/54 (50.00%), multiple: 0/54 (0.00%), native or external: 27/54 (50.00%)
+Functions with zero callers: 2/7 (28.57%), reachable functions: 3/7 (42.86%)
+Analysis time: 71ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

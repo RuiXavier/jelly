@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:express-validators.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/express-validators_1.0.3/express-validators.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/express-validators_1.0.3/express-validators.test.js:3:23
+Analyzing module express-validators@1.0.3:src/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 42, code size main: 1KB, dependencies: 20KB
+Call edges function->function: 19, call->function: 26
+Calls with zero or one callee: 27/105 (25.71%), multiple: 0/105 (0.00%), native or external: 78/105 (74.29%)
+Functions with zero callers: 33/42 (78.57%), reachable functions: 1/42 (2.38%)
+Analysis time: 88ms, memory usage: 44MB (without --gc)
+Analysis errors: 0, warnings: 12 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:aws-sdk-shared-ini-file-loader.test.js (1)
+Analyzing module @aws-sdk/shared-ini-file-loader@1.0.0-rc.8:dist/cjs/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 11, code size main: 1KB, dependencies: 11KB
+Call edges function->function: 11, call->function: 15
+Calls with zero or one callee: 20/37 (54.05%), multiple: 0/37 (0.00%), native or external: 17/37 (45.95%)
+Functions with zero callers: 0/11 (0.00%), reachable functions: 11/11 (100.00%)
+Analysis time: 60ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:101.test.js (1)
+Analyzing module 101@1.0.0:set.js (2)
+Analyzing module 101@1.0.0:is-string.js (3)
+Analyzing module 101@1.0.0:is-object.js (4)
+Analyzing module keypather@1.10.2:index.js (5)
+Analyzing module 101@1.0.0:exists.js (6)
+Analyzed packages: 3, modules: 6, functions: 40, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 54, call->function: 74
+Calls with zero or one callee: 99/182 (54.40%), multiple: 0/182 (0.00%), native or external: 83/182 (45.60%)
+Functions with zero callers: 9/40 (22.50%), reachable functions: 26/40 (65.00%)
+Analysis time: 101ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 16 (show all with --warnings-unsupported)

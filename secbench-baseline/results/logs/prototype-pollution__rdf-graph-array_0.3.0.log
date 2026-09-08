@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:rdf-graph-array.test.js (1)
+Analyzing module rdf-graph-array@0.3.0:index.js (2)
+Analyzing module rdf-graph-abstract@0.3.0:index.js (3)
+Analyzing module rdf-normalize@0.3.0:index.js (4)
+Analyzing module rdf-normalize@0.3.0:jsonld-normalize.js (5)
+Analyzed packages: 4, modules: 5, functions: 97, code size main: 1KB, dependencies: 34KB
+Call edges function->function: 98, call->function: 112
+Calls with zero or one callee: 143/237 (60.34%), multiple: 3/237 (1.27%), native or external: 91/237 (38.40%)
+Functions with zero callers: 39/97 (40.21%), reachable functions: 7/97 (7.22%)
+Analysis time: 140ms, memory usage: 58MB (without --gc)
+Analysis errors: 0, warnings: 35 (show all with --warnings-unsupported)

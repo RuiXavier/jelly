@@ -1,0 +1,79 @@
+Analyzing module <anonymous>:jointjs.test.js (1)
+Analyzing module jointjs@2.2.1:dist/joint.min.js (2)
+Analyzing module backbone@1.3.3:backbone.js (3)
+Analyzing module lodash@4.17.11:lodash.js (4)
+Analyzing module jquery@3.3.1:dist/jquery.js (5)
+Analyzing module graphlib@2.1.5:index.js (6)
+Analyzing module dagre@0.8.2:index.js (7)
+Analyzing module underscore@1.13.8:underscore-node.cjs (8)
+Analyzing module graphlib@2.1.5:lib/index.js (9)
+Analyzing module graphlib@2.1.5:lib/json.js (10)
+Analyzing module graphlib@2.1.5:lib/alg/index.js (11)
+Analyzing module dagre@0.8.2:lib/graphlib.js (12)
+Analyzing module dagre@0.8.2:lib/layout.js (13)
+Analyzing module dagre@0.8.2:lib/debug.js (14)
+Analyzing module dagre@0.8.2:lib/util.js (15)
+Analyzing module dagre@0.8.2:lib/version.js (16)
+Analyzing module underscore@1.13.8:underscore-node-f.cjs (17)
+Analyzing module graphlib@2.1.5:lib/graph.js (18)
+Analyzing module graphlib@2.1.5:lib/version.js (19)
+Analyzing module graphlib@2.1.5:lib/lodash.js (20)
+Analyzing module graphlib@2.1.5:lib/alg/components.js (21)
+Analyzing module graphlib@2.1.5:lib/alg/dijkstra.js (22)
+Analyzing module graphlib@2.1.5:lib/alg/dijkstra-all.js (23)
+Analyzing module graphlib@2.1.5:lib/alg/find-cycles.js (24)
+Analyzing module graphlib@2.1.5:lib/alg/floyd-warshall.js (25)
+Analyzing module graphlib@2.1.5:lib/alg/is-acyclic.js (26)
+Analyzing module graphlib@2.1.5:lib/alg/postorder.js (27)
+Analyzing module graphlib@2.1.5:lib/alg/preorder.js (28)
+Analyzing module graphlib@2.1.5:lib/alg/prim.js (29)
+Analyzing module graphlib@2.1.5:lib/alg/tarjan.js (30)
+Analyzing module graphlib@2.1.5:lib/alg/topsort.js (31)
+Analyzing module dagre@0.8.2:lib/lodash.js (32)
+Analyzing module dagre@0.8.2:lib/acyclic.js (33)
+Analyzing module dagre@0.8.2:lib/normalize.js (34)
+Analyzing module dagre@0.8.2:lib/rank/index.js (35)
+Analyzing module dagre@0.8.2:lib/parent-dummy-chains.js (36)
+Analyzing module dagre@0.8.2:lib/nesting-graph.js (37)
+Analyzing module dagre@0.8.2:lib/add-border-segments.js (38)
+Analyzing module dagre@0.8.2:lib/coordinate-system.js (39)
+Analyzing module dagre@0.8.2:lib/order/index.js (40)
+Analyzing module dagre@0.8.2:lib/position/index.js (41)
+Analyzing module graphlib@2.1.5:lib/data/priority-queue.js (42)
+Analyzing module graphlib@2.1.5:lib/alg/dfs.js (43)
+Analyzing module dagre@0.8.2:lib/greedy-fas.js (44)
+Analyzing module dagre@0.8.2:lib/rank/util.js (45)
+Analyzing module dagre@0.8.2:lib/rank/feasible-tree.js (46)
+Analyzing module dagre@0.8.2:lib/rank/network-simplex.js (47)
+Analyzing module dagre@0.8.2:lib/order/init-order.js (48)
+Analyzing module dagre@0.8.2:lib/order/cross-count.js (49)
+Analyzing module dagre@0.8.2:lib/order/sort-subgraph.js (50)
+Analyzing module dagre@0.8.2:lib/order/build-layer-graph.js (51)
+Analyzing module dagre@0.8.2:lib/order/add-subgraph-constraints.js (52)
+Analyzing module dagre@0.8.2:lib/position/bk.js (53)
+Analyzing module dagre@0.8.2:lib/data/list.js (54)
+Analyzing module dagre@0.8.2:lib/order/barycenter.js (55)
+Analyzing module dagre@0.8.2:lib/order/resolve-conflicts.js (56)
+Analyzing module dagre@0.8.2:lib/order/sort.js (57)
+
+<--- Last few GCs --->
+
+[42814:0x557884c76000]    89526 ms: Scavenge (during sweeping) 8171.2 (8192.3) -> 8170.1 (8192.8) MB, pooled: 0.0 MB, 6.92 / 0.00 ms (average mu = 0.259, current mu = 0.196) allocation failure; 
+[42814:0x557884c76000]    91131 ms: Incremental Mark-Compact (reduce) 8175.3 (8196.3) -> 8171.9 (8192.1) MB, pooled: 0.0 MB, 1139.99 / 0.00 ms (+ 198.1 ms in 39 steps since start of marking, biggest step 5.4 ms, walltime since start of marking 1357 ms) (a
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x557879997a64  [node]
+ 2: 0x557879771fe1 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 3: 0x55787a84d20b  [node]
+ 4: 0x55787a84d2f5  [node]
+ 5: 0x55787aafd7ec  [node]
+ 6: 0x55787aafd938  [node]
+ 7: 0x55787ab126ed  [node]
+ 8: 0x55787aae6192  [node]
+ 9: 0x55787aae6280  [node]
+10: 0x55787aae6409  [node]
+11: 0x55787aabce82  [node]
+12: 0x55787af7ebcf  [node]
+13: 0x7ffa43e7ea36 
+timeout: the monitored command dumped core

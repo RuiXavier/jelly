@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:undefsafe.test.js (1)
+Analyzing module undefsafe@2.0.2:lib/undefsafe.js (2)
+Analyzed packages: 2, modules: 2, functions: 4, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 11/21 (52.38%), multiple: 0/21 (0.00%), native or external: 10/21 (47.62%)
+Functions with zero callers: 0/4 (0.00%), reachable functions: 4/4 (100.00%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

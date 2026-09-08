@@ -1,0 +1,16 @@
+Analyzing module <anonymous>:prototype.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/prototype_0.0.5/prototype.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/prototype_0.0.5/prototype.test.js:3:23
+Analyzing module prototype@v0.0.5:lib/String.js (2)
+Analyzing module prototype@v0.0.5:lib/Prototype.js (3)
+Analyzing module prototype@v0.0.5:lib/Object.js (4)
+Analyzing module prototype@v0.0.5:lib/Class.js (5)
+Analyzing module prototype@v0.0.5:lib/Function.js (6)
+Analyzing module prototype@v0.0.5:lib/Date.js (7)
+Analyzing module prototype@v0.0.5:lib/RegExp.js (8)
+Analyzed packages: 2, modules: 8, functions: 94, code size main: 1KB, dependencies: 19KB
+Call edges function->function: 31, call->function: 33
+Calls with zero or one callee: 159/244 (65.16%), multiple: 0/244 (0.00%), native or external: 85/244 (34.84%)
+Functions with zero callers: 74/94 (78.72%), reachable functions: 8/94 (8.51%)
+Analysis time: 115ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

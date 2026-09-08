@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:charset.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/charset_1.0.0/charset.test.js:2:23
+Analyzing module charset@1.0.0:index.js (2)
+Analyzing module charset@1.0.0:lib/charset.js (3)
+Analyzed packages: 2, modules: 3, functions: 3, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 7/14 (50.00%), multiple: 0/14 (0.00%), native or external: 7/14 (50.00%)
+Functions with zero callers: 1/3 (33.33%), reachable functions: 1/3 (33.33%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 1

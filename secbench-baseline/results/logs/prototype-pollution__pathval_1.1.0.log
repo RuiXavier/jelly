@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:pathval.test.js (1)
+Analyzing module pathval@1.1.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 8, call->function: 9
+Calls with zero or one callee: 13/21 (61.90%), multiple: 0/21 (0.00%), native or external: 8/21 (38.10%)
+Functions with zero callers: 2/9 (22.22%), reachable functions: 4/9 (44.44%)
+Analysis time: 56ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 6 (show all with --warnings-unsupported)

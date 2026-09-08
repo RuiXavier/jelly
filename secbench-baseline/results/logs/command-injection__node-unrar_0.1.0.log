@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-unrar.test.js (1)
+Analyzing module node-unrar@0.1.0:lib/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 6, call->function: 7
+Calls with zero or one callee: 11/29 (37.93%), multiple: 0/29 (0.00%), native or external: 18/29 (62.07%)
+Functions with zero callers: 2/8 (25.00%), reachable functions: 6/8 (75.00%)
+Analysis time: 48ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

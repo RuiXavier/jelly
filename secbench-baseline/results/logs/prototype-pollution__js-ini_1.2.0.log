@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:js-ini.test.js (1)
+Analyzing module js-ini@1.2.0:lib/index.js (2)
+Analyzing module js-ini@1.2.0:lib/errors.js (3)
+Analyzing module js-ini@1.2.0:lib/parse.js (4)
+Analyzing module js-ini@1.2.0:lib/stringify.js (5)
+Analyzed packages: 2, modules: 5, functions: 7, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 5, call->function: 7
+Calls with zero or one callee: 19/58 (32.76%), multiple: 0/58 (0.00%), native or external: 39/58 (67.24%)
+Functions with zero callers: 2/7 (28.57%), reachable functions: 2/7 (28.57%)
+Analysis time: 76ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

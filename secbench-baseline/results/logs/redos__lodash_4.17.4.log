@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:lodash.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/lodash_4.17.4/lodash.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/lodash_4.17.4/lodash.test.js:3:23
+Analyzing module lodash@4.17.4:lodash.js (2)
+Analyzed packages: 2, modules: 2, functions: 690, code size main: 1KB, dependencies: 527KB
+Call edges function->function: 7066, call->function: 10297
+Calls with zero or one callee: 1185/1793 (66.09%), multiple: 358/1793 (19.97%), native or external: 250/1793 (13.94%)
+Functions with zero callers: 183/690 (26.52%), reachable functions: 430/690 (62.32%)
+Analysis time: 1708ms, memory usage: 301MB (without --gc)
+Analysis errors: 0, warnings: 163 (show all with --warnings-unsupported)

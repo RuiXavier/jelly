@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:diskusage-ng.test.js (1)
+Analyzing module diskusage-ng@0.2.6:index.js (2)
+Analyzing module diskusage-ng@0.2.6:lib/win32.js (3)
+Analyzing module diskusage-ng@0.2.6:lib/posix.js (4)
+Analyzing module diskusage-ng@0.2.6:lib/utils.js (5)
+Analyzed packages: 2, modules: 5, functions: 19, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 23, call->function: 31
+Calls with zero or one callee: 30/74 (40.54%), multiple: 1/74 (1.35%), native or external: 43/74 (58.11%)
+Functions with zero callers: 0/19 (0.00%), reachable functions: 19/19 (100.00%)
+Analysis time: 74ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 0

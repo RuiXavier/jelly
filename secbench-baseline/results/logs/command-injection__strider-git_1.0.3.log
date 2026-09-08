@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:strider-git.test.js (1)
+Analyzing module strider-git@1.0.3:lib/index.js (2)
+Analyzing module debug@2.6.9:src/index.js (3)
+Analyzing module shell-escape@0.0.1:shell-escape.js (4)
+Analyzing module strider-docker-gitane-camo@0.0.1:index.js (5)
+Analyzing module gitane@0.3.2:index.js (6)
+Analyzing module debug@2.6.9:src/browser.js (7)
+Analyzing module debug@2.6.9:src/node.js (8)
+Analyzing module step@0.0.6:lib/step.js (9)
+Analyzing module debug@2.6.9:src/debug.js (10)
+Analyzing module ms@2.0.0:index.js (11)
+Analyzed packages: 8, modules: 11, functions: 88, code size main: 1KB, dependencies: 33KB
+Call edges function->function: 90, call->function: 97
+Calls with zero or one callee: 114/270 (42.22%), multiple: 12/270 (4.44%), native or external: 144/270 (53.33%)
+Functions with zero callers: 26/88 (29.55%), reachable functions: 34/88 (38.64%)
+Analysis time: 146ms, memory usage: 56MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

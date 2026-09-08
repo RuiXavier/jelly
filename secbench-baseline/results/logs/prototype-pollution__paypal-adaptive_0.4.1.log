@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:paypal-adaptive.test.js (1)
+Analyzing module paypal-adaptive@0.4.1:lib/paypal-adaptive.js (2)
+Analyzed packages: 2, modules: 2, functions: 22, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 18, call->function: 18
+Calls with zero or one callee: 41/71 (57.75%), multiple: 0/71 (0.00%), native or external: 30/71 (42.25%)
+Functions with zero callers: 10/22 (45.45%), reachable functions: 5/22 (22.73%)
+Analysis time: 72ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

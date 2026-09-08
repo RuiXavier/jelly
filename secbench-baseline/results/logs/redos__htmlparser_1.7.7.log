@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:htmlparser.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/htmlparser_1.7.7/htmlparser.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/htmlparser_1.7.7/htmlparser.test.js:3:23
+Analyzing module htmlparser@1.7.7:lib/htmlparser.js (2)
+Analyzed packages: 2, modules: 2, functions: 44, code size main: 1KB, dependencies: 30KB
+Call edges function->function: 54, call->function: 84
+Calls with zero or one callee: 99/170 (58.24%), multiple: 0/170 (0.00%), native or external: 71/170 (41.76%)
+Functions with zero callers: 7/44 (15.91%), reachable functions: 10/44 (22.73%)
+Analysis time: 129ms, memory usage: 56MB (without --gc)
+Analysis errors: 0, warnings: 6 (show all with --warnings-unsupported)

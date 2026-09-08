@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:safe-flat.test.js (1)
+Analyzing module safe-flat@2.0.0:src/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 10, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 11, call->function: 11
+Calls with zero or one callee: 14/24 (58.33%), multiple: 0/24 (0.00%), native or external: 10/24 (41.67%)
+Functions with zero callers: 3/10 (30.00%), reachable functions: 5/10 (50.00%)
+Analysis time: 50ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:asciitable.test.js (1)
+Analyzing module asciitable.js@1.0.2:asciitable.umd.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 10, call->function: 16
+Calls with zero or one callee: 21/45 (46.67%), multiple: 0/45 (0.00%), native or external: 24/45 (53.33%)
+Functions with zero callers: 0/9 (0.00%), reachable functions: 9/9 (100.00%)
+Analysis time: 64ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 10 (show all with --warnings-unsupported)

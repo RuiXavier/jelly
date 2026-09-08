@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:tough-cookie.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/tough-cookie_2.3.2/tough-cookie.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/tough-cookie_2.3.2/tough-cookie.test.js:3:23
+Analyzing module tough-cookie@2.3.2:lib/cookie.js (2)
+Analyzing module tough-cookie@2.3.2:lib/pubsuffix.js (3)
+Analyzing module tough-cookie@2.3.2:lib/store.js (4)
+Analyzing module tough-cookie@2.3.2:lib/memstore.js (5)
+Analyzing module tough-cookie@2.3.2:lib/pathMatch.js (6)
+Analyzing module tough-cookie@2.3.2:lib/permuteDomain.js (7)
+Analyzed packages: 2, modules: 7, functions: 89, code size main: 1KB, dependencies: 196KB
+Call edges function->function: 58, call->function: 64
+Calls with zero or one callee: 126/302 (41.72%), multiple: 3/302 (0.99%), native or external: 173/302 (57.28%)
+Functions with zero callers: 52/89 (58.43%), reachable functions: 6/89 (6.74%)
+Analysis time: 269ms, memory usage: 75MB (without --gc)
+Analysis errors: 0, warnings: 18 (show all with --warnings-unsupported)

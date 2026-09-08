@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:deep-extend.test.js (1)
+Analyzing module deep-extend@0.5.0:lib/deep-extend.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 12, call->function: 13
+Calls with zero or one callee: 15/32 (46.88%), multiple: 0/32 (0.00%), native or external: 17/32 (53.13%)
+Functions with zero callers: 1/8 (12.50%), reachable functions: 2/8 (25.00%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

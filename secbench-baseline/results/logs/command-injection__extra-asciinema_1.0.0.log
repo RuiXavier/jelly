@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:extra-asciinema.test.js (1)
+Analyzing module extra-asciinema@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 21, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 16, call->function: 16
+Calls with zero or one callee: 29/77 (37.66%), multiple: 0/77 (0.00%), native or external: 48/77 (62.34%)
+Functions with zero callers: 7/21 (33.33%), reachable functions: 3/21 (14.29%)
+Analysis time: 73ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

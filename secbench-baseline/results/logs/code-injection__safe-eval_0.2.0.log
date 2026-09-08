@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:safe-eval.test.js (1)
+Analyzing module safe-eval@0.2.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 3/14 (21.43%), multiple: 0/14 (0.00%), native or external: 11/14 (78.57%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 41ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

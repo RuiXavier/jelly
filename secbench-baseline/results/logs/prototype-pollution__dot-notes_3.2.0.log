@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:dot-notes.test.js (1)
+Analyzing module dot-notes@3.2.0:index.js (2)
+Analyzing module dot-notes@3.2.0:lib/create.js (3)
+Analyzing module dot-notes@3.2.0:lib/escape.js (4)
+Analyzing module dot-notes@3.2.0:lib/escaped.js (5)
+Analyzing module dot-notes@3.2.0:lib/get.js (6)
+Analyzing module dot-notes@3.2.0:lib/join.js (7)
+Analyzing module dot-notes@3.2.0:lib/keys.js (8)
+Analyzing module dot-notes@3.2.0:lib/recurse.js (9)
+Analyzing module dot-notes@3.2.0:lib/exception.js (10)
+Analyzing module dot-notes@3.2.0:lib/patterns.js (11)
+Analyzed packages: 2, modules: 11, functions: 11, code size main: 1KB, dependencies: 11KB
+Call edges function->function: 10, call->function: 15
+Calls with zero or one callee: 26/64 (40.63%), multiple: 0/64 (0.00%), native or external: 38/64 (59.38%)
+Functions with zero callers: 4/11 (36.36%), reachable functions: 5/11 (45.45%)
+Analysis time: 83ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

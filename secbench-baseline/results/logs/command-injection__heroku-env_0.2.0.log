@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:heroku-env.test.js (1)
+Analyzing module heroku-env@0.2.0:index.js (2)
+Analyzing module parse-database-url@0.2.2:lib/parse-database-url.js (3)
+Analyzing module heroku-env@0.2.0:lib/get.js (4)
+Analyzed packages: 3, modules: 4, functions: 10, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 10, call->function: 13
+Calls with zero or one callee: 18/47 (38.30%), multiple: 0/47 (0.00%), native or external: 29/47 (61.70%)
+Functions with zero callers: 0/10 (0.00%), reachable functions: 10/10 (100.00%)
+Analysis time: 61ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

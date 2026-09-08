@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:getsetdeep.test.js (1)
+Analyzing module getsetdeep@4.15.0:edition-esnext/index.js (2)
+Analyzing module typechecker@7.18.0:edition-es2019/index.js (3)
+Analyzed packages: 3, modules: 3, functions: 31, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 25, call->function: 27
+Calls with zero or one callee: 33/56 (58.93%), multiple: 0/56 (0.00%), native or external: 23/56 (41.07%)
+Functions with zero callers: 19/31 (61.29%), reachable functions: 8/31 (25.81%)
+Analysis time: 75ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

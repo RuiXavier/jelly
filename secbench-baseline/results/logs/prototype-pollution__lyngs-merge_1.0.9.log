@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:lyngs-merge.test.js (1)
+Analyzing module @lyngs/merge@1.0.9:dist/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 271, code size main: 1KB, dependencies: 92KB
+Call edges function->function: 1565, call->function: 2064
+Calls with zero or one callee: 467/746 (62.60%), multiple: 98/746 (13.14%), native or external: 181/746 (24.26%)
+Functions with zero callers: 28/271 (10.33%), reachable functions: 237/271 (87.45%)
+Analysis time: 2707ms, memory usage: 689MB (without --gc)
+Analysis errors: 0, warnings: 149 (show all with --warnings-unsupported)

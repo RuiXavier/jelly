@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:objutil.test.js (1)
+Analyzing module objutil@2.17.3:dist/objutil.cjs.js (2)
+Analyzed packages: 2, modules: 2, functions: 40, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 53, call->function: 62
+Calls with zero or one callee: 61/93 (65.59%), multiple: 1/93 (1.08%), native or external: 31/93 (33.33%)
+Functions with zero callers: 14/40 (35.00%), reachable functions: 19/40 (47.50%)
+Analysis time: 83ms, memory usage: 40MB (without --gc)
+Analysis errors: 0, warnings: 27 (show all with --warnings-unsupported)

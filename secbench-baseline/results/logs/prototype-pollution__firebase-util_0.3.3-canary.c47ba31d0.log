@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:firebase-util.test.js (1)
+Analyzing module @firebase/util@0.3.3:dist/index.node.cjs.js (2)
+Analyzing module tslib@1.14.1:tslib.js (3)
+Analyzed packages: 3, modules: 3, functions: 169, code size main: 1KB, dependencies: 76KB
+Call edges function->function: 101, call->function: 141
+Calls with zero or one callee: 202/340 (59.41%), multiple: 3/340 (0.88%), native or external: 135/340 (39.71%)
+Functions with zero callers: 91/169 (53.85%), reachable functions: 12/169 (7.10%)
+Analysis time: 196ms, memory usage: 63MB (without --gc)
+Analysis errors: 0, warnings: 28 (show all with --warnings-unsupported)

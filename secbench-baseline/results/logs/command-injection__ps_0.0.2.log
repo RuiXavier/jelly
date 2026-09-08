@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ps.test.js (1)
+Analyzing module ps@0.0.2:lib/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 12, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 11, call->function: 13
+Calls with zero or one callee: 19/41 (46.34%), multiple: 0/41 (0.00%), native or external: 22/41 (53.66%)
+Functions with zero callers: 1/12 (8.33%), reachable functions: 11/12 (91.67%)
+Analysis time: 53ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 0

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:eivindfjeldstad-dot.test.js (1)
+Analyzing module eivindfjeldstad-dot@0.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 2, call->function: 2
+Calls with zero or one callee: 6/11 (54.55%), multiple: 0/11 (0.00%), native or external: 5/11 (45.45%)
+Functions with zero callers: 1/3 (33.33%), reachable functions: 2/3 (66.67%)
+Analysis time: 44ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

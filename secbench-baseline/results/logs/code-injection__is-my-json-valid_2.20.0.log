@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:is-my-json-valid.test.js (1)
+Analyzing module is-my-json-valid@2.20.0:index.js (2)
+Analyzing module sleep@6.3.0:index.js (3)
+Error: Unable to resolve module './build/Release/node_sleep.node' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/code-injection/is-my-json-valid_2.20.0/node_modules/sleep/index.js:1:13
+Analyzing module generate-object-property@1.2.0:index.js (4)
+Analyzing module generate-function@2.3.1:index.js (5)
+Analyzing module jsonpointer@4.1.0:jsonpointer.js (6)
+Analyzing module xtend@4.0.2:immutable.js (7)
+Analyzing module is-my-json-valid@2.20.0:formats.js (8)
+Analyzing module is-property@1.0.2:is-property.js (9)
+Analyzing module is-my-ip-valid@1.0.1:index.js (10)
+Analyzed packages: 9, modules: 10, functions: 82, code size main: 1KB, dependencies: 39KB
+Call edges function->function: 96, call->function: 266
+Calls with zero or one callee: 271/420 (64.52%), multiple: 1/420 (0.24%), native or external: 148/420 (35.24%)
+Functions with zero callers: 26/82 (31.71%), reachable functions: 50/82 (60.98%)
+Analysis time: 156ms, memory usage: 62MB (without --gc)
+Analysis errors: 1, warnings: 24 (show all with --warnings-unsupported)

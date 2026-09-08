@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:set-getter.test.js (1)
+Analyzing module set-getter@0.1.0:index.js (2)
+Analyzing module to-object-path@0.3.0:index.js (3)
+Analyzing module kind-of@3.2.2:index.js (4)
+Analyzing module is-buffer@1.1.6:index.js (5)
+Analyzed packages: 5, modules: 5, functions: 11, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 13, call->function: 14
+Calls with zero or one callee: 23/38 (60.53%), multiple: 0/38 (0.00%), native or external: 15/38 (39.47%)
+Functions with zero callers: 1/11 (9.09%), reachable functions: 10/11 (90.91%)
+Analysis time: 65ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

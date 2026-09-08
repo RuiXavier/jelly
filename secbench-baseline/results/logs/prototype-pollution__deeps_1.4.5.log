@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:deeps.test.js (1)
+Analyzing module deeps@1.4.5:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 17, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 30, call->function: 43
+Calls with zero or one callee: 50/71 (70.42%), multiple: 0/71 (0.00%), native or external: 21/71 (29.58%)
+Functions with zero callers: 3/17 (17.65%), reachable functions: 3/17 (17.65%)
+Analysis time: 78ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 14 (show all with --warnings-unsupported)

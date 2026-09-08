@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:extend.test.js (1)
+Analyzing module extend@3.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 4, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 5, call->function: 7
+Calls with zero or one callee: 12/19 (63.16%), multiple: 0/19 (0.00%), native or external: 7/19 (36.84%)
+Functions with zero callers: 0/4 (0.00%), reachable functions: 4/4 (100.00%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

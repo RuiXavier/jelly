@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:easy-node-server.test.js (1)
+Analyzing module easy-node-server@1.2.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 11, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 11, call->function: 11
+Calls with zero or one callee: 15/57 (26.32%), multiple: 0/57 (0.00%), native or external: 42/57 (73.68%)
+Functions with zero callers: 0/11 (0.00%), reachable functions: 11/11 (100.00%)
+Analysis time: 58ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 0

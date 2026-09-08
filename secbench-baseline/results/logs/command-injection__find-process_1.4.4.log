@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:find-process.test.js (1)
+Analyzing module find-process@1.4.4:index.js (2)
+Analyzing module find-process@1.4.4:lib/find.js (3)
+Analyzing module find-process@1.4.4:lib/find_pid.js (4)
+Analyzing module find-process@1.4.4:lib/find_process.js (5)
+Analyzing module find-process@1.4.4:lib/utils.js (6)
+Analyzed packages: 2, modules: 6, functions: 71, code size main: 1KB, dependencies: 17KB
+Call edges function->function: 79, call->function: 79
+Calls with zero or one callee: 130/231 (56.28%), multiple: 3/231 (1.30%), native or external: 98/231 (42.42%)
+Functions with zero callers: 12/71 (16.90%), reachable functions: 6/71 (8.45%)
+Analysis time: 107ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

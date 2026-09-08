@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:aurelia-path.test.js (1)
+Analyzing module aurelia-path@1.1.0:dist/commonjs/aurelia-path.js (2)
+Analyzed packages: 2, modules: 2, functions: 12, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 12, call->function: 16
+Calls with zero or one callee: 36/71 (50.70%), multiple: 3/71 (4.23%), native or external: 32/71 (45.07%)
+Functions with zero callers: 3/12 (25.00%), reachable functions: 6/12 (50.00%)
+Analysis time: 73ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

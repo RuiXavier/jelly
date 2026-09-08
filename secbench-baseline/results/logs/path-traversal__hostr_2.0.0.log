@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:hostr.test.js (1)
+Error: Unable to resolve module 'sleep' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/hostr_2.0.0/hostr.test.js:15:17
+Analyzed packages: 1, modules: 1, functions: 6, code size main: 1KB, dependencies: 0KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 7/22 (31.82%), multiple: 0/22 (0.00%), native or external: 15/22 (68.18%)
+Functions with zero callers: 0/6 (0.00%), reachable functions: 6/6 (100.00%)
+Analysis time: 40ms, memory usage: 32MB (without --gc)
+Analysis errors: 1, warnings: 0

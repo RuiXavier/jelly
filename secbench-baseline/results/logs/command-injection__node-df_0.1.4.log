@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:node-df.test.js (1)
+Analyzing module node-df@0.1.4:lib/index.js (2)
+Analyzing module node-df@0.1.4:lib/parse.js (3)
+Analyzing module node-df@0.1.4:lib/format.js (4)
+Analyzing module node-df@0.1.4:lib/calcMultiplier.js (5)
+Analyzed packages: 2, modules: 5, functions: 10, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 10, call->function: 17
+Calls with zero or one callee: 15/62 (24.19%), multiple: 3/62 (4.84%), native or external: 44/62 (70.97%)
+Functions with zero callers: 0/10 (0.00%), reachable functions: 10/10 (100.00%)
+Analysis time: 66ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

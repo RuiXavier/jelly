@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:starfruit.test.js (1)
+Analyzing module starfruit@0.2.2:lib/index.js (2)
+Analyzing module sleep@6.3.0:index.js (3)
+Error: Unable to resolve module './build/Release/node_sleep.node' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/path-traversal/starfruit_0.2.2/node_modules/sleep/index.js:1:13
+Analyzing module starfruit@0.2.2:lib/server.js (4)
+Analyzing module starfruit@0.2.2:lib/controller.js (5)
+Analyzed packages: 3, modules: 5, functions: 65, code size main: 1KB, dependencies: 16KB
+Call edges function->function: 36, call->function: 37
+Calls with zero or one callee: 82/204 (40.20%), multiple: 1/204 (0.49%), native or external: 121/204 (59.31%)
+Functions with zero callers: 32/65 (49.23%), reachable functions: 7/65 (10.77%)
+Analysis time: 107ms, memory usage: 40MB (without --gc)
+Analysis errors: 1, warnings: 8 (show all with --warnings-unsupported)

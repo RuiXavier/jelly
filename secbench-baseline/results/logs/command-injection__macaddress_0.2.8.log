@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:macaddress.test.js (1)
+Analyzing module macaddress@0.2.8:index.js (2)
+Analyzing module macaddress@0.2.8:lib/windows.js (3)
+Analyzing module macaddress@0.2.8:lib/linux.js (4)
+Analyzing module macaddress@0.2.8:lib/unix.js (5)
+Analyzed packages: 2, modules: 5, functions: 22, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 24, call->function: 30
+Calls with zero or one callee: 37/78 (47.44%), multiple: 1/78 (1.28%), native or external: 40/78 (51.28%)
+Functions with zero callers: 1/22 (4.55%), reachable functions: 14/22 (63.64%)
+Analysis time: 78ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 10 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:xopen.test.js (1)
+Analyzing module xopen@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 10/22 (45.45%), multiple: 0/22 (0.00%), native or external: 12/22 (54.55%)
+Functions with zero callers: 0/6 (0.00%), reachable functions: 6/6 (100.00%)
+Analysis time: 45ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

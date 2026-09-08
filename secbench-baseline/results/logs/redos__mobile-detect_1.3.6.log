@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:mobile-detect.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/mobile-detect_1.3.6/mobile-detect.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/mobile-detect_1.3.6/mobile-detect.test.js:3:23
+Analyzing module mobile-detect@1.3.6:mobile-detect.js (2)
+Analyzed packages: 2, modules: 2, functions: 38, code size main: 1KB, dependencies: 67KB
+Call edges function->function: 36, call->function: 45
+Calls with zero or one callee: 46/146 (31.51%), multiple: 3/146 (2.05%), native or external: 97/146 (66.44%)
+Functions with zero callers: 12/38 (31.58%), reachable functions: 9/38 (23.68%)
+Analysis time: 94ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 9 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:eslint-fixer.test.js (1)
+Analyzing module eslint-fixer@0.1.5:index.js (2)
+Analyzing module p-wait-for@1.0.0:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 17, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 19, call->function: 19
+Calls with zero or one callee: 26/47 (55.32%), multiple: 0/47 (0.00%), native or external: 21/47 (44.68%)
+Functions with zero callers: 0/17 (0.00%), reachable functions: 17/17 (100.00%)
+Analysis time: 60ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

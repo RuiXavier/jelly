@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:getobject.test.js (1)
+Analyzing module getobject@0.1.0:lib/getobject.js (2)
+Analyzed packages: 2, modules: 2, functions: 6, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 7, call->function: 7
+Calls with zero or one callee: 15/20 (75.00%), multiple: 0/20 (0.00%), native or external: 5/20 (25.00%)
+Functions with zero callers: 2/6 (33.33%), reachable functions: 4/6 (66.67%)
+Analysis time: 47ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

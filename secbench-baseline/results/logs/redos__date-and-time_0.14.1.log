@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:date-and-time.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/date-and-time_0.14.1/date-and-time.test.js:2:23
+Analyzing module date-and-time@0.14.1:date-and-time.js (2)
+Analyzed packages: 2, modules: 2, functions: 82, code size main: 1KB, dependencies: 18KB
+Call edges function->function: 23, call->function: 26
+Calls with zero or one callee: 89/129 (68.99%), multiple: 0/129 (0.00%), native or external: 40/129 (31.01%)
+Functions with zero callers: 64/82 (78.05%), reachable functions: 7/82 (8.54%)
+Analysis time: 99ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

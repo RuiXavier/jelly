@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:im-metadata.test.js (1)
+Analyzing module im-metadata@3.0.1:index.js (2)
+Analyzing module filesize-parser@1.5.2:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 11, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 11, call->function: 13
+Calls with zero or one callee: 22/57 (38.60%), multiple: 0/57 (0.00%), native or external: 35/57 (61.40%)
+Functions with zero callers: 0/11 (0.00%), reachable functions: 11/11 (100.00%)
+Analysis time: 74ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

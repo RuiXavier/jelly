@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:lodash.test.js (1)
+Analyzing module lodash@4.17.11:lodash.js (2)
+Analyzed packages: 2, modules: 2, functions: 688, code size main: 1KB, dependencies: 528KB
+Call edges function->function: 7391, call->function: 10959
+Calls with zero or one callee: 1180/1796 (65.70%), multiple: 365/1796 (20.32%), native or external: 251/1796 (13.98%)
+Functions with zero callers: 180/688 (26.16%), reachable functions: 433/688 (62.94%)
+Analysis time: 1764ms, memory usage: 238MB (without --gc)
+Analysis errors: 0, warnings: 164 (show all with --warnings-unsupported)

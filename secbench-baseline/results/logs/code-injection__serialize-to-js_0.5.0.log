@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:serialize-to-js.test.js (1)
+Analyzing module serialize-to-js@0.5.0:lib/index.js (2)
+Analyzing module serialize-to-js@0.5.0:lib/serialize.js (3)
+Analyzing module serialize-to-js@0.5.0:lib/serializeToModule.js (4)
+Analyzing module serialize-to-js@0.5.0:lib/deserialize.js (5)
+Analyzing module serialize-to-js@0.5.0:lib/internal/utils.js (6)
+Analyzing module serialize-to-js@0.5.0:lib/internal/reference.js (7)
+Analyzing module js-beautify@1.6.14:js/index.js (8)
+Analyzing module js-beautify@1.6.14:js/lib/beautify.js (9)
+Analyzing module js-beautify@1.6.14:js/lib/beautify-css.js (10)
+Analyzing module js-beautify@1.6.14:js/lib/beautify-html.js (11)
+Analyzed packages: 3, modules: 11, functions: 181, code size main: 2KB, dependencies: 200KB
+Call edges function->function: 337, call->function: 638
+Calls with zero or one callee: 700/970 (72.16%), multiple: 1/970 (0.10%), native or external: 269/970 (27.73%)
+Functions with zero callers: 25/181 (13.81%), reachable functions: 4/181 (2.21%)
+Analysis time: 325ms, memory usage: 78MB (without --gc)
+Analysis errors: 0, warnings: 37 (show all with --warnings-unsupported)

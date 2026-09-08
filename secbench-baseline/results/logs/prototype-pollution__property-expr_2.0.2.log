@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:property-expr.test.js (1)
+Analyzing module property-expr@2.0.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 20, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 24, call->function: 26
+Calls with zero or one callee: 29/44 (65.91%), multiple: 1/44 (2.27%), native or external: 14/44 (31.82%)
+Functions with zero callers: 5/20 (25.00%), reachable functions: 10/20 (50.00%)
+Analysis time: 61ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

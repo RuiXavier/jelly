@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:scp.test.js (1)
+Analyzing module scp@0.0.3:scp.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 9/26 (34.62%), multiple: 0/26 (0.00%), native or external: 17/26 (65.38%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 5/7 (71.43%)
+Analysis time: 49ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 0

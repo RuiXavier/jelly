@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:basic-static.test.js (1)
+Analyzing module basic-static@2.0.2:basic-static.js (2)
+Analyzing module mime@2.6.0:index.js (3)
+Analyzing module mime@2.6.0:Mime.js (4)
+Analyzing module mime@2.6.0:types/standard.js (5)
+Analyzing module mime@2.6.0:types/other.js (6)
+Analyzed packages: 3, modules: 6, functions: 23, code size main: 1KB, dependencies: 43KB
+Call edges function->function: 26, call->function: 35
+Calls with zero or one callee: 36/105 (34.29%), multiple: 4/105 (3.81%), native or external: 65/105 (61.90%)
+Functions with zero callers: 1/23 (4.35%), reachable functions: 22/23 (95.65%)
+Analysis time: 139ms, memory usage: 65MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

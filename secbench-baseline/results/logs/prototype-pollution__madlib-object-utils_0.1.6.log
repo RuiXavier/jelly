@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:madlib-object-utils.test.js (1)
+Analyzing module madlib-object-utils@0.1.6:lib/utils.js (2)
+Analyzed packages: 2, modules: 2, functions: 8, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 6, call->function: 7
+Calls with zero or one callee: 17/23 (73.91%), multiple: 0/23 (0.00%), native or external: 6/23 (26.09%)
+Functions with zero callers: 2/8 (25.00%), reachable functions: 6/8 (75.00%)
+Analysis time: 53ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

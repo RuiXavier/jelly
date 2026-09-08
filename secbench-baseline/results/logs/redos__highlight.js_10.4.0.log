@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:highlight.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/highlight.js_10.4.0/highlight.test.js:2:23
+Analyzing module highlight.js@10.4.0:lib/core.js (2)
+Analyzing module highlight.js@10.4.0:lib/languages/r.js (3)
+Analyzed packages: 2, modules: 3, functions: 146, code size main: 1KB, dependencies: 72KB
+Call edges function->function: 168, call->function: 189
+Calls with zero or one callee: 233/353 (66.01%), multiple: 3/353 (0.85%), native or external: 117/353 (33.14%)
+Functions with zero callers: 34/146 (23.29%), reachable functions: 15/146 (10.27%)
+Analysis time: 182ms, memory usage: 52MB (without --gc)
+Analysis errors: 0, warnings: 17 (show all with --warnings-unsupported)

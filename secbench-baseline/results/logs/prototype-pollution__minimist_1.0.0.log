@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:minimist.test.js (1)
+Analyzing module minimist@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 19, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 23, call->function: 34
+Calls with zero or one callee: 46/93 (49.46%), multiple: 0/93 (0.00%), native or external: 47/93 (50.54%)
+Functions with zero callers: 1/19 (5.26%), reachable functions: 18/19 (94.74%)
+Analysis time: 72ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 34 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:npm-help.test.js (1)
+Analyzing module npm-help@1.0.0:index.js (2)
+Analyzing module semver@5.7.2:semver.js (3)
+Analyzed packages: 3, modules: 3, functions: 95, code size main: 1KB, dependencies: 41KB
+Call edges function->function: 137, call->function: 195
+Calls with zero or one callee: 203/290 (70.00%), multiple: 31/290 (10.69%), native or external: 56/290 (19.31%)
+Functions with zero callers: 51/95 (53.68%), reachable functions: 6/95 (6.32%)
+Analysis time: 162ms, memory usage: 47MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

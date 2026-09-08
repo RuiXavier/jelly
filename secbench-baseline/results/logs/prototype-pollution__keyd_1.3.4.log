@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:keyd.test.js (1)
+Analyzing module keyd@1.3.4:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 25, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 33, call->function: 36
+Calls with zero or one callee: 37/64 (57.81%), multiple: 0/64 (0.00%), native or external: 27/64 (42.19%)
+Functions with zero callers: 9/25 (36.00%), reachable functions: 6/25 (24.00%)
+Analysis time: 73ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

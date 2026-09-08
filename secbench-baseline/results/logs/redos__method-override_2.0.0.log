@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:method-override.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/method-override_2.0.0/method-override.test.js:3:23
+Analyzing module method-override@2.0.0:index.js (2)
+Analyzing module methods@1.0.0:index.js (3)
+Analyzing module parseurl@1.0.1:index.js (4)
+Analyzed packages: 4, modules: 4, functions: 16, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 15, call->function: 16
+Calls with zero or one callee: 25/47 (53.19%), multiple: 1/47 (2.13%), native or external: 21/47 (44.68%)
+Functions with zero callers: 1/16 (6.25%), reachable functions: 2/16 (12.50%)
+Analysis time: 62ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

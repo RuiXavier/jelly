@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:mergify.test.js (1)
+Analyzing module mergify@1.0.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 12, call->function: 13
+Calls with zero or one callee: 13/31 (41.94%), multiple: 0/31 (0.00%), native or external: 18/31 (58.06%)
+Functions with zero callers: 0/9 (0.00%), reachable functions: 9/9 (100.00%)
+Analysis time: 49ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

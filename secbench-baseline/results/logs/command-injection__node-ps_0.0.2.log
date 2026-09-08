@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:node-ps.test.js (1)
+Analyzing module node-ps@0.0.2:index.js (2)
+Analyzing module node-ps@0.0.2:lib/index.js (3)
+Analyzed packages: 2, modules: 3, functions: 15, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 15, call->function: 17
+Calls with zero or one callee: 20/51 (39.22%), multiple: 0/51 (0.00%), native or external: 31/51 (60.78%)
+Functions with zero callers: 1/15 (6.67%), reachable functions: 14/15 (93.33%)
+Analysis time: 61ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 0

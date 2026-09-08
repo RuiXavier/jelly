@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:is-my-json-valid.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/is-my-json-valid_2.20.1/is-my-json-valid.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/is-my-json-valid_2.20.1/is-my-json-valid.test.js:3:23
+Analyzing module is-my-json-valid@2.20.1:index.js (2)
+Analyzing module generate-object-property@1.2.0:index.js (3)
+Analyzing module generate-function@2.3.1:index.js (4)
+Analyzing module jsonpointer@4.1.0:jsonpointer.js (5)
+Analyzing module xtend@4.0.2:immutable.js (6)
+Analyzing module is-my-json-valid@2.20.1:formats.js (7)
+Analyzing module is-property@1.0.2:is-property.js (8)
+Analyzing module is-my-ip-valid@1.0.1:index.js (9)
+Analyzed packages: 8, modules: 9, functions: 80, code size main: 1KB, dependencies: 39KB
+Call edges function->function: 95, call->function: 265
+Calls with zero or one callee: 270/412 (65.53%), multiple: 1/412 (0.24%), native or external: 141/412 (34.22%)
+Functions with zero callers: 25/80 (31.25%), reachable functions: 49/80 (61.25%)
+Analysis time: 151ms, memory usage: 61MB (without --gc)
+Analysis errors: 0, warnings: 26 (show all with --warnings-unsupported)

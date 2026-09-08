@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:expand-hash.test.js (1)
+Analyzing module expand-hash@1.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 7/19 (36.84%), multiple: 0/19 (0.00%), native or external: 12/19 (63.16%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 49ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

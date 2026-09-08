@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:sanitize.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/sanitize_2.0.0/sanitize.test.js:2:23
+Analyzing module sanitize@2.0.0:lib/sanitize.js (2)
+Analyzing module lodash@3.10.1:index.js (3)
+Analyzing module sanitize@2.0.0:lib/Sanitizer.js (4)
+Analyzing module sanitize@2.0.0:lib/middleware.js (5)
+Analyzing module validator@3.43.0:validator.js (6)
+Analyzed packages: 4, modules: 6, functions: 556, code size main: 1KB, dependencies: 437KB
+Call edges function->function: 5454, call->function: 7743
+Calls with zero or one callee: 827/1478 (55.95%), multiple: 263/1478 (17.79%), native or external: 388/1478 (26.25%)
+Functions with zero callers: 186/556 (33.45%), reachable functions: 291/556 (52.34%)
+Analysis time: 999ms, memory usage: 201MB (without --gc)
+Analysis errors: 0, warnings: 184 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:modulify.test.js (1)
+Analyzing module modulify@0.1.0:src/modulify.js (2)
+Analyzing module esprima@4.0.1:dist/esprima.js (3)
+Analyzed packages: 3, modules: 3, functions: 444, code size main: 1KB, dependencies: 287KB
+Call edges function->function: 1287, call->function: 1790
+Calls with zero or one callee: 1666/1959 (85.04%), multiple: 52/1959 (2.65%), native or external: 241/1959 (12.30%)
+Functions with zero callers: 4/444 (0.90%), reachable functions: 5/444 (1.13%)
+Analysis time: 777ms, memory usage: 146MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

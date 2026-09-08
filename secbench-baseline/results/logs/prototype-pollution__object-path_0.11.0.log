@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:object-path.test.js (1)
+Error: Unable to resolve module 'object-path-set' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/object-path_0.11.0/object-path.test.js:3:19
+Analyzed packages: 1, modules: 1, functions: 1, code size main: 1KB, dependencies: 0KB
+Call edges function->function: 1, call->function: 1
+Calls with zero or one callee: 1/7 (14.29%), multiple: 0/7 (0.00%), native or external: 6/7 (85.71%)
+Functions with zero callers: 0/1 (0.00%), reachable functions: 1/1 (100.00%)
+Analysis time: 31ms, memory usage: 30MB (without --gc)
+Analysis errors: 1, warnings: 0

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:deep-defaults.test.js (1)
+Analyzing module deep-defaults@1.0.5:lib/index.js (2)
+Analyzing module lodash@4.18.1:lodash.js (3)
+Analyzed packages: 3, modules: 3, functions: 695, code size main: 1KB, dependencies: 534KB
+Call edges function->function: 7861, call->function: 11725
+Calls with zero or one callee: 1198/1828 (65.54%), multiple: 370/1828 (20.24%), native or external: 260/1828 (14.22%)
+Functions with zero callers: 179/695 (25.76%), reachable functions: 440/695 (63.31%)
+Analysis time: 1853ms, memory usage: 384MB (without --gc)
+Analysis errors: 0, warnings: 169 (show all with --warnings-unsupported)

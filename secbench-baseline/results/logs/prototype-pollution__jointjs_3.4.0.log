@@ -1,0 +1,30 @@
+Analyzing module <anonymous>:jointjs.test.js (1)
+Analyzing module jointjs@3.4.0:dist/joint.min.js (2)
+Analyzing module backbone@1.4.1:backbone.js (3)
+Analyzing module lodash@4.17.23:lodash.js (4)
+Analyzing module jquery@3.6.4:dist/jquery.js (5)
+Analyzing module underscore@1.13.8:underscore-node.cjs (6)
+Analyzing module underscore@1.13.8:underscore-node-f.cjs (7)
+
+<--- Last few GCs --->
+
+[43121:0x55976d572000]    74113 ms: Mark-Compact 8211.7 (8240.4) -> 8211.7 (8236.9) MB, pooled: 9.8 MB, 3200.90 / 0.00 ms (average mu = 0.115, current mu = 0.000) allocation failure; GC in old space requested
+[43121:0x55976d572000]    75909 ms: Mark-Compact (reduce) 8211.7 (8236.9) -> 8211.6 (8230.7) MB, pooled: 0.0 MB, 1794.52 / 0.00 ms (average mu = 0.074, current mu = 0.000) last resort; GC in old space requested
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x559766997a64  [node]
+ 2: 0x559766771fe1 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 3: 0x55976784d20b  [node]
+ 4: 0x55976784d2f5  [node]
+ 5: 0x559767afd7ec  [node]
+ 6: 0x559767afd938  [node]
+ 7: 0x559767b126ed  [node]
+ 8: 0x559767b133f4  [node]
+ 9: 0x559767ae62ac  [node]
+10: 0x559767ae6409  [node]
+11: 0x559767abce82  [node]
+12: 0x559767f7ecc8  [node]
+13: 0x7ff5c3e7ea36 
+timeout: the monitored command dumped core

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:lyngs-digger.test.js (1)
+Analyzing module @lyngs/digger@1.0.7:dist/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 191, code size main: 1KB, dependencies: 74KB
+Call edges function->function: 712, call->function: 931
+Calls with zero or one callee: 377/621 (60.71%), multiple: 94/621 (15.14%), native or external: 150/621 (24.15%)
+Functions with zero callers: 21/191 (10.99%), reachable functions: 164/191 (85.86%)
+Analysis time: 319ms, memory usage: 84MB (without --gc)
+Analysis errors: 0, warnings: 118 (show all with --warnings-unsupported)

@@ -1,0 +1,17 @@
+Analyzing module <anonymous>:async-git.test.js (1)
+Analyzing module async-git@1.13.1:index.js (2)
+Analyzing module async-execute@1.2.0:index.js (3)
+Analyzing module async-git@1.13.1:lib/index.js (4)
+Analyzing module async-git@1.13.1:lib/list/index.js (5)
+Analyzing module async-git@1.13.1:lib/modified/index.js (6)
+Analyzing module async-git@1.13.1:lib/remote/index.js (7)
+Analyzing module async-git@1.13.1:lib/reset/index.js (8)
+Analyzing module async-git@1.13.1:lib/tag/index.js (9)
+Analyzing module async-git@1.13.1:lib/unadded/index.js (10)
+Analyzing module @does/exist@1.1.0:index.js (11)
+Analyzed packages: 4, modules: 11, functions: 26, code size main: 1KB, dependencies: 9KB
+Call edges function->function: 23, call->function: 27
+Calls with zero or one callee: 40/111 (36.04%), multiple: 0/111 (0.00%), native or external: 71/111 (63.96%)
+Functions with zero callers: 11/26 (42.31%), reachable functions: 5/26 (19.23%)
+Analysis time: 94ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 14 (show all with --warnings-unsupported)

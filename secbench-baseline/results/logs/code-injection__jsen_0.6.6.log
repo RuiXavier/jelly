@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:jsen.test.js (1)
+Analyzing module jsen@0.6.6:index.js (2)
+Analyzing module jsen@0.6.6:lib/jsen.js (3)
+Analyzing module jsen@0.6.6:lib/func.js (4)
+Analyzing module jsen@0.6.6:lib/equal.js (5)
+Analyzing module jsen@0.6.6:lib/unique.js (6)
+Analyzing module jsen@0.6.6:lib/resolver.js (7)
+Analyzing module jsen@0.6.6:lib/formats.js (8)
+Analyzing module jsen@0.6.6:lib/ucs2length.js (9)
+Analyzed packages: 2, modules: 9, functions: 95, code size main: 1KB, dependencies: 43KB
+Call edges function->function: 105, call->function: 154
+Calls with zero or one callee: 173/435 (39.77%), multiple: 0/435 (0.00%), native or external: 262/435 (60.23%)
+Functions with zero callers: 38/95 (40.00%), reachable functions: 44/95 (46.32%)
+Analysis time: 194ms, memory usage: 57MB (without --gc)
+Analysis errors: 0, warnings: 39 (show all with --warnings-unsupported)

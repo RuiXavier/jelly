@@ -1,0 +1,14 @@
+Analyzing module <anonymous>:no-case.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/no-case_2.3.1/no-case.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/no-case_2.3.1/no-case.test.js:3:23
+Analyzing module no-case@2.3.1:no-case.js (2)
+Analyzing module lower-case@1.1.4:lower-case.js (3)
+Analyzing module no-case@2.3.1:vendor/non-word-regexp.js (4)
+Analyzing module no-case@2.3.1:vendor/camel-case-regexp.js (5)
+Analyzing module no-case@2.3.1:vendor/camel-case-upper-regexp.js (6)
+Analyzed packages: 3, modules: 6, functions: 6, code size main: 1KB, dependencies: 28KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 10/21 (47.62%), multiple: 0/21 (0.00%), native or external: 11/21 (52.38%)
+Functions with zero callers: 3/6 (50.00%), reachable functions: 1/6 (16.67%)
+Analysis time: 54ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

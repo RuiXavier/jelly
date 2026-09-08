@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:git.test.js (1)
+Analyzing module git@0.1.5:lib/git/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 9/25 (36.00%), multiple: 0/25 (0.00%), native or external: 16/25 (64.00%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 5/7 (71.43%)
+Analysis time: 47ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

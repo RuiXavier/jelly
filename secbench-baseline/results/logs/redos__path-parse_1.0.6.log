@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:path-parse.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/path-parse_1.0.6/path-parse.test.js:9:23
+Analyzing module path-parse@1.0.6:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 9/22 (40.91%), multiple: 1/22 (4.55%), native or external: 12/22 (54.55%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 1/7 (14.29%)
+Analysis time: 54ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 1

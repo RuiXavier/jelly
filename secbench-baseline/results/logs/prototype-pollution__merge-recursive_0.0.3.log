@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:merge-recursive.test.js (1)
+Analyzing module merge-recursive@0.0.3:lib/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 16, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 12, call->function: 14
+Calls with zero or one callee: 24/33 (72.73%), multiple: 0/33 (0.00%), native or external: 9/33 (27.27%)
+Functions with zero callers: 9/16 (56.25%), reachable functions: 3/16 (18.75%)
+Analysis time: 53ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

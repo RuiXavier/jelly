@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:webrepl.test.js (1)
+Analyzing module webrepl@0.4.7:webrepl.js (2)
+Analyzing module webrepl@0.4.7:SimpleStream.js (3)
+Analyzing module webrepl@0.4.7:http-digest.js (4)
+Analyzed packages: 2, modules: 4, functions: 39, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 31, call->function: 38
+Calls with zero or one callee: 50/147 (34.01%), multiple: 0/147 (0.00%), native or external: 97/147 (65.99%)
+Functions with zero callers: 11/39 (28.21%), reachable functions: 28/39 (71.79%)
+Analysis time: 90ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

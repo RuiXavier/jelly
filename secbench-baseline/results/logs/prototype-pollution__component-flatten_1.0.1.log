@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:component-flatten.test.js (1)
+Analyzing module component-flatten@1.0.1:index.js (2)
+Analyzing module semver@2.3.2:semver.js (3)
+Analyzed packages: 3, modules: 3, functions: 85, code size main: 1KB, dependencies: 31KB
+Call edges function->function: 133, call->function: 177
+Calls with zero or one callee: 125/227 (55.07%), multiple: 28/227 (12.33%), native or external: 74/227 (32.60%)
+Functions with zero callers: 19/85 (22.35%), reachable functions: 20/85 (23.53%)
+Analysis time: 145ms, memory usage: 59MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

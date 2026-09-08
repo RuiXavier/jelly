@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:Proto.test.js (1)
+Analyzing module Proto@1.1.4:dist/Proto.cjs.js (2)
+Analyzed packages: 2, modules: 2, functions: 75, code size main: 1KB, dependencies: 21KB
+Call edges function->function: 152, call->function: 362
+Calls with zero or one callee: 122/153 (79.74%), multiple: 13/153 (8.50%), native or external: 18/153 (11.76%)
+Functions with zero callers: 14/75 (18.67%), reachable functions: 54/75 (72.00%)
+Analysis time: 148ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 23 (show all with --warnings-unsupported)

@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:mobile-icon-resizer.test.js (1)
+Analyzing module mobile-icon-resizer@0.4.2:index.js (2)
+Analyzing module mobile-icon-resizer@0.4.2:lib/resize.js (3)
+Analyzing module async@0.2.10:lib/async.js (4)
+Analyzing module mkdirp@0.3.5:index.js (5)
+Analyzing module image-size@0.2.5:lib/index.js (6)
+Analyzing module mobile-icon-resizer@0.4.2:config.js (7)
+Analyzed packages: 5, modules: 7, functions: 213, code size main: 1KB, dependencies: 42KB
+Call edges function->function: 421, call->function: 477
+Calls with zero or one callee: 201/394 (51.02%), multiple: 78/394 (19.80%), native or external: 115/394 (29.19%)
+Functions with zero callers: 46/213 (21.60%), reachable functions: 130/213 (61.03%)
+Analysis time: 175ms, memory usage: 50MB (without --gc)
+Analysis errors: 0, warnings: 16 (show all with --warnings-unsupported)

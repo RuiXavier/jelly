@@ -1,0 +1,1156 @@
+{
+  "overall": {
+    "total_cases": 603,
+    "npm_install_failed": 8,
+    "skipped_malformed": 2,
+    "analyzed": 593,
+    "clean_success": 587,
+    "oom_or_crash": 6,
+    "other_nonzero_exit": 0,
+    "wall_seconds": {
+      "n": 587,
+      "min": 0.38,
+      "max": 58.84,
+      "mean": 0.91,
+      "median": 0.42,
+      "p90": 1.1
+    },
+    "jelly_reported_time_ms": {
+      "n": 587,
+      "min": 31.0,
+      "max": 57984.0,
+      "mean": 547.74,
+      "median": 62.0,
+      "p90": 721.0
+    },
+    "jelly_reported_memory_mb": {
+      "n": 587,
+      "min": 30.0,
+      "max": 7396.0,
+      "mean": 100.34,
+      "median": 36.0,
+      "p90": 143.0
+    },
+    "modules": {
+      "n": 587,
+      "min": 1.0,
+      "max": 909.0,
+      "mean": 16.82,
+      "median": 2.0,
+      "p90": 30.0
+    },
+    "functions": {
+      "n": 587,
+      "min": 1.0,
+      "max": 3976.0,
+      "mean": 166.95,
+      "median": 12.0,
+      "p90": 574.0
+    },
+    "packages": {
+      "n": 587,
+      "min": 1.0,
+      "max": 138.0,
+      "mean": 4.18,
+      "median": 2.0,
+      "p90": 7.0
+    },
+    "edges_call2fun": {
+      "n": 587,
+      "min": 1.0,
+      "max": 153978.0,
+      "mean": 1584.83,
+      "median": 15.0,
+      "p90": 1333.0
+    },
+    "funcs_reachable_pct": {
+      "n": 587,
+      "min": 0.39,
+      "max": 100.0,
+      "mean": 62.19,
+      "median": 64.52,
+      "p90": 100.0
+    },
+    "warnings": {
+      "n": 587,
+      "min": 0.0,
+      "max": 10634.0,
+      "mean": 72.16,
+      "median": 3.0,
+      "p90": 109.0
+    },
+    "errors": {
+      "n": 587,
+      "min": 0.0,
+      "max": 9.0,
+      "mean": 0.49,
+      "median": 0.0,
+      "p90": 2.0
+    },
+    "oom_cases": [
+      "prototype-pollution/jointjs_2.2.1",
+      "prototype-pollution/jointjs_3.4.0",
+      "redos/jspdf_2.1.1",
+      "command-injection/apiconnect-cli-plugins_6.0.2",
+      "command-injection/buns_1.1.6",
+      "command-injection/monorepo-build_0.1.9"
+    ],
+    "npm_failed_cases": [
+      "command-injection/corenlp-js-interface_1.0.3",
+      "command-injection/corenlp-js-prefab_1.0.1",
+      "command-injection/effect_1.0.4",
+      "command-injection/gity_1.0.5",
+      "command-injection/jison_0.4.17",
+      "command-injection/lycwed-spritesheetjs_1.2.5",
+      "path-traversal/srverqq_1.0.0",
+      "code-injection/mongoosemask_0.0.6"
+    ],
+    "other_fail_cases": [],
+    "top10_slowest": [
+      {
+        "case": "code-injection/mathjs_3.10.3",
+        "seconds": 58.84
+      },
+      {
+        "case": "code-injection/mathjs_3.9.0",
+        "seconds": 56.91
+      },
+      {
+        "case": "redos/three_0.122.0",
+        "seconds": 46.34
+      },
+      {
+        "case": "redos/ramda_0.27.1",
+        "seconds": 8.79
+      },
+      {
+        "case": "command-injection/libnmap_0.4.11",
+        "seconds": 5.79
+      },
+      {
+        "case": "prototype-pollution/mathjs_7.4.0",
+        "seconds": 4.54
+      },
+      {
+        "case": "prototype-pollution/style-dictionary_2.10.2",
+        "seconds": 4.08
+      },
+      {
+        "case": "command-injection/total.js_3.4.6",
+        "seconds": 3.7
+      },
+      {
+        "case": "prototype-pollution/total.js_3.4.6",
+        "seconds": 3.68
+      },
+      {
+        "case": "redos/ethers_5.2.0",
+        "seconds": 3.39
+      }
+    ],
+    "top10_largest_callgraph": [
+      {
+        "case": "prototype-pollution/mathjs_7.4.0",
+        "modules": 909,
+        "functions": 3976
+      },
+      {
+        "case": "code-injection/mathjs_3.10.3",
+        "modules": 515,
+        "functions": 2441
+      },
+      {
+        "case": "code-injection/mathjs_3.9.0",
+        "modules": 512,
+        "functions": 2414
+      },
+      {
+        "case": "prototype-pollution/locutus_2.0.11",
+        "modules": 364,
+        "functions": 770
+      },
+      {
+        "case": "redos/ramda_0.27.1",
+        "modules": 332,
+        "functions": 520
+      },
+      {
+        "case": "prototype-pollution/mout_1.0.0",
+        "modules": 264,
+        "functions": 353
+      },
+      {
+        "case": "redos/checkit_0.7.0",
+        "modules": 257,
+        "functions": 341
+      },
+      {
+        "case": "prototype-pollution/nis-utils_0.6.10",
+        "modules": 243,
+        "functions": 1563
+      },
+      {
+        "case": "path-traversal/nitro-server_1.3.3",
+        "modules": 231,
+        "functions": 1906
+      },
+      {
+        "case": "code-injection/modjs_0.4.0",
+        "modules": 212,
+        "functions": 2090
+      }
+    ]
+  },
+  "by_class": {
+    "code-injection": {
+      "total_cases": 40,
+      "npm_install_failed": 1,
+      "skipped_malformed": 0,
+      "analyzed": 39,
+      "clean_success": 39,
+      "oom_or_crash": 0,
+      "other_nonzero_exit": 0,
+      "wall_seconds": {
+        "n": 39,
+        "min": 0.39,
+        "max": 58.84,
+        "mean": 3.6,
+        "median": 0.51,
+        "p90": 1.46
+      },
+      "jelly_reported_time_ms": {
+        "n": 39,
+        "min": 40.0,
+        "max": 57984.0,
+        "mean": 3219.82,
+        "median": 156.0,
+        "p90": 1095.0
+      },
+      "jelly_reported_memory_mb": {
+        "n": 39,
+        "min": 32.0,
+        "max": 6101.0,
+        "mean": 376.33,
+        "median": 54.0,
+        "p90": 184.0
+      },
+      "modules": {
+        "n": 39,
+        "min": 2.0,
+        "max": 515.0,
+        "mean": 44.62,
+        "median": 7.0,
+        "p90": 57.0
+      },
+      "functions": {
+        "n": 39,
+        "min": 2.0,
+        "max": 2441.0,
+        "mean": 353.08,
+        "median": 95.0,
+        "p90": 791.0
+      },
+      "packages": {
+        "n": 39,
+        "min": 2.0,
+        "max": 109.0,
+        "mean": 6.72,
+        "median": 3.0,
+        "p90": 8.0
+      },
+      "edges_call2fun": {
+        "n": 39,
+        "min": 2.0,
+        "max": 153978.0,
+        "mean": 8439.59,
+        "median": 125.0,
+        "p90": 2089.0
+      },
+      "funcs_reachable_pct": {
+        "n": 39,
+        "min": 1.13,
+        "max": 100.0,
+        "mean": 54.5,
+        "median": 56.99,
+        "p90": 100.0
+      },
+      "warnings": {
+        "n": 39,
+        "min": 0.0,
+        "max": 10634.0,
+        "mean": 586.46,
+        "median": 26.0,
+        "p90": 93.0
+      },
+      "errors": {
+        "n": 39,
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.05,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "oom_cases": [],
+      "npm_failed_cases": [
+        "code-injection/mongoosemask_0.0.6"
+      ],
+      "other_fail_cases": [],
+      "top10_slowest": [
+        {
+          "case": "code-injection/mathjs_3.10.3",
+          "seconds": 58.84
+        },
+        {
+          "case": "code-injection/mathjs_3.9.0",
+          "seconds": 56.91
+        },
+        {
+          "case": "code-injection/modjs_0.4.0",
+          "seconds": 2.35
+        },
+        {
+          "case": "code-injection/static-eval_1.1.1",
+          "seconds": 1.56
+        },
+        {
+          "case": "code-injection/hot-formula-parser_3.0.0",
+          "seconds": 1.46
+        },
+        {
+          "case": "code-injection/js-yaml_3.13.0",
+          "seconds": 1.32
+        },
+        {
+          "case": "code-injection/value-censorship_1.1.0",
+          "seconds": 1.27
+        },
+        {
+          "case": "code-injection/modulify_0.1.0",
+          "seconds": 1.14
+        },
+        {
+          "case": "code-injection/marsdb_0.6.11",
+          "seconds": 1.0
+        },
+        {
+          "case": "code-injection/kmc_1.2.2",
+          "seconds": 0.7
+        }
+      ],
+      "top10_largest_callgraph": [
+        {
+          "case": "code-injection/mathjs_3.10.3",
+          "modules": 515,
+          "functions": 2441
+        },
+        {
+          "case": "code-injection/mathjs_3.9.0",
+          "modules": 512,
+          "functions": 2414
+        },
+        {
+          "case": "code-injection/modjs_0.4.0",
+          "modules": 212,
+          "functions": 2090
+        },
+        {
+          "case": "code-injection/value-censorship_1.1.0",
+          "modules": 110,
+          "functions": 701
+        },
+        {
+          "case": "code-injection/marsdb_0.6.11",
+          "modules": 57,
+          "functions": 791
+        },
+        {
+          "case": "code-injection/hot-formula-parser_3.0.0",
+          "modules": 42,
+          "functions": 1088
+        },
+        {
+          "case": "code-injection/js-yaml_3.13.0",
+          "modules": 32,
+          "functions": 594
+        },
+        {
+          "case": "code-injection/djv_2.0.0",
+          "modules": 30,
+          "functions": 99
+        },
+        {
+          "case": "code-injection/kmc_1.2.2",
+          "modules": 30,
+          "functions": 219
+        },
+        {
+          "case": "code-injection/cd-messenger_2.7.24",
+          "modules": 25,
+          "functions": 129
+        }
+      ]
+    },
+    "command-injection": {
+      "total_cases": 101,
+      "npm_install_failed": 6,
+      "skipped_malformed": 0,
+      "analyzed": 95,
+      "clean_success": 92,
+      "oom_or_crash": 3,
+      "other_nonzero_exit": 0,
+      "wall_seconds": {
+        "n": 92,
+        "min": 0.39,
+        "max": 5.79,
+        "mean": 0.78,
+        "median": 0.43,
+        "p90": 1.46
+      },
+      "jelly_reported_time_ms": {
+        "n": 92,
+        "min": 42.0,
+        "max": 5351.0,
+        "mean": 414.64,
+        "median": 78.5,
+        "p90": 1085.0
+      },
+      "jelly_reported_memory_mb": {
+        "n": 92,
+        "min": 32.0,
+        "max": 936.0,
+        "mean": 88.05,
+        "median": 38.0,
+        "p90": 215.0
+      },
+      "modules": {
+        "n": 92,
+        "min": 2.0,
+        "max": 172.0,
+        "mean": 17.38,
+        "median": 3.0,
+        "p90": 45.0
+      },
+      "functions": {
+        "n": 92,
+        "min": 3.0,
+        "max": 3093.0,
+        "mean": 265.84,
+        "median": 26.5,
+        "p90": 830.0
+      },
+      "packages": {
+        "n": 92,
+        "min": 2.0,
+        "max": 46.0,
+        "mean": 6.27,
+        "median": 2.0,
+        "p90": 13.0
+      },
+      "edges_call2fun": {
+        "n": 92,
+        "min": 3.0,
+        "max": 54420.0,
+        "mean": 2431.27,
+        "median": 28.0,
+        "p90": 3151.0
+      },
+      "funcs_reachable_pct": {
+        "n": 92,
+        "min": 3.4,
+        "max": 100.0,
+        "mean": 60.4,
+        "median": 61.06,
+        "p90": 100.0
+      },
+      "warnings": {
+        "n": 92,
+        "min": 0.0,
+        "max": 926.0,
+        "mean": 48.95,
+        "median": 2.0,
+        "p90": 165.0
+      },
+      "errors": {
+        "n": 92,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "oom_cases": [
+        "command-injection/apiconnect-cli-plugins_6.0.2",
+        "command-injection/buns_1.1.6",
+        "command-injection/monorepo-build_0.1.9"
+      ],
+      "npm_failed_cases": [
+        "command-injection/corenlp-js-interface_1.0.3",
+        "command-injection/corenlp-js-prefab_1.0.1",
+        "command-injection/effect_1.0.4",
+        "command-injection/gity_1.0.5",
+        "command-injection/jison_0.4.17",
+        "command-injection/lycwed-spritesheetjs_1.2.5"
+      ],
+      "other_fail_cases": [],
+      "top10_slowest": [
+        {
+          "case": "command-injection/libnmap_0.4.11",
+          "seconds": 5.79
+        },
+        {
+          "case": "command-injection/total.js_3.4.6",
+          "seconds": 3.7
+        },
+        {
+          "case": "command-injection/node-mpv_0.12.2",
+          "seconds": 3.1
+        },
+        {
+          "case": "command-injection/bestzip_2.1.6",
+          "seconds": 2.74
+        },
+        {
+          "case": "command-injection/thi.ng-egf_0.3.0",
+          "seconds": 2.65
+        },
+        {
+          "case": "command-injection/deferred-exec_0.3.1",
+          "seconds": 2.36
+        },
+        {
+          "case": "command-injection/umount_1.1.6",
+          "seconds": 2.23
+        },
+        {
+          "case": "command-injection/codecov_3.6.4",
+          "seconds": 2.12
+        },
+        {
+          "case": "command-injection/npm-git-publish_0.2.4-beta",
+          "seconds": 1.64
+        },
+        {
+          "case": "command-injection/theme-core_0.2.5",
+          "seconds": 1.54
+        }
+      ],
+      "top10_largest_callgraph": [
+        {
+          "case": "command-injection/codecov_3.6.4",
+          "modules": 172,
+          "functions": 1413
+        },
+        {
+          "case": "command-injection/pdfinfojs_0.3.6",
+          "modules": 146,
+          "functions": 824
+        },
+        {
+          "case": "command-injection/git-parse_1.0.4",
+          "modules": 129,
+          "functions": 219
+        },
+        {
+          "case": "command-injection/bestzip_2.1.6",
+          "modules": 123,
+          "functions": 1904
+        },
+        {
+          "case": "command-injection/npm-git-publish_0.2.4-beta",
+          "modules": 98,
+          "functions": 1052
+        },
+        {
+          "case": "command-injection/blamer_0.1.13",
+          "modules": 80,
+          "functions": 1065
+        },
+        {
+          "case": "command-injection/deferred-exec_0.3.1",
+          "modules": 76,
+          "functions": 830
+        },
+        {
+          "case": "command-injection/libnmap_0.4.11",
+          "modules": 67,
+          "functions": 2114
+        },
+        {
+          "case": "command-injection/ts-process-promises_1.0.2",
+          "modules": 60,
+          "functions": 722
+        },
+        {
+          "case": "command-injection/theme-core_0.2.5",
+          "modules": 53,
+          "functions": 925
+        }
+      ]
+    },
+    "path-traversal": {
+      "total_cases": 171,
+      "npm_install_failed": 1,
+      "skipped_malformed": 1,
+      "analyzed": 169,
+      "clean_success": 169,
+      "oom_or_crash": 0,
+      "other_nonzero_exit": 0,
+      "wall_seconds": {
+        "n": 169,
+        "min": 0.38,
+        "max": 2.11,
+        "mean": 0.42,
+        "median": 0.39,
+        "p90": 0.44
+      },
+      "jelly_reported_time_ms": {
+        "n": 169,
+        "min": 40.0,
+        "max": 1727.0,
+        "mean": 64.95,
+        "median": 41.0,
+        "p90": 86.0
+      },
+      "jelly_reported_memory_mb": {
+        "n": 169,
+        "min": 32.0,
+        "max": 282.0,
+        "mean": 36.11,
+        "median": 32.0,
+        "p90": 39.0
+      },
+      "modules": {
+        "n": 169,
+        "min": 1.0,
+        "max": 231.0,
+        "mean": 3.25,
+        "median": 1.0,
+        "p90": 4.0
+      },
+      "functions": {
+        "n": 169,
+        "min": 6.0,
+        "max": 1906.0,
+        "mean": 27.42,
+        "median": 6.0,
+        "p90": 28.0
+      },
+      "packages": {
+        "n": 169,
+        "min": 1.0,
+        "max": 138.0,
+        "mean": 2.28,
+        "median": 1.0,
+        "p90": 2.0
+      },
+      "edges_call2fun": {
+        "n": 169,
+        "min": 6.0,
+        "max": 3758.0,
+        "mean": 51.46,
+        "median": 6.0,
+        "p90": 33.0
+      },
+      "funcs_reachable_pct": {
+        "n": 169,
+        "min": 10.77,
+        "max": 100.0,
+        "mean": 95.27,
+        "median": 100.0,
+        "p90": 100.0
+      },
+      "warnings": {
+        "n": 169,
+        "min": 0.0,
+        "max": 218.0,
+        "mean": 3.26,
+        "median": 0.0,
+        "p90": 2.0
+      },
+      "errors": {
+        "n": 169,
+        "min": 0.0,
+        "max": 2.0,
+        "mean": 1.62,
+        "median": 2.0,
+        "p90": 2.0
+      },
+      "oom_cases": [],
+      "npm_failed_cases": [
+        "path-traversal/srverqq_1.0.0"
+      ],
+      "other_fail_cases": [],
+      "top10_slowest": [
+        {
+          "case": "path-traversal/nitro-server_1.3.3",
+          "seconds": 2.11
+        },
+        {
+          "case": "path-traversal/node-srv_2.0.0",
+          "seconds": 0.71
+        },
+        {
+          "case": "path-traversal/isv-http_0.0.9",
+          "seconds": 0.63
+        },
+        {
+          "case": "path-traversal/node-simple-router_0.10.0",
+          "seconds": 0.62
+        },
+        {
+          "case": "path-traversal/stattic_0.2.3",
+          "seconds": 0.62
+        },
+        {
+          "case": "path-traversal/express-blinker_0.0.6",
+          "seconds": 0.59
+        },
+        {
+          "case": "path-traversal/glance_3.0.0",
+          "seconds": 0.57
+        },
+        {
+          "case": "path-traversal/hangersteak_0.2.2",
+          "seconds": 0.53
+        },
+        {
+          "case": "path-traversal/basic-static_2.0.2",
+          "seconds": 0.5
+        },
+        {
+          "case": "path-traversal/atropa-ide_0.2.2-2",
+          "seconds": 0.49
+        }
+      ],
+      "top10_largest_callgraph": [
+        {
+          "case": "path-traversal/nitro-server_1.3.3",
+          "modules": 231,
+          "functions": 1906
+        },
+        {
+          "case": "path-traversal/stattic_0.2.3",
+          "modules": 27,
+          "functions": 158
+        },
+        {
+          "case": "path-traversal/glance_3.0.0",
+          "modules": 17,
+          "functions": 89
+        },
+        {
+          "case": "path-traversal/isv-http_0.0.9",
+          "modules": 15,
+          "functions": 166
+        },
+        {
+          "case": "path-traversal/hangersteak_0.2.2",
+          "modules": 14,
+          "functions": 88
+        },
+        {
+          "case": "path-traversal/express-blinker_0.0.6",
+          "modules": 10,
+          "functions": 272
+        },
+        {
+          "case": "path-traversal/node-srv_2.0.0",
+          "modules": 9,
+          "functions": 303
+        },
+        {
+          "case": "path-traversal/atropa-ide_0.2.2-2",
+          "modules": 8,
+          "functions": 72
+        },
+        {
+          "case": "path-traversal/basic-static_2.0.2",
+          "modules": 6,
+          "functions": 23
+        },
+        {
+          "case": "path-traversal/web-node-server_0.1.0",
+          "modules": 6,
+          "functions": 22
+        }
+      ]
+    },
+    "prototype-pollution": {
+      "total_cases": 193,
+      "npm_install_failed": 0,
+      "skipped_malformed": 1,
+      "analyzed": 192,
+      "clean_success": 190,
+      "oom_or_crash": 2,
+      "other_nonzero_exit": 0,
+      "wall_seconds": {
+        "n": 190,
+        "min": 0.38,
+        "max": 4.54,
+        "mean": 0.71,
+        "median": 0.43,
+        "p90": 1.49
+      },
+      "jelly_reported_time_ms": {
+        "n": 190,
+        "min": 31.0,
+        "max": 4124.0,
+        "mean": 355.29,
+        "median": 74.0,
+        "p90": 1118.0
+      },
+      "jelly_reported_memory_mb": {
+        "n": 190,
+        "min": 30.0,
+        "max": 689.0,
+        "mean": 79.08,
+        "median": 38.0,
+        "p90": 209.0
+      },
+      "modules": {
+        "n": 190,
+        "min": 1.0,
+        "max": 909.0,
+        "mean": 21.42,
+        "median": 2.0,
+        "p90": 39.0
+      },
+      "functions": {
+        "n": 190,
+        "min": 1.0,
+        "max": 3976.0,
+        "mean": 202.9,
+        "median": 18.5,
+        "p90": 688.0
+      },
+      "packages": {
+        "n": 190,
+        "min": 1.0,
+        "max": 69.0,
+        "mean": 4.46,
+        "median": 2.0,
+        "p90": 7.0
+      },
+      "edges_call2fun": {
+        "n": 190,
+        "min": 1.0,
+        "max": 26256.0,
+        "mean": 1373.3,
+        "median": 25.5,
+        "p90": 2537.0
+      },
+      "funcs_reachable_pct": {
+        "n": 190,
+        "min": 0.39,
+        "max": 100.0,
+        "mean": 54.46,
+        "median": 53.02,
+        "p90": 100.0
+      },
+      "warnings": {
+        "n": 190,
+        "min": 0.0,
+        "max": 926.0,
+        "mean": 48.64,
+        "median": 8.0,
+        "p90": 158.0
+      },
+      "errors": {
+        "n": 190,
+        "min": 0.0,
+        "max": 9.0,
+        "mean": 0.06,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "oom_cases": [
+        "prototype-pollution/jointjs_2.2.1",
+        "prototype-pollution/jointjs_3.4.0"
+      ],
+      "npm_failed_cases": [],
+      "other_fail_cases": [],
+      "top10_slowest": [
+        {
+          "case": "prototype-pollution/mathjs_7.4.0",
+          "seconds": 4.54
+        },
+        {
+          "case": "prototype-pollution/style-dictionary_2.10.2",
+          "seconds": 4.08
+        },
+        {
+          "case": "prototype-pollution/total.js_3.4.6",
+          "seconds": 3.68
+        },
+        {
+          "case": "prototype-pollution/lyngs-merge_1.0.9",
+          "seconds": 3.13
+        },
+        {
+          "case": "prototype-pollution/grunt-util-property_0.0.2",
+          "seconds": 2.98
+        },
+        {
+          "case": "prototype-pollution/worksmith_1.0.0",
+          "seconds": 2.89
+        },
+        {
+          "case": "prototype-pollution/querymen_2.1.3",
+          "seconds": 2.67
+        },
+        {
+          "case": "prototype-pollution/objtools_3.0.0",
+          "seconds": 2.63
+        },
+        {
+          "case": "prototype-pollution/bodymen_1.0.0",
+          "seconds": 2.62
+        },
+        {
+          "case": "prototype-pollution/multi-ini_2.1.0",
+          "seconds": 2.43
+        }
+      ],
+      "top10_largest_callgraph": [
+        {
+          "case": "prototype-pollution/mathjs_7.4.0",
+          "modules": 909,
+          "functions": 3976
+        },
+        {
+          "case": "prototype-pollution/locutus_2.0.11",
+          "modules": 364,
+          "functions": 770
+        },
+        {
+          "case": "prototype-pollution/mout_1.0.0",
+          "modules": 264,
+          "functions": 353
+        },
+        {
+          "case": "prototype-pollution/nis-utils_0.6.10",
+          "modules": 243,
+          "functions": 1563
+        },
+        {
+          "case": "prototype-pollution/set-in_1.0.0",
+          "modules": 194,
+          "functions": 333
+        },
+        {
+          "case": "prototype-pollution/fluentui-styles_0.47.15",
+          "modules": 189,
+          "functions": 263
+        },
+        {
+          "case": "prototype-pollution/style-dictionary_2.10.2",
+          "modules": 160,
+          "functions": 1658
+        },
+        {
+          "case": "prototype-pollution/nodee-utils_1.2.2",
+          "modules": 134,
+          "functions": 1016
+        },
+        {
+          "case": "prototype-pollution/uifabric-utilities_7.20.2",
+          "modules": 114,
+          "functions": 653
+        },
+        {
+          "case": "prototype-pollution/grunt-util-property_0.0.2",
+          "modules": 109,
+          "functions": 1424
+        }
+      ]
+    },
+    "redos": {
+      "total_cases": 98,
+      "npm_install_failed": 0,
+      "skipped_malformed": 0,
+      "analyzed": 98,
+      "clean_success": 97,
+      "oom_or_crash": 1,
+      "other_nonzero_exit": 0,
+      "wall_seconds": {
+        "n": 97,
+        "min": 0.38,
+        "max": 46.34,
+        "mean": 1.18,
+        "median": 0.44,
+        "p90": 0.99
+      },
+      "jelly_reported_time_ms": {
+        "n": 97,
+        "min": 33.0,
+        "max": 45363.0,
+        "mean": 817.75,
+        "median": 88.0,
+        "p90": 629.0
+      },
+      "jelly_reported_memory_mb": {
+        "n": 97,
+        "min": 30.0,
+        "max": 7396.0,
+        "mean": 154.56,
+        "median": 43.0,
+        "p90": 116.0
+      },
+      "modules": {
+        "n": 97,
+        "min": 1.0,
+        "max": 332.0,
+        "mean": 19.76,
+        "median": 2.0,
+        "p90": 62.0
+      },
+      "functions": {
+        "n": 97,
+        "min": 2.0,
+        "max": 2877.0,
+        "mean": 170.99,
+        "median": 22.0,
+        "p90": 474.0
+      },
+      "packages": {
+        "n": 97,
+        "min": 1.0,
+        "max": 45.0,
+        "mean": 3.96,
+        "median": 2.0,
+        "p90": 5.0
+      },
+      "edges_call2fun": {
+        "n": 97,
+        "min": 1.0,
+        "max": 29640.0,
+        "mean": 1111.86,
+        "median": 24.0,
+        "p90": 908.0
+      },
+      "funcs_reachable_pct": {
+        "n": 97,
+        "min": 0.5,
+        "max": 97.31,
+        "mean": 24.5,
+        "median": 19.65,
+        "p90": 50.0
+      },
+      "warnings": {
+        "n": 97,
+        "min": 1.0,
+        "max": 1614.0,
+        "mean": 53.48,
+        "median": 5.0,
+        "p90": 115.0
+      },
+      "errors": {
+        "n": 97,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p90": 0.0
+      },
+      "oom_cases": [
+        "redos/jspdf_2.1.1"
+      ],
+      "npm_failed_cases": [],
+      "other_fail_cases": [],
+      "top10_slowest": [
+        {
+          "case": "redos/three_0.122.0",
+          "seconds": 46.34
+        },
+        {
+          "case": "redos/ramda_0.27.1",
+          "seconds": 8.79
+        },
+        {
+          "case": "redos/ethers_5.2.0",
+          "seconds": 3.39
+        },
+        {
+          "case": "redos/conventional-commits-parser_3.2.0",
+          "seconds": 2.92
+        },
+        {
+          "case": "redos/clean-css_4.1.10",
+          "seconds": 2.12
+        },
+        {
+          "case": "redos/slug_0.9.1",
+          "seconds": 2.09
+        },
+        {
+          "case": "redos/lodash_4.17.4",
+          "seconds": 2.08
+        },
+        {
+          "case": "redos/sanitize_2.0.0",
+          "seconds": 1.37
+        },
+        {
+          "case": "redos/terminal-kit_2.1.0",
+          "seconds": 1.34
+        },
+        {
+          "case": "redos/sshpk_1.13.1",
+          "seconds": 1.23
+        }
+      ],
+      "top10_largest_callgraph": [
+        {
+          "case": "redos/ramda_0.27.1",
+          "modules": 332,
+          "functions": 520
+        },
+        {
+          "case": "redos/checkit_0.7.0",
+          "modules": 257,
+          "functions": 341
+        },
+        {
+          "case": "redos/ethers_5.2.0",
+          "modules": 174,
+          "functions": 2877
+        },
+        {
+          "case": "redos/clean-css_4.1.10",
+          "modules": 107,
+          "functions": 598
+        },
+        {
+          "case": "redos/validator_13.5.2",
+          "modules": 100,
+          "functions": 346
+        },
+        {
+          "case": "redos/markdown-to-jsx_5.4.2",
+          "modules": 99,
+          "functions": 540
+        },
+        {
+          "case": "redos/chrono-node_2.2.3",
+          "modules": 95,
+          "functions": 474
+        },
+        {
+          "case": "redos/ajv_5.2.2",
+          "modules": 90,
+          "functions": 238
+        },
+        {
+          "case": "redos/underscore.string_3.3.4",
+          "modules": 73,
+          "functions": 89
+        },
+        {
+          "case": "redos/markdown-it_9.1.0",
+          "modules": 66,
+          "functions": 202
+        }
+      ]
+    }
+  }
+}

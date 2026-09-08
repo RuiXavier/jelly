@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:vboxmanage-js.test.js (1)
+Analyzing module vboxmanage.js@1.0.6:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 50, code size main: 1KB, dependencies: 16KB
+Call edges function->function: 28, call->function: 28
+Calls with zero or one callee: 60/142 (42.25%), multiple: 2/142 (1.41%), native or external: 80/142 (56.34%)
+Functions with zero callers: 27/50 (54.00%), reachable functions: 12/50 (24.00%)
+Analysis time: 89ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

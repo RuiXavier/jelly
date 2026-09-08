@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-latex-pdf.test.js (1)
+Analyzing module node-latex-pdf@0.0.2:node-latex-pdf.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 6, call->function: 7
+Calls with zero or one callee: 12/29 (41.38%), multiple: 0/29 (0.00%), native or external: 17/29 (58.62%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

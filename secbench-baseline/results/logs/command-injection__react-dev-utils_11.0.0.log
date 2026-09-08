@@ -1,0 +1,18 @@
+Analyzing module <anonymous>:react-dev-utils.test.js (1)
+Analyzing module react-dev-utils@11.0.0:getProcessForPort.js (2)
+Analyzing module chalk@2.4.2:index.js (3)
+Analyzing module escape-string-regexp@1.0.5:index.js (4)
+Analyzing module ansi-styles@3.2.1:index.js (5)
+Analyzing module supports-color@5.5.0:index.js (6)
+Analyzing module chalk@2.4.2:templates.js (7)
+Analyzing module color-convert@1.9.3:index.js (8)
+Analyzing module has-flag@3.0.0:index.js (9)
+Analyzing module color-convert@1.9.3:conversions.js (10)
+Analyzing module color-convert@1.9.3:route.js (11)
+Analyzing module color-name@1.1.3:index.js (12)
+Analyzed packages: 9, modules: 12, functions: 106, code size main: 1KB, dependencies: 43KB
+Call edges function->function: 57, call->function: 83
+Calls with zero or one callee: 115/329 (34.95%), multiple: 0/329 (0.00%), native or external: 214/329 (65.05%)
+Functions with zero callers: 56/106 (52.83%), reachable functions: 25/106 (23.58%)
+Analysis time: 222ms, memory usage: 65MB (without --gc)
+Analysis errors: 0, warnings: 65 (show all with --warnings-unsupported)

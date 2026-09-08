@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:@ianwalter-merge.test.js (1)
+Analyzing module @ianwalter/merge@9.0.1:dist/merge.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 4, call->function: 5
+Calls with zero or one callee: 5/21 (23.81%), multiple: 0/21 (0.00%), native or external: 16/21 (76.19%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 49ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 7 (show all with --warnings-unsupported)

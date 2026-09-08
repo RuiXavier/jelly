@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:mootools.test.js (1)
+Analyzing module mootools@1.5.2:lib/mootools-core-1.5.2-server.js (2)
+Analyzed packages: 2, modules: 2, functions: 140, code size main: 1KB, dependencies: 25KB
+Call edges function->function: 51, call->function: 63
+Calls with zero or one callee: 171/293 (58.36%), multiple: 2/293 (0.68%), native or external: 120/293 (40.96%)
+Functions with zero callers: 109/140 (77.86%), reachable functions: 10/140 (7.14%)
+Analysis time: 143ms, memory usage: 59MB (without --gc)
+Analysis errors: 0, warnings: 15 (show all with --warnings-unsupported)

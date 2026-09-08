@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:set-object-value.test.js (1)
+Analyzing module set-object-value@0.0.5:build/cjs/src/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 3, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 3/11 (27.27%), multiple: 0/11 (0.00%), native or external: 8/11 (72.73%)
+Functions with zero callers: 0/3 (0.00%), reachable functions: 3/3 (100.00%)
+Analysis time: 44ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

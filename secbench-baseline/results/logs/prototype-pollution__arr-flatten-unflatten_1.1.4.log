@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:arr-flatten-unflatten.test.js (1)
+Analyzing module arr-flatten-unflatten@1.1.4:index.js (2)
+Analyzing module arr-flatten-unflatten@1.1.4:flatten.js (3)
+Analyzing module arr-flatten-unflatten@1.1.4:unflatten.js (4)
+Analyzing module arr-flatten-unflatten@1.1.4:wrap.js (5)
+Analyzed packages: 2, modules: 5, functions: 4, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 3/20 (15.00%), multiple: 0/20 (0.00%), native or external: 17/20 (85.00%)
+Functions with zero callers: 1/4 (25.00%), reachable functions: 2/4 (50.00%)
+Analysis time: 60ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

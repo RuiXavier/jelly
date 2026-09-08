@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:nth-check.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/nth-check_2.0.0/nth-check.test.js:3:23
+Analyzing module nth-check@2.0.0:lib/index.js (2)
+Analyzing module nth-check@2.0.0:lib/parse.js (3)
+Analyzing module nth-check@2.0.0:lib/compile.js (4)
+Analyzing module boolbase@1.0.0:index.js (5)
+Analyzed packages: 3, modules: 5, functions: 14, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 11/28 (39.29%), multiple: 0/28 (0.00%), native or external: 17/28 (60.71%)
+Functions with zero callers: 10/14 (71.43%), reachable functions: 1/14 (7.14%)
+Analysis time: 62ms, memory usage: 37MB (without --gc)
+Analysis errors: 0, warnings: 1

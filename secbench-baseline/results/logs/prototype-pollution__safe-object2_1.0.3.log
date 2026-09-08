@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:safe-object2.test.js (1)
+Analyzing module safe-object2@1.0.3:lib/index.js (2)
+Analyzed packages: 2, modules: 2, functions: 18, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 18, call->function: 20
+Calls with zero or one callee: 21/37 (56.76%), multiple: 1/37 (2.70%), native or external: 15/37 (40.54%)
+Functions with zero callers: 5/18 (27.78%), reachable functions: 10/18 (55.56%)
+Analysis time: 66ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-static-webserver.test.js (1)
+Analyzing module node-static-webserver@0.0.1:node-static-webserver.js (2)
+Analyzed packages: 2, modules: 2, functions: 17, code size main: 1KB, dependencies: 4KB
+Call edges function->function: 17, call->function: 19
+Calls with zero or one callee: 24/63 (38.10%), multiple: 0/63 (0.00%), native or external: 39/63 (61.90%)
+Functions with zero callers: 1/17 (5.88%), reachable functions: 16/17 (94.12%)
+Analysis time: 61ms, memory usage: 38MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

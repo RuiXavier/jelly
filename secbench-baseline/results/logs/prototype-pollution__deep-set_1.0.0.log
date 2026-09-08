@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:deep-set.test.js (1)
+Analyzing module deep-set@1.0.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 10, call->function: 12
+Calls with zero or one callee: 12/22 (54.55%), multiple: 1/22 (4.55%), native or external: 9/22 (40.91%)
+Functions with zero callers: 2/9 (22.22%), reachable functions: 6/9 (66.67%)
+Analysis time: 55ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

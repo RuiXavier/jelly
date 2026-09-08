@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:roar-pidusage.test.js (1)
+Analyzing module roar-pidusage@1.1.6:index.js (2)
+Analyzing module roar-pidusage@1.1.6:lib/stats.js (3)
+Analyzing module roar-pidusage@1.1.6:lib/helpers.js (4)
+Analyzed packages: 2, modules: 4, functions: 27, code size main: 1KB, dependencies: 9KB
+Call edges function->function: 18, call->function: 28
+Calls with zero or one callee: 36/115 (31.30%), multiple: 3/115 (2.61%), native or external: 76/115 (66.09%)
+Functions with zero callers: 10/27 (37.04%), reachable functions: 3/27 (11.11%)
+Analysis time: 79ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

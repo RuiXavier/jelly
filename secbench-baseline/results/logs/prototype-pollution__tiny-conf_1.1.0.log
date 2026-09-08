@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:tiny-conf.test.js (1)
+Analyzing module tiny-conf@1.1.0:tiny-conf.js (2)
+Analyzed packages: 2, modules: 2, functions: 10, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 7, call->function: 7
+Calls with zero or one callee: 11/27 (40.74%), multiple: 0/27 (0.00%), native or external: 16/27 (59.26%)
+Functions with zero callers: 5/10 (50.00%), reachable functions: 4/10 (40.00%)
+Analysis time: 54ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 4 (show all with --warnings-unsupported)

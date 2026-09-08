@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:underscore.test.js (1)
+Analyzing module underscore@1.13.0-0:underscore-node.cjs (2)
+Analyzing module underscore@1.13.0-0:underscore-node-f.cjs (3)
+Analyzed packages: 2, modules: 3, functions: 186, code size main: 1KB, dependencies: 68KB
+Call edges function->function: 926, call->function: 1123
+Calls with zero or one callee: 295/459 (64.27%), multiple: 63/459 (13.73%), native or external: 101/459 (22.00%)
+Functions with zero callers: 61/186 (32.80%), reachable functions: 106/186 (56.99%)
+Analysis time: 253ms, memory usage: 74MB (without --gc)
+Analysis errors: 0, warnings: 58 (show all with --warnings-unsupported)

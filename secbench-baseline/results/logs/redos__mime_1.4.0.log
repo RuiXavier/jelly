@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:mime.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/mime_1.4.0/mime.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/mime_1.4.0/mime.test.js:3:23
+Analyzing module mime@1.4.0:mime.js (2)
+Analyzed packages: 2, modules: 2, functions: 9, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 6, call->function: 6
+Calls with zero or one callee: 15/31 (48.39%), multiple: 0/31 (0.00%), native or external: 16/31 (51.61%)
+Functions with zero callers: 4/9 (44.44%), reachable functions: 4/9 (44.44%)
+Analysis time: 55ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 6 (show all with --warnings-unsupported)

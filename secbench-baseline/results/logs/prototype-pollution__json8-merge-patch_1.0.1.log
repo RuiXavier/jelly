@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:json8-merge-patch.test.js (1)
+Analyzing module json8-merge-patch@1.0.1:index.js (2)
+Analyzing module json8-merge-patch@1.0.1:lib/apply.js (3)
+Analyzing module json8-merge-patch@1.0.1:lib/diff.js (4)
+Analyzing module json8@1.0.5:lib/type.js (5)
+Analyzing module json8@1.0.5:lib/equal.js (6)
+Analyzing module json8@1.0.5:lib/types.js (7)
+Analyzed packages: 3, modules: 7, functions: 9, code size main: 1KB, dependencies: 5KB
+Call edges function->function: 12, call->function: 17
+Calls with zero or one callee: 17/43 (39.53%), multiple: 0/43 (0.00%), native or external: 26/43 (60.47%)
+Functions with zero callers: 0/9 (0.00%), reachable functions: 2/9 (22.22%)
+Analysis time: 75ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:ms.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ms_0.7.0/ms.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/ms_0.7.0/ms.test.js:3:23
+Analyzing module ms@0.7.0:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 6, call->function: 9
+Calls with zero or one callee: 12/25 (48.00%), multiple: 0/25 (0.00%), native or external: 13/25 (52.00%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 1/7 (14.29%)
+Analysis time: 50ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 2

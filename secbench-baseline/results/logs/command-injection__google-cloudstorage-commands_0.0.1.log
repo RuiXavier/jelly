@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:google-cloudstorage-commands.test.js (1)
+Analyzing module google-cloudstorage-commands@0.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 13, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 11, call->function: 11
+Calls with zero or one callee: 19/35 (54.29%), multiple: 0/35 (0.00%), native or external: 16/35 (45.71%)
+Functions with zero callers: 2/13 (15.38%), reachable functions: 7/13 (53.85%)
+Analysis time: 53ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 0

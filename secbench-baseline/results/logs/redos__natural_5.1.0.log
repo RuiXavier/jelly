@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:natural.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/natural_5.1.0/natural.test.js:2:23
+Analyzing module natural@5.1.0:lib/natural/distance/dice_coefficient.js (2)
+Analyzed packages: 2, modules: 2, functions: 7, code size main: 1KB, dependencies: 3KB
+Call edges function->function: 6, call->function: 8
+Calls with zero or one callee: 14/23 (60.87%), multiple: 0/23 (0.00%), native or external: 9/23 (39.13%)
+Functions with zero callers: 1/7 (14.29%), reachable functions: 1/7 (14.29%)
+Analysis time: 48ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 1

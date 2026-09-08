@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:merge-change.test.js (1)
+Analyzing module merge-change@1.0.1:index.js (2)
+Analyzing module merge-change@1.0.1:merge-change.js (3)
+Analyzing module merge-change@1.0.1:utils.js (4)
+Analyzed packages: 2, modules: 4, functions: 32, code size main: 1KB, dependencies: 17KB
+Call edges function->function: 16, call->function: 21
+Calls with zero or one callee: 24/92 (26.09%), multiple: 0/92 (0.00%), native or external: 68/92 (73.91%)
+Functions with zero callers: 22/32 (68.75%), reachable functions: 4/32 (12.50%)
+Analysis time: 91ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

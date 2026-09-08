@@ -1,0 +1,16 @@
+Analyzing module <anonymous>:objnest.test.js (1)
+Analyzing module objnest@5.0.0:lib/index.js (2)
+Analyzing module objnest@5.0.0:lib/create.js (3)
+Analyzing module objnest@5.0.0:lib/objnest.js (4)
+Analyzing module extend@3.0.2:index.js (5)
+Analyzing module abind@1.0.5:lib/index.js (6)
+Analyzing module objnest@5.0.0:lib/key/is_array_key.js (7)
+Analyzing module objnest@5.0.0:lib/key/from_array_key.js (8)
+Analyzing module objnest@5.0.0:lib/key/to_array_key.js (9)
+Analyzing module abind@1.0.5:lib/abind.js (10)
+Analyzed packages: 4, modules: 10, functions: 17, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 21, call->function: 26
+Calls with zero or one callee: 40/79 (50.63%), multiple: 0/79 (0.00%), native or external: 39/79 (49.37%)
+Functions with zero callers: 0/17 (0.00%), reachable functions: 15/17 (88.24%)
+Analysis time: 100ms, memory usage: 41MB (without --gc)
+Analysis errors: 0, warnings: 17 (show all with --warnings-unsupported)

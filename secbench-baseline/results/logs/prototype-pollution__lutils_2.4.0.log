@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:lutils.test.js (1)
+Analyzing module lutils@2.4.0:index.js (2)
+Analyzing module lutils@2.4.0:merge/merge.js (3)
+Analyzing module lutils@2.4.0:clone/clone.js (4)
+Analyzing module lutils@2.4.0:typeOf/typeOf.js (5)
+Analyzing module lutils@2.4.0:typeOf/index.js (6)
+Analyzed packages: 2, modules: 6, functions: 43, code size main: 1KB, dependencies: 10KB
+Call edges function->function: 42, call->function: 44
+Calls with zero or one callee: 47/82 (57.32%), multiple: 4/82 (4.88%), native or external: 31/82 (37.80%)
+Functions with zero callers: 13/43 (30.23%), reachable functions: 19/43 (44.19%)
+Analysis time: 94ms, memory usage: 42MB (without --gc)
+Analysis errors: 0, warnings: 8 (show all with --warnings-unsupported)

@@ -1,0 +1,7 @@
+Analyzing module <anonymous>:i18next.test.js (1)
+Analyzed packages: 1, modules: 1, functions: 2, code size main: 2KB, dependencies: 0KB
+Call edges function->function: 3, call->function: 3
+Calls with zero or one callee: 3/8 (37.50%), multiple: 0/8 (0.00%), native or external: 5/8 (62.50%)
+Functions with zero callers: 0/2 (0.00%), reachable functions: 2/2 (100.00%)
+Analysis time: 38ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

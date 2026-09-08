@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:willvdb_test_server.test.js (1)
+Analyzing module willvdb_test_server@0.0.0:cityserver.js (2)
+Analyzed packages: 2, modules: 2, functions: 11, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 11, call->function: 11
+Calls with zero or one callee: 12/55 (21.82%), multiple: 0/55 (0.00%), native or external: 43/55 (78.18%)
+Functions with zero callers: 0/11 (0.00%), reachable functions: 11/11 (100.00%)
+Analysis time: 57ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

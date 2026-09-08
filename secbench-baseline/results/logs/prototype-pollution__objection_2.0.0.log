@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:objection.test.js (1)
+Analyzing module objection@2.0.0:lib/utils/objectUtils.js (2)
+Analyzing module objection@2.0.0:lib/utils/clone.js (3)
+Analyzed packages: 2, modules: 3, functions: 137, code size main: 1KB, dependencies: 72KB
+Call edges function->function: 179, call->function: 204
+Calls with zero or one callee: 199/313 (63.58%), multiple: 20/313 (6.39%), native or external: 94/313 (30.03%)
+Functions with zero callers: 32/137 (23.36%), reachable functions: 24/137 (17.52%)
+Analysis time: 165ms, memory usage: 48MB (without --gc)
+Analysis errors: 0, warnings: 17 (show all with --warnings-unsupported)

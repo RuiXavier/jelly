@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:asset-cache.test.js (1)
+Analyzing module asset-cache@0.0.6:index.js (2)
+Analyzing module asset-cache@0.0.6:lib/asset-cache.js (3)
+Analyzed packages: 2, modules: 3, functions: 11, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 11, call->function: 12
+Calls with zero or one callee: 17/42 (40.48%), multiple: 0/42 (0.00%), native or external: 25/42 (59.52%)
+Functions with zero callers: 1/11 (9.09%), reachable functions: 10/11 (90.91%)
+Analysis time: 56ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

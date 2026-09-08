@@ -1,0 +1,13 @@
+Analyzing module <anonymous>:dirty-json.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/dirty-json_0.4.0/dirty-json.test.js:3:23
+Analyzing module dirty-json@0.4.0:dirty-json.js (2)
+Analyzing module dirty-json@0.4.0:parser.js (3)
+Analyzing module dirty-json@0.4.0:lexer.js (4)
+Analyzing module q@1.5.1:q.js (5)
+Analyzing module lex@1.7.9:lexer.js (6)
+Analyzed packages: 4, modules: 6, functions: 257, code size main: 1KB, dependencies: 83KB
+Call edges function->function: 468, call->function: 645
+Calls with zero or one callee: 501/738 (67.89%), multiple: 50/738 (6.78%), native or external: 187/738 (25.34%)
+Functions with zero callers: 91/257 (35.41%), reachable functions: 9/257 (3.50%)
+Analysis time: 272ms, memory usage: 72MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

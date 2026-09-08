@@ -1,0 +1,12 @@
+Analyzing module <anonymous>:enpeem.test.js (1)
+Analyzing module enpeem@2.2.0:index.js (2)
+Analyzing module enpeem@2.2.0:reduceStream.js (3)
+Analyzing module enpeem@2.2.0:errors.js (4)
+Analyzing module stream-reduce@1.0.3:index.js (5)
+Analyzing module through@2.3.8:index.js (6)
+Analyzed packages: 4, modules: 6, functions: 30, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 29, call->function: 31
+Calls with zero or one callee: 23/72 (31.94%), multiple: 6/72 (8.33%), native or external: 43/72 (59.72%)
+Functions with zero callers: 8/30 (26.67%), reachable functions: 15/30 (50.00%)
+Analysis time: 79ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

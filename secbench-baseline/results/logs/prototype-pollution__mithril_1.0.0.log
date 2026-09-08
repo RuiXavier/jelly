@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:mithril.test.js (1)
+Analyzing module mithril@1.0.0:test-utils/browserMock.js (2)
+Analyzing module mithril@1.0.0:mithril.js (3)
+Analyzing module mithril@1.0.0:test-utils/pushStateMock.js (4)
+Analyzing module mithril@1.0.0:test-utils/domMock.js (5)
+Analyzing module mithril@1.0.0:test-utils/xhrMock.js (6)
+Analyzing module mithril@1.0.0:test-utils/parseURL.js (7)
+Analyzing module mithril@1.0.0:test-utils/callAsync.js (8)
+Analyzing module mithril@1.0.0:querystring/parse.js (9)
+Analyzed packages: 2, modules: 9, functions: 246, code size main: 1KB, dependencies: 67KB
+Call edges function->function: 301, call->function: 361
+Calls with zero or one callee: 362/652 (55.52%), multiple: 16/652 (2.45%), native or external: 274/652 (42.02%)
+Functions with zero callers: 96/246 (39.02%), reachable functions: 28/246 (11.38%)
+Analysis time: 271ms, memory usage: 72MB (without --gc)
+Analysis errors: 0, warnings: 53 (show all with --warnings-unsupported)

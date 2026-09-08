@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:flat-wrap.test.js (1)
+Analyzing module flat-wrap@1.0.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 10, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 13, call->function: 16
+Calls with zero or one callee: 28/54 (51.85%), multiple: 0/54 (0.00%), native or external: 26/54 (48.15%)
+Functions with zero callers: 1/10 (10.00%), reachable functions: 7/10 (70.00%)
+Analysis time: 76ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 21 (show all with --warnings-unsupported)

@@ -1,0 +1,15 @@
+Analyzing module <anonymous>:think-helper.test.js (1)
+Analyzing module think-helper@1.1.0:index.js (2)
+Analyzing module uuid@3.4.0:index.js (3)
+Analyzing module ms@1.0.0:index.js (4)
+Analyzing module core-util-is@1.0.3:lib/util.js (5)
+Analyzing module uuid@3.4.0:v1.js (6)
+Analyzing module uuid@3.4.0:v4.js (7)
+Analyzing module uuid@3.4.0:lib/rng.js (8)
+Analyzing module uuid@3.4.0:lib/bytesToUuid.js (9)
+Analyzed packages: 5, modules: 9, functions: 66, code size main: 1KB, dependencies: 22KB
+Call edges function->function: 60, call->function: 76
+Calls with zero or one callee: 89/175 (50.86%), multiple: 3/175 (1.71%), native or external: 83/175 (47.43%)
+Functions with zero callers: 27/66 (40.91%), reachable functions: 7/66 (10.61%)
+Analysis time: 124ms, memory usage: 46MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

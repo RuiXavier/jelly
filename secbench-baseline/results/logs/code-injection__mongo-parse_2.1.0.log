@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:mongo-parse.test.js (1)
+Analyzing module mongo-parse@2.1.0:mongoParse.js (2)
+Analyzing module mongo-parse@2.1.0:mapValues.js (3)
+Analyzing module mongo-parse@2.1.0:matches.js (4)
+Analyzing module mongo-parse@2.1.0:DotNotationPointers.js (5)
+Analyzed packages: 2, modules: 5, functions: 77, code size main: 1KB, dependencies: 26KB
+Call edges function->function: 78, call->function: 97
+Calls with zero or one callee: 117/172 (68.02%), multiple: 0/172 (0.00%), native or external: 55/172 (31.98%)
+Functions with zero callers: 28/77 (36.36%), reachable functions: 13/77 (16.88%)
+Analysis time: 118ms, memory usage: 48MB (without --gc)
+Analysis errors: 0, warnings: 34 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:node-staticserver.test.js (1)
+Analyzing module node-staticserver@1.0.3:index.js (2)
+Analyzing module node-staticserver@1.0.3:lib/server.js (3)
+Analyzing module node-staticserver@1.0.3:lib/util.js (4)
+Analyzed packages: 2, modules: 4, functions: 21, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 25, call->function: 38
+Calls with zero or one callee: 38/121 (31.40%), multiple: 1/121 (0.83%), native or external: 82/121 (67.77%)
+Functions with zero callers: 1/21 (4.76%), reachable functions: 20/21 (95.24%)
+Analysis time: 94ms, memory usage: 43MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

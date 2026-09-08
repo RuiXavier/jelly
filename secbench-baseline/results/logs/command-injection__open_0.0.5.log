@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:open.test.js (1)
+Analyzing module open@0.0.5:lib/open.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 5, call->function: 8
+Calls with zero or one callee: 11/27 (40.74%), multiple: 0/27 (0.00%), native or external: 16/27 (59.26%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 0

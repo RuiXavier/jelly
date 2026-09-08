@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ini-parser.test.js (1)
+Analyzing module ini-parser@0.0.2:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 5, call->function: 5
+Calls with zero or one callee: 7/16 (43.75%), multiple: 0/16 (0.00%), native or external: 9/16 (56.25%)
+Functions with zero callers: 2/5 (40.00%), reachable functions: 2/5 (40.00%)
+Analysis time: 46ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

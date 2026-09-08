@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:x-assign.test.js (1)
+Analyzing module x-assign@0.1.4:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 5, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 6, call->function: 7
+Calls with zero or one callee: 7/18 (38.89%), multiple: 0/18 (0.00%), native or external: 11/18 (61.11%)
+Functions with zero callers: 0/5 (0.00%), reachable functions: 5/5 (100.00%)
+Analysis time: 47ms, memory usage: 33MB (without --gc)
+Analysis errors: 0, warnings: 11 (show all with --warnings-unsupported)

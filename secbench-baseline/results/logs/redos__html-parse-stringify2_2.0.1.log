@@ -1,0 +1,14 @@
+Analyzing module <anonymous>:html-parse-stringify2.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/html-parse-stringify2_2.0.1/html-parse-stringify2.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/html-parse-stringify2_2.0.1/html-parse-stringify2.test.js:3:23
+Analyzing module html-parse-stringify2@2.0.1:index.js (2)
+Analyzing module html-parse-stringify2@2.0.1:lib/parse.js (3)
+Analyzing module html-parse-stringify2@2.0.1:lib/stringify.js (4)
+Analyzing module html-parse-stringify2@2.0.1:lib/parse-tag.js (5)
+Analyzing module void-elements@2.0.1:index.js (6)
+Analyzed packages: 3, modules: 6, functions: 11, code size main: 1KB, dependencies: 6KB
+Call edges function->function: 7, call->function: 8
+Calls with zero or one callee: 20/36 (55.56%), multiple: 0/36 (0.00%), native or external: 16/36 (44.44%)
+Functions with zero callers: 5/11 (45.45%), reachable functions: 1/11 (9.09%)
+Analysis time: 72ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

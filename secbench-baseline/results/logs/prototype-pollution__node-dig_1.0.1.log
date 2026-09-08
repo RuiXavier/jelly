@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-dig.test.js (1)
+Analyzing module node-dig@1.0.1:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 1, code size main: 1KB, dependencies: 1KB
+Call edges function->function: 1, call->function: 1
+Calls with zero or one callee: 1/10 (10.00%), multiple: 0/10 (0.00%), native or external: 9/10 (90.00%)
+Functions with zero callers: 0/1 (0.00%), reachable functions: 1/1 (100.00%)
+Analysis time: 35ms, memory usage: 31MB (without --gc)
+Analysis errors: 0, warnings: 1 (show all with --warnings-unsupported)

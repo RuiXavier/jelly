@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:vega-util.test.js (1)
+Analyzing module vega-util@1.13.0:build/vega-util.js (2)
+Analyzed packages: 2, modules: 2, functions: 108, code size main: 1KB, dependencies: 22KB
+Call edges function->function: 105, call->function: 161
+Calls with zero or one callee: 130/195 (66.67%), multiple: 9/195 (4.62%), native or external: 56/195 (28.72%)
+Functions with zero callers: 53/108 (49.07%), reachable functions: 10/108 (9.26%)
+Analysis time: 128ms, memory usage: 54MB (without --gc)
+Analysis errors: 0, warnings: 18 (show all with --warnings-unsupported)

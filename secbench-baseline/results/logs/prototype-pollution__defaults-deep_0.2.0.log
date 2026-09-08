@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:defaults-deep.test.js (1)
+Analyzing module defaults-deep@0.2.0:index.js (2)
+Analyzing module is-plain-object@0.1.0:index.js (3)
+Analyzing module for-own@0.1.5:index.js (4)
+Analyzing module for-in@1.0.2:index.js (5)
+Analyzed packages: 5, modules: 5, functions: 8, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 9, call->function: 10
+Calls with zero or one callee: 11/20 (55.00%), multiple: 0/20 (0.00%), native or external: 9/20 (45.00%)
+Functions with zero callers: 0/8 (0.00%), reachable functions: 8/8 (100.00%)
+Analysis time: 55ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 3 (show all with --warnings-unsupported)

@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:platform.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/platform_1.3.4/platform.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/platform_1.3.4/platform.test.js:3:23
+Analyzing module platform@1.3.4:platform.js (2)
+Analyzed packages: 2, modules: 2, functions: 32, code size main: 1KB, dependencies: 40KB
+Call edges function->function: 45, call->function: 54
+Calls with zero or one callee: 80/274 (29.20%), multiple: 2/274 (0.73%), native or external: 192/274 (70.07%)
+Functions with zero callers: 4/32 (12.50%), reachable functions: 28/32 (87.50%)
+Analysis time: 153ms, memory usage: 50MB (without --gc)
+Analysis errors: 0, warnings: 13 (show all with --warnings-unsupported)

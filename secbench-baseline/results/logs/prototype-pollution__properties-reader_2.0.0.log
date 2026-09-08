@@ -1,0 +1,11 @@
+Analyzing module <anonymous>:properties-reader.test.js (1)
+Analyzing module properties-reader@2.0.0:src/properties-reader-factory.js (2)
+Analyzing module properties-reader@2.0.0:src/properties-reader.js (3)
+Analyzing module properties-reader@2.0.0:src/property-appender.js (4)
+Analyzing module mkdirp@0.5.6:index.js (5)
+Analyzed packages: 3, modules: 5, functions: 37, code size main: 1KB, dependencies: 15KB
+Call edges function->function: 24, call->function: 29
+Calls with zero or one callee: 59/118 (50.00%), multiple: 5/118 (4.24%), native or external: 54/118 (45.76%)
+Functions with zero callers: 20/37 (54.05%), reachable functions: 7/37 (18.92%)
+Analysis time: 92ms, memory usage: 42MB (without --gc)
+Analysis errors: 0, warnings: 9 (show all with --warnings-unsupported)

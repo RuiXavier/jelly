@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ffmpeg-sdk.test.js (1)
+Analyzing module ffmpeg-sdk@0.0.5:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 15, code size main: 1KB, dependencies: 2KB
+Call edges function->function: 13, call->function: 14
+Calls with zero or one callee: 23/44 (52.27%), multiple: 0/44 (0.00%), native or external: 21/44 (47.73%)
+Functions with zero callers: 5/15 (33.33%), reachable functions: 8/15 (53.33%)
+Analysis time: 58ms, memory usage: 36MB (without --gc)
+Analysis errors: 0, warnings: 0

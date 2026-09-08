@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:arpping.test.js (1)
+Analyzing module arpping@2.0.0:index.js (2)
+Analyzing module arpping@2.0.0:macLookup.js (3)
+Analyzed packages: 2, modules: 3, functions: 42, code size main: 1KB, dependencies: 9KB
+Call edges function->function: 27, call->function: 27
+Calls with zero or one callee: 69/137 (50.36%), multiple: 0/137 (0.00%), native or external: 68/137 (49.64%)
+Functions with zero callers: 17/42 (40.48%), reachable functions: 16/42 (38.10%)
+Analysis time: 87ms, memory usage: 39MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

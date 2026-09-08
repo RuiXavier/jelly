@@ -1,0 +1,10 @@
+Analyzing module <anonymous>:timespan.test.js (1)
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/timespan_2.3.0/timespan.test.js:2:18
+Warning: Skipping module '../utils' at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/utils.js outside basedir at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/redos/timespan_2.3.0/timespan.test.js:3:23
+Analyzing module timespan@2.3.0:lib/time-span.js (2)
+Analyzed packages: 2, modules: 2, functions: 55, code size main: 1KB, dependencies: 23KB
+Call edges function->function: 37, call->function: 46
+Calls with zero or one callee: 68/122 (55.74%), multiple: 0/122 (0.00%), native or external: 54/122 (44.26%)
+Functions with zero callers: 43/55 (78.18%), reachable functions: 1/55 (1.82%)
+Analysis time: 87ms, memory usage: 44MB (without --gc)
+Analysis errors: 0, warnings: 5 (show all with --warnings-unsupported)

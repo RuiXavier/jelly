@@ -1,0 +1,37 @@
+Analyzing module <anonymous>:utilitify.test.js (1)
+Analyzing module utilitify@1.0.2:index.js (2)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/index.js:3:17
+Analyzing module utilitify@1.0.2:utils/index.js (3)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/index.js:3:17
+Analyzing module utilitify@1.0.2:utils/arrUnion.js (4)
+Analyzing module utilitify@1.0.2:utils/cloneDeep.js (5)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/cloneDeep.js:3:17
+Analyzing module utilitify@1.0.2:utils/cloneShallow.js (6)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/cloneShallow.js:3:17
+Analyzing module utilitify@1.0.2:utils/mergeDeep.js (7)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/mergeDeep.js:3:17
+Analyzing module utilitify@1.0.2:utils/compose.js (8)
+Analyzing module utilitify@1.0.2:utils/isObject.js (9)
+Analyzing module utilitify@1.0.2:utils/difference.js (10)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/difference.js:3:17
+Analyzing module utilitify@1.0.2:utils/delIn.js (11)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/delIn.js:3:17
+Analyzing module utilitify@1.0.2:utils/setIn.js (12)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/setIn.js:3:17
+Analyzing module utilitify@1.0.2:utils/utils.js (13)
+Error: Unable to resolve module 'tslib' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/utilitify_1.0.2/node_modules/utilitify/utils/utils.js:3:17
+Analyzing module utilitify@1.0.2:utils/string.js (14)
+Analyzing module kind-of@6.0.3:index.js (15)
+Analyzing module lodash.transform@4.6.0:index.js (16)
+Analyzing module lodash.topath@4.5.2:index.js (17)
+Analyzing module lodash.get@4.4.2:index.js (18)
+Analyzing module lodash.set@4.3.2:index.js (19)
+Analyzing module lodash.isnumber@3.0.3:index.js (20)
+Analyzing module lodash.findindex@4.6.0:index.js (21)
+Analyzing module lodash.omit@4.18.0:index.js (22)
+Analyzed packages: 10, modules: 22, functions: 545, code size main: 1KB, dependencies: 285KB
+Call edges function->function: 779, call->function: 886
+Calls with zero or one callee: 916/1357 (67.50%), multiple: 54/1357 (3.98%), native or external: 387/1357 (28.52%)
+Functions with zero callers: 51/545 (9.36%), reachable functions: 461/545 (84.59%)
+Analysis time: 441ms, memory usage: 95MB (without --gc)
+Analysis errors: 9, warnings: 85 (show all with --warnings-unsupported)

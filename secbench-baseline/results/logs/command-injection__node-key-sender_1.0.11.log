@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:node-key-sender.test.js (1)
+Analyzing module node-key-sender@1.0.11:key-sender.js (2)
+Analyzed packages: 2, modules: 2, functions: 27, code size main: 1KB, dependencies: 8KB
+Call edges function->function: 20, call->function: 20
+Calls with zero or one callee: 25/49 (51.02%), multiple: 0/49 (0.00%), native or external: 24/49 (48.98%)
+Functions with zero callers: 16/27 (59.26%), reachable functions: 8/27 (29.63%)
+Analysis time: 74ms, memory usage: 34MB (without --gc)
+Analysis errors: 0, warnings: 2 (show all with --warnings-unsupported)

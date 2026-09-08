@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:predefine.test.js (1)
+Analyzing module predefine@0.1.2:index.js (2)
+Analyzing module extendible@0.1.1:index.js (3)
+Analyzed packages: 3, modules: 3, functions: 27, code size main: 1KB, dependencies: 12KB
+Call edges function->function: 20, call->function: 29
+Calls with zero or one callee: 36/66 (54.55%), multiple: 4/66 (6.06%), native or external: 26/66 (39.39%)
+Functions with zero callers: 12/27 (44.44%), reachable functions: 5/27 (18.52%)
+Analysis time: 77ms, memory usage: 35MB (without --gc)
+Analysis errors: 0, warnings: 15 (show all with --warnings-unsupported)

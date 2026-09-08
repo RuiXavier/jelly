@@ -1,0 +1,8 @@
+Analyzing module <anonymous>:ffmpegdotjs.test.js (1)
+Analyzing module ffmpegdotjs@0.0.4:index.js (2)
+Analyzed packages: 2, modules: 2, functions: 38, code size main: 1KB, dependencies: 7KB
+Call edges function->function: 28, call->function: 28
+Calls with zero or one callee: 62/101 (61.39%), multiple: 0/101 (0.00%), native or external: 39/101 (38.61%)
+Functions with zero callers: 10/38 (26.32%), reachable functions: 8/38 (21.05%)
+Analysis time: 71ms, memory usage: 32MB (without --gc)
+Analysis errors: 0, warnings: 0

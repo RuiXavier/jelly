@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:jquery.test.js (1)
+Error: Unable to resolve module 'jsdom' (CommonJS) at /tmp/claude-1000/-home-rx-Documents-repos-jelly/fd08a6e0-49e6-4046-bbce-ea5801d7b00f/scratchpad/SecBench.js/prototype-pollution/jquery_1.11.0/jquery.test.js:3:21
+Analyzing module jquery@1.11.0:dist/jquery.js (2)
+Analyzed packages: 2, modules: 2, functions: 602, code size main: 1KB, dependencies: 277KB
+Call edges function->function: 883, call->function: 1227
+Calls with zero or one callee: 718/1877 (38.25%), multiple: 93/1877 (4.95%), native or external: 1066/1877 (56.79%)
+Functions with zero callers: 264/602 (43.85%), reachable functions: 171/602 (28.41%)
+Analysis time: 721ms, memory usage: 143MB (without --gc)
+Analysis errors: 1, warnings: 163 (show all with --warnings-unsupported)

@@ -1,0 +1,9 @@
+Analyzing module <anonymous>:clamscan.test.js (1)
+Analyzing module clamscan@1.2.0:index.js (2)
+Analyzing module clamscan@1.2.0:NodeClamTransform.js (3)
+Analyzed packages: 2, modules: 3, functions: 107, code size main: 1KB, dependencies: 88KB
+Call edges function->function: 144, call->function: 174
+Calls with zero or one callee: 411/643 (63.92%), multiple: 0/643 (0.00%), native or external: 232/643 (36.08%)
+Functions with zero callers: 9/107 (8.41%), reachable functions: 21/107 (19.63%)
+Analysis time: 225ms, memory usage: 59MB (without --gc)
+Analysis errors: 0, warnings: 10 (show all with --warnings-unsupported)
